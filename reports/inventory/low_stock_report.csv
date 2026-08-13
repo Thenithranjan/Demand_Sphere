@@ -1,0 +1,119 @@
+ProductID,ProductName,Category,Warehouse,CurrentStock,SafetyStock,ReorderPoint,SuggestedPurchaseQuantity,RiskLevel
+P0411,Prisma Socks MI Blue XL,Accessories,Coimbatore WH,0,19,47,266,Critical
+P0170,Netplay Shirts RCB Red XS,Men,Chennai WH,1,22,53,180,Critical
+P0448,Kanchipuram Handloom Sarees Yellow Standard,Women,Madurai WH,1,15,47,215,Critical
+P0138,Prisma Shirts Blue XL,Men,Madurai WH,2,29,48,174,Critical
+P0363,Westside Baby Dresses Pink 6-12 Years,Kids,Madurai WH,2,17,47,237,Critical
+P0372,Prisma Pants CSK Yellow L,Men,Chennai WH,2,14,34,255,Critical
+P0147,Fabindia Bedsheets Yellow Single,Home & Lifestyle,Madurai WH,2,22,61,305,Critical
+P0277,Fabindia Curtains Orange King,Home & Lifestyle,Coimbatore WH,2,10,47,238,Critical
+P0031,Fabindia Puttu Vasti Black L,Women,Madurai WH,3,17,44,277,Critical
+P0373,Westside Baby Dresses Cream 0-3 Months,Kids,Madurai WH,3,22,54,153,Critical
+P0397,Raymond Shirts Red L,Men,Chennai WH,3,10,48,221,Critical
+P0430,Guess Dresses Green XXL,Women,Chennai WH,4,27,43,198,Critical
+P0005,Fabindia Pillow Covers Orange Single,Home & Lifestyle,Coimbatore WH,5,12,28,135,Critical
+P0162,Prisma Umbrellas Yellow XL,Accessories,Coimbatore WH,5,13,39,128,Critical
+P0321,Prisma Raincoats Black M,Accessories,Madurai WH,6,25,60,282,Critical
+P0299,Prisma School Uniforms White XXL,Kids,Madurai WH,6,18,51,138,Critical
+P0441,Biba Sarees RCB Red 9 Yards,Women,Madurai WH,6,26,60,251,Critical
+P0455,Uathayam Political Veshti Black 9 Yards,Men,Chennai WH,6,29,45,257,Critical
+P0488,Westside Baby Dresses Red 1-5 Years,Kids,Coimbatore WH,7,12,36,142,Critical
+P0322,Prisma Gift Boxes Cream S,Kids,Chennai WH,7,23,56,217,Critical
+P0360,Fabindia Bed Covers Maroon King,Home & Lifestyle,Chennai WH,8,30,70,143,Critical
+P0194,Fabindia Bedsheets Purple Double,Home & Lifestyle,Madurai WH,9,20,44,255,Critical
+P0355,Prisma Towels White XL,Accessories,Coimbatore WH,9,11,39,117,Critical
+P0175,Guess IPL Jerseys MI Blue XL,Accessories,Madurai WH,9,13,53,251,Critical
+P0128,Netplay Socks Red L,Accessories,Chennai WH,10,20,40,193,Critical
+P0347,Prisma Umbrellas CSK Yellow L,Accessories,Chennai WH,11,16,45,249,Critical
+P0342,Prisma School Uniforms Green S,Kids,Coimbatore WH,11,21,51,147,Critical
+P0044,Kanchipuram Handloom Puttu Vasti Red L,Women,Coimbatore WH,11,25,40,159,Critical
+P0101,Prisma Baby Dresses Cream 3-6 Months,Kids,Madurai WH,12,25,53,202,Critical
+P0264,Biba Shree CSK Yellow L,Women,Chennai WH,12,10,27,170,High
+P0244,Fabindia Kurtas CSK Yellow L,Women,Chennai WH,13,23,54,134,Critical
+P0356,Fabindia Shree Purple M,Women,Madurai WH,13,15,34,199,Critical
+P0349,Guess Belts Red M,Accessories,Madurai WH,14,17,33,202,Critical
+P0022,Fabindia Pillow Covers Black King,Home & Lifestyle,Madurai WH,15,15,50,225,Critical
+P0281,Netplay Socks White S,Accessories,Madurai WH,15,16,55,272,Critical
+P0078,Prisma School Uniforms Maroon M,Kids,Chennai WH,16,15,43,185,High
+P0425,Fabindia Bed Covers Maroon Single,Home & Lifestyle,Chennai WH,16,26,45,156,Critical
+P0423,Prisma Towels Pink S,Accessories,Chennai WH,18,13,37,184,High
+P0293,Westside Baby Dresses MI Blue 3-6 Months,Kids,Chennai WH,18,17,52,210,High
+P0394,Fabindia Bedsheets Green King,Home & Lifestyle,Chennai WH,18,20,60,133,Critical
+P0302,Fabindia Kurtas RCB Red S,Women,Chennai WH,19,21,39,144,Critical
+P0189,Prisma Baby Dresses Blue 3-6 Months,Kids,Coimbatore WH,19,12,27,216,High
+P0353,Kanchipuram Handloom Sarees Red 4m,Women,Chennai WH,19,16,37,118,High
+P0054,Biba Sarees Green Standard,Women,Coimbatore WH,19,27,54,214,Critical
+P0306,Guess Belts Pink S,Accessories,Chennai WH,19,17,35,168,High
+P0282,Prisma Pants MI Blue L,Men,Coimbatore WH,20,29,47,177,Critical
+P0016,Netplay Pants Cream XS,Men,Coimbatore WH,21,26,43,124,Critical
+P0077,Prisma Umbrellas Gold L,Accessories,Chennai WH,21,10,32,124,High
+P0291,Ramraj Cotton Shirts Maroon L,Men,Chennai WH,21,19,56,196,High
+P0417,Fabindia Pillow Covers Maroon Single,Home & Lifestyle,Madurai WH,22,14,32,188,High
+P0492,Guess IPL Jerseys Yellow XXL,Accessories,Chennai WH,22,12,47,144,High
+P0226,Prisma Gift Boxes Red L,Kids,Chennai WH,22,27,43,233,Critical
+P0415,Fabindia Bedsheets Green King,Home & Lifestyle,Chennai WH,22,22,38,176,Critical
+P0365,Fabindia Bed Covers Black King,Home & Lifestyle,Madurai WH,23,14,54,201,High
+P0470,Fabindia Kurtas Cream S,Women,Chennai WH,23,24,56,194,Critical
+P0377,Prisma Gift Boxes Purple XXL,Kids,Coimbatore WH,23,12,35,127,High
+P0231,Raymond Belts White S,Accessories,Chennai WH,23,27,52,262,Critical
+P0207,Prisma Baby Dresses Black 3-6 Months,Kids,Chennai WH,23,26,58,130,Critical
+P0494,Uathayam School Uniforms Blue XL,Kids,Madurai WH,23,14,31,97,High
+P0071,Prisma Gift Boxes CSK Yellow S,Kids,Chennai WH,25,16,55,157,High
+P0120,Ramraj Cotton Towels Blue XL,Men,Madurai WH,25,30,47,221,Critical
+P0216,Westside Dresses Red XXL,Women,Madurai WH,26,27,60,202,Critical
+P0498,Prisma School Uniforms Green L,Kids,Madurai WH,26,13,47,220,High
+P0025,Netplay Socks RCB Red S,Accessories,Madurai WH,26,14,46,228,High
+P0444,Fabindia Curtains CSK Yellow King,Home & Lifestyle,Coimbatore WH,26,20,41,230,High
+P0304,Westside Baby Dresses Red 6-12 Years,Kids,Chennai WH,27,19,36,112,High
+P0489,Prisma Towels Blue S,Accessories,Chennai WH,27,14,51,164,High
+P0247,Ramraj Cotton Political Veshti CSK Yellow 2m,Men,Madurai WH,28,23,42,154,High
+P0075,Prisma Pants Yellow XL,Men,Madurai WH,28,17,46,121,High
+P0402,Fabindia Puttu Vasti Orange XS,Women,Madurai WH,30,10,43,145,High
+P0469,Fabindia Pillow Covers CSK Yellow Single,Home & Lifestyle,Madurai WH,30,14,37,125,High
+P0035,Fabindia Kurtas Gold S,Women,Coimbatore WH,31,21,48,172,High
+P0236,Fabindia Curtains Blue Single,Home & Lifestyle,Chennai WH,31,18,35,114,High
+P0055,Raymond Shirts Gold XS,Men,Coimbatore WH,31,25,44,125,High
+P0408,Biba Kurtas CSK Yellow XXL,Women,Madurai WH,32,24,48,134,High
+P0205,Prisma Gift Boxes RCB Red XS,Kids,Chennai WH,32,14,38,256,High
+P0329,Uathayam Political Veshti Black 2m,Men,Chennai WH,33,23,38,159,High
+P0338,Kanchipuram Handloom Sarees Green 2m,Women,Madurai WH,33,14,49,153,High
+P0176,Prisma Towels Maroon S,Men,Coimbatore WH,33,12,39,110,High
+P0387,Netplay Pants RCB Red XL,Men,Madurai WH,33,24,40,229,High
+P0351,Ramraj Cotton Shirts Green S,Men,Chennai WH,34,26,59,158,High
+P0348,Uathayam Lungi MI Blue Standard,Men,Coimbatore WH,34,14,52,221,High
+P0139,Fabindia Pillow Covers Pink King,Home & Lifestyle,Chennai WH,36,26,54,222,High
+P0097,Prisma Umbrellas White M,Accessories,Coimbatore WH,36,17,37,94,High
+P0089,Uathayam Lungi Green Standard,Men,Madurai WH,36,27,63,107,High
+P0212,Nandu Lungi Lungi Orange Standard,Men,Chennai WH,36,27,57,173,High
+P0155,Fabindia Bed Covers Yellow King,Home & Lifestyle,Coimbatore WH,37,11,45,149,High
+P0080,Fabindia Pillow Covers Orange King,Home & Lifestyle,Coimbatore WH,37,29,53,101,High
+P0416,Raymond Shirts CSK Yellow XS,Men,Chennai WH,37,16,50,167,High
+P0180,Uathayam School Uniforms Purple S,Kids,Chennai WH,37,12,41,253,High
+P0250,Prisma Gift Boxes Orange XL,Kids,Madurai WH,38,20,46,232,High
+P0340,Prisma Raincoats CSK Yellow M,Accessories,Coimbatore WH,38,13,43,92,High
+P0421,Fabindia Sarees Yellow Standard,Women,Coimbatore WH,39,29,50,181,High
+P0161,Ramraj Cotton Towels Orange XS,Accessories,Chennai WH,39,20,47,151,High
+P0400,Fabindia Pillow Covers CSK Yellow King,Home & Lifestyle,Coimbatore WH,40,29,63,104,High
+P0480,Biba Sarees Yellow 9 Yards,Women,Madurai WH,40,14,45,121,High
+P0146,Fabindia Puttu Vasti Purple XL,Women,Coimbatore WH,41,23,45,180,High
+P0487,Netplay IPL Jerseys White XS,Accessories,Madurai WH,41,30,69,148,High
+P0003,Biba Kurtas Black M,Women,Chennai WH,41,27,52,153,High
+P0426,Ramraj Cotton Towels Pink XXL,Accessories,Chennai WH,42,29,67,209,High
+P0375,Guess IPL Jerseys Red M,Accessories,Chennai WH,43,23,51,219,High
+P0092,Netplay Pants Black XXL,Men,Chennai WH,43,28,60,147,High
+P0203,Prisma Gift Boxes Black XL,Kids,Coimbatore WH,43,17,54,202,High
+P0379,Westside Dresses CSK Yellow M,Women,Madurai WH,43,25,49,86,High
+P0285,Prisma Gift Boxes Gold S,Kids,Madurai WH,44,29,67,272,High
+P0447,Fabindia Pillow Covers Purple King,Home & Lifestyle,Coimbatore WH,46,28,68,106,High
+P0058,Fabindia Curtains CSK Yellow Single,Home & Lifestyle,Coimbatore WH,46,12,50,182,High
+P0266,Uathayam Veshti Pink Standard,Men,Coimbatore WH,48,29,49,160,High
+P0406,Netplay IPL Jerseys RCB Red M,Accessories,Madurai WH,49,28,62,115,High
+P0336,Ramraj Cotton Towels Cream XXL,Accessories,Chennai WH,49,19,54,195,High
+P0395,Fabindia Shree RCB Red XS,Women,Coimbatore WH,50,29,62,231,High
+P0313,Fabindia Pillow Covers Black Double,Home & Lifestyle,Coimbatore WH,53,24,63,211,High
+P0086,Uathayam Towels Gold XS,Accessories,Chennai WH,53,22,57,252,High
+P0258,Fabindia Pillow Covers Pink Double,Home & Lifestyle,Madurai WH,54,22,56,161,High
+P0083,Fabindia Sarees Purple 9 Yards,Women,Chennai WH,55,23,56,100,High
+P0298,Netplay Shirts Purple M,Men,Coimbatore WH,56,29,60,208,High
+P0374,Uathayam School Uniforms MI Blue L,Kids,Madurai WH,60,29,60,195,High
+P0171,Ramraj Cotton Shirts Blue L,Men,Chennai WH,63,29,66,123,High

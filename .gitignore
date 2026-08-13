@@ -1,0 +1,133 @@
+# =============================================================
+# Demand Sphere - Retail Product Recommendation System
+# .gitignore
+# =============================================================
+
+# -----------------------------------------------
+# SECRETS & ENVIRONMENT FILES - NEVER COMMIT
+# -----------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# -----------------------------------------------
+# Python
+# -----------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+
+# -----------------------------------------------
+# Python Virtual Environments
+# -----------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# -----------------------------------------------
+# Python Egg / Distribution
+# -----------------------------------------------
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# -----------------------------------------------
+# Pytest / Coverage
+# -----------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# -----------------------------------------------
+# Jupyter Notebooks - checkpoint files only
+# -----------------------------------------------
+.ipynb_checkpoints/
+
+# -----------------------------------------------
+# Node / Frontend
+# -----------------------------------------------
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+
+# -----------------------------------------------
+# Trained ML Model Files (large binary artifacts ~84MB total)
+# Use DVC, MLflow, or model registry instead
+# -----------------------------------------------
+backend/models/*.pkl
+backend/models/*.joblib
+backend/models/recommendation/
+backend/models/forecast/
+!backend/models/model_registry.json
+!backend/models/model_metadata.json
+!backend/models/training_settings.json
+!backend/models/audit_trail.json
+!backend/models/dataset_registry.json
+!backend/models/training_logs.json
+
+# -----------------------------------------------
+# Data - Processed / Backup CSVs (generated, large)
+# -----------------------------------------------
+data/backups/
+data/processed/master_dataset.csv
+data/processed/forecasting_features.csv
+
+# Root-level generated CSV outputs
+forecast_results.csv
+inventory_alerts.csv
+inventory_decision.csv
+
+# -----------------------------------------------
+# Large data files
+# -----------------------------------------------
+*.parquet
+*.feather
+
+# -----------------------------------------------
+# Logs
+# -----------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------------------------
+# IDE / Editor
+# -----------------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# -----------------------------------------------
+# OS Artifacts
+# -----------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# -----------------------------------------------
+# Temporary / Misc
+# -----------------------------------------------
+*.tmp
+*.bak
+*.swp
+*.orig

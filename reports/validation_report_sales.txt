@@ -1,0 +1,47 @@
+======================================================================
+VALIDATION REPORT — SALES TRANSACTIONS DATASET
+Generated: 2026-07-20 23:56:14
+Source File: data\raw\sales_transactions_50000_textile_dataset.xlsx
+======================================================================
+
+📊 DATASET SUMMARY
+----------------------------------------
+  Total Rows       : 50,000
+  Total Columns    : 13
+  Unique Customers : 2,000
+  Unique Products  : 500
+  Unique Invoices  : 19,882
+  Quantity Range   : 1 — 3
+  FinalPrice Range : ₹90.00 — ₹10,500.00
+  Total Revenue    : ₹89,097,332.50
+
+1️⃣  SCHEMA VALIDATION
+----------------------------------------
+  Status  : ✅ PASSED
+
+2️⃣  MISSING VALUES CHECK
+----------------------------------------
+  Status      : ✅ PASSED
+  Total Nulls : 0
+
+3️⃣  DUPLICATE CHECK
+----------------------------------------
+  Status           : ✅ PASSED
+  Duplicate SaleIDs: 0
+  Full Duplicates  : 0
+
+4️⃣  DATA TYPE VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+5️⃣  BUSINESS RULES VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+6️⃣  REFERENTIAL INTEGRITY
+----------------------------------------
+  Status : ✅ PASSED
+
+======================================================================
+OVERALL RESULT: ✅ ALL CHECKS PASSED
+======================================================================

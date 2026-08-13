@@ -1,0 +1,4 @@
+Warehouse,TotalProducts,TotalCurrentStock,AverageSafetyStock,SuggestedOrderVolume,LowStockItemsCount
+Chennai WH,184,19066,19.88586956521739,8458,47
+Coimbatore WH,171,20169,19.935672514619885,5249,32
+Madurai WH,145,13943,20.29655172413793,7493,39

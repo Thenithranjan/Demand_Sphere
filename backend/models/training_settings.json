@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "sales_threshold": 2000,
+  "customer_threshold": 800,
+  "product_threshold": 50,
+  "training_interval_months": 1,
+  "check_interval_hours": 24,
+  "min_precision": 0.0,
+  "max_rmse": 100.0,
+  "customers_threshold": 800,
+  "time_threshold_months": 1,
+  "approval_mode": "automatic"
+}

@@ -1,0 +1,21 @@
+ProductID,ProductName,Category,CurrentStock,ForecastDemand,SuggestedPurchaseQuantity,RiskLevel
+P0322,Prisma Gift Boxes Cream S,Kids,7,13.291363,217,Critical
+P0448,Kanchipuram Handloom Sarees Yellow Standard,Women,1,8.461358,215,Critical
+P0430,Guess Dresses Green XXL,Women,4,8.44851,198,Critical
+P0162,Prisma Umbrellas Yellow XL,Accessories,5,8.405015,128,Critical
+P0441,Biba Sarees RCB Red 9 Yards,Women,6,8.194161,251,Critical
+P0138,Prisma Shirts Blue XL,Men,2,8.058921,174,Critical
+P0031,Fabindia Puttu Vasti Black L,Women,3,7.9874773,277,Critical
+P0397,Raymond Shirts Red L,Men,3,7.8826985,221,Critical
+P0363,Westside Baby Dresses Pink 6-12 Years,Kids,2,7.8351936,237,Critical
+P0488,Westside Baby Dresses Red 1-5 Years,Kids,7,7.812129,142,Critical
+P0455,Uathayam Political Veshti Black 9 Yards,Men,6,7.810049,257,Critical
+P0147,Fabindia Bedsheets Yellow Single,Home & Lifestyle,2,7.810049,305,Critical
+P0170,Netplay Shirts RCB Red XS,Men,1,7.809532,180,Critical
+P0411,Prisma Socks MI Blue XL,Accessories,0,7.7996855,266,Critical
+P0373,Westside Baby Dresses Cream 0-3 Months,Kids,3,7.7796702,153,Critical
+P0299,Prisma School Uniforms White XXL,Kids,6,7.703662,138,Critical
+P0372,Prisma Pants CSK Yellow L,Men,2,7.6229954,255,Critical
+P0277,Fabindia Curtains Orange King,Home & Lifestyle,2,7.405175,238,Critical
+P0005,Fabindia Pillow Covers Orange Single,Home & Lifestyle,5,7.3764887,135,Critical
+P0321,Prisma Raincoats Black M,Accessories,6,7.075975,282,Critical

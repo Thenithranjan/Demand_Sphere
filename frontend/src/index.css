@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/*
+ * Global Stylesheet — Retail AI Frontend
+ * =========================================
+ * Tailwind CSS v4 with custom design tokens for the premium SaaS theme.
+ * Dark mode first approach with glassmorphism effects.
+ */
+
+/* ─── Custom Theme Variables ───────────────────────────────────────────────── */
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-300: #a5b4fc;
+  --color-brand-400: #818cf8;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+
+  --color-surface-dark: #09090b;
+  --color-surface-card: #18181b;
+  --color-surface-elevated: #27272a;
+
+  --color-glass-dark: rgba(24, 24, 27, 0.6);
+  --color-glass-light: rgba(255, 255, 255, 0.7);
+  --color-glass-border-dark: rgba(63, 63, 70, 0.5);
+  --color-glass-border-light: rgba(228, 228, 231, 0.8);
+
+  --radius-card: 1rem;
+  --radius-button: 0.625rem;
+}
+
+/* ─── Base Styles ──────────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    border-color: theme(colors.zinc.800);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-zinc-950 text-zinc-100 transition-colors duration-300;
+  }
+
+  html:not(.dark) body {
+    @apply bg-gray-50 text-zinc-900;
+  }
+
+  html:not(.dark) * {
+    border-color: theme(colors.zinc.200);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: theme(colors.zinc.700);
+    border-radius: 999px;
+  }
+  html:not(.dark) ::-webkit-scrollbar-thumb {
+    background: theme(colors.zinc.300);
+  }
+}
+
+/* ─── Component Utilities ──────────────────────────────────────────────────── */
+@utility glass-card {
+  background: var(--color-glass-dark);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-glass-border-dark);
+  border-radius: var(--radius-card);
+}
+
+@utility glass-card-light {
+  background: var(--color-glass-light);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--color-glass-border-light);
+  border-radius: var(--radius-card);
+}
+
+@utility gradient-brand {
+  background: linear-gradient(135deg, var(--color-brand-500), var(--color-brand-700));
+}
+
+@utility gradient-brand-text {
+  background: linear-gradient(135deg, var(--color-brand-400), #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@utility animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    theme(colors.zinc.800) 0%,
+    theme(colors.zinc.700) 50%,
+    theme(colors.zinc.800) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ─── Recharts Overrides ───────────────────────────────────────────────────── */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: theme(colors.zinc.800);
+  stroke-opacity: 0.5;
+}
+
+html:not(.dark) .recharts-cartesian-grid-horizontal line,
+html:not(.dark) .recharts-cartesian-grid-vertical line {
+  stroke: theme(colors.zinc.200);
+}
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}

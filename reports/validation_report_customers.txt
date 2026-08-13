@@ -1,0 +1,42 @@
+======================================================================
+VALIDATION REPORT — CUSTOMERS DATASET
+Generated: 2026-07-20 23:56:10
+Source File: data\raw\customers_2000_textile_dataset.xlsx
+======================================================================
+
+📊 DATASET SUMMARY
+----------------------------------------
+  Total Rows    : 2000
+  Total Columns : 12
+  Column Names  : ['CustomerID', 'FullName', 'Gender', 'Age', 'City', 'State', 'Membership', 'JoinDate', 'PreferredCategory', 'PreferredFabric', 'PreferredPriceRange', 'LoyaltyPoints']
+  Unique Cities : 15
+  Age Range     : 18 — 65
+  Points Range  : 0 — 14878
+
+1️⃣  SCHEMA VALIDATION
+----------------------------------------
+  Status  : ✅ PASSED
+
+2️⃣  MISSING VALUES CHECK
+----------------------------------------
+  Status      : ✅ PASSED
+  Total Nulls : 0
+
+3️⃣  DUPLICATE CHECK
+----------------------------------------
+  Status               : ✅ PASSED
+  Duplicate CustomerIDs : 0
+  Duplicate Names (info): 1553
+  Fully Duplicated Rows : 0
+
+4️⃣  DATA TYPE VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+5️⃣  BUSINESS RULES VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+======================================================================
+OVERALL RESULT: ✅ ALL CHECKS PASSED
+======================================================================

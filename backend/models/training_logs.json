@@ -1,0 +1,194 @@
+[
+  {
+    "training_id": "TRN-20260807-234928",
+    "training_start_time": "2026-08-07T23:49:28.228473",
+    "training_end_time": "2026-08-07T23:49:41.837669",
+    "duration_seconds": 13.61,
+    "duration_human": "13.6s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.1",
+    "forecast_model_version": "v1.1"
+  },
+  {
+    "training_id": "TRN-20260807-235107",
+    "training_start_time": "2026-08-07T23:51:07.333234",
+    "training_end_time": "2026-08-07T23:51:07.334174",
+    "duration_seconds": 0.0,
+    "duration_human": "0.0s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "automatic: Data growth detected in products: 100 \u2192 500 (400.0% increase, threshold: 10.0%); Model staleness: 37 days since last training (threshold: 7 days)",
+    "dataset_sizes": {},
+    "metrics": {},
+    "status": "failed",
+    "recommendation_model_version": "v1.0",
+    "forecast_model_version": "v1.0",
+    "error_message": "Database unavailable: (pymysql.err.InternalError) Packet sequence number wrong - got 48 expected 5\n[SQL: SELECT count(*) AS count_1 \nFROM (SELECT products.`ProductID` AS `products_ProductID`, products.`SKU` AS `products_SKU`, products.`ProductName` AS `products_ProductName`, products.`Category` AS `products_Category`, products.`SubCategory` AS `products_SubCategory`, products.`Brand` AS `products_Brand`, products.`Color` AS `products_Color`, products.`Size` AS `products_Size`, products.`Fabric` AS `products_Fabric`, products.`SeasonalDemandTag` AS `products_SeasonalDemandTag`, products.`Gender` AS `products_Gender`, products.`Price` AS `products_Price`, products.`CostPrice` AS `products_CostPrice`, products.`SupplierID` AS `products_SupplierID`, products.`ProductStatus` AS `products_ProductStatus`, products.`ImageURL` AS `products_ImageURL`, products.`ProfitMargin` AS `products_ProfitMargin` \nFROM products) AS anon_1]\n(Background on this error at: https://sqlalche.me/e/20/2j85)"
+  },
+  {
+    "training_id": "TRN-20260808-193536",
+    "training_start_time": "2026-08-08T19:35:36.211813",
+    "training_end_time": "2026-08-08T19:35:48.677141",
+    "duration_seconds": 12.47,
+    "duration_human": "12.5s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.2",
+    "forecast_model_version": "v1.2"
+  },
+  {
+    "training_id": "TRN-20260809-233455",
+    "training_start_time": "2026-08-09T23:34:55.249796",
+    "training_end_time": "2026-08-09T23:35:07.579989",
+    "duration_seconds": 12.33,
+    "duration_human": "12.3s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "test_rejection",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "model_rejected",
+    "recommendation_model_version": "v1.3",
+    "forecast_model_version": "v1.3",
+    "error_message": "model_rejected: Recommendation accuracy 0.0% is below minimum threshold of 100.0%"
+  },
+  {
+    "training_id": "TRN-20260810-005144",
+    "training_start_time": "2026-08-10T00:51:44.967929",
+    "training_end_time": "2026-08-10T00:51:56.265819",
+    "duration_seconds": 11.3,
+    "duration_human": "11.3s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.3",
+    "forecast_model_version": "v1.3"
+  },
+  {
+    "training_id": "TRN-20260810-005202",
+    "training_start_time": "2026-08-10T00:52:02.076734",
+    "training_end_time": "2026-08-10T00:52:10.395787",
+    "duration_seconds": 8.32,
+    "duration_human": "8.3s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.4",
+    "forecast_model_version": "v1.4"
+  },
+  {
+    "training_id": "TRN-20260810-005230",
+    "training_start_time": "2026-08-10T00:52:30.576588",
+    "training_end_time": "2026-08-10T00:52:38.430653",
+    "duration_seconds": 7.85,
+    "duration_human": "7.9s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.5",
+    "forecast_model_version": "v1.5"
+  },
+  {
+    "training_id": "TRN-20260810-005246",
+    "training_start_time": "2026-08-10T00:52:46.016701",
+    "training_end_time": "2026-08-10T00:52:53.872228",
+    "duration_seconds": 7.86,
+    "duration_human": "7.9s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.6",
+    "forecast_model_version": "v1.6"
+  }
+]

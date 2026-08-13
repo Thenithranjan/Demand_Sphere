@@ -1,0 +1,50 @@
+======================================================================
+VALIDATION REPORT — INVENTORY DATASET
+Generated: 2026-07-20 23:56:14
+Source File: data\raw\inventory_500_textile_dataset.xlsx
+======================================================================
+
+📊 DATASET SUMMARY
+----------------------------------------
+  Total Rows        : 500
+  Total Columns     : 11
+  Unique Warehouses : 3
+  Warehouses        : ['Chennai WH', 'Madurai WH', 'Coimbatore WH']
+  Status Distribution:
+    Healthy: 323
+    Reorder Required: 117
+    Overstock: 59
+    Out of Stock: 1
+  CurrentStock Range: 0 — 298
+  Total Stock Units : 53,178
+
+1️⃣  SCHEMA VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+2️⃣  MISSING VALUES CHECK
+----------------------------------------
+  Status      : ✅ PASSED
+  Total Nulls : 0
+
+3️⃣  DUPLICATE CHECK
+----------------------------------------
+  Status             : ✅ PASSED
+  Duplicate ProductIDs: 0
+  Full Duplicates     : 0
+
+4️⃣  DATA TYPE VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+5️⃣  BUSINESS RULES VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+6️⃣  REFERENTIAL INTEGRITY
+----------------------------------------
+  Status : ✅ PASSED
+
+======================================================================
+OVERALL RESULT: ✅ ALL CHECKS PASSED
+======================================================================

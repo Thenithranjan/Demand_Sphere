@@ -1,0 +1,182 @@
+[
+  {
+    "timestamp": "2026-08-10T00:51:56.018247",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_TRAINING_COMPLETED",
+    "model_type": null,
+    "version": null,
+    "details": "Retraining completed inside pipeline"
+  },
+  {
+    "timestamp": "2026-08-10T00:51:56.173445",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "recommendation",
+    "version": "v1.3",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:51:56.187033",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "forecast",
+    "version": "v1.3",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:51:56.205164",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "recommendation",
+    "version": "v1.3",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:51:56.219195",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "forecast",
+    "version": "v1.3",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:10.183138",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_TRAINING_COMPLETED",
+    "model_type": null,
+    "version": null,
+    "details": "Retraining completed inside pipeline"
+  },
+  {
+    "timestamp": "2026-08-10T00:52:10.295757",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "recommendation",
+    "version": "v1.4",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:10.316061",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "forecast",
+    "version": "v1.4",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:10.331107",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "recommendation",
+    "version": "v1.4",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:10.351512",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "forecast",
+    "version": "v1.4",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:38.240958",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_TRAINING_COMPLETED",
+    "model_type": null,
+    "version": null,
+    "details": "Retraining completed inside pipeline"
+  },
+  {
+    "timestamp": "2026-08-10T00:52:38.350941",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "recommendation",
+    "version": "v1.5",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:38.359789",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "forecast",
+    "version": "v1.5",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:38.372466",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "recommendation",
+    "version": "v1.5",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:38.386833",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "forecast",
+    "version": "v1.5",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:53.648601",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_TRAINING_COMPLETED",
+    "model_type": null,
+    "version": null,
+    "details": "Retraining completed inside pipeline"
+  },
+  {
+    "timestamp": "2026-08-10T00:52:53.763131",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "recommendation",
+    "version": "v1.6",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:53.782393",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "forecast",
+    "version": "v1.6",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:53.796990",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "recommendation",
+    "version": "v1.6",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-10T00:52:53.818109",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "forecast",
+    "version": "v1.6",
+    "details": null
+  }
+]

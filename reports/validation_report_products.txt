@@ -1,0 +1,39 @@
+======================================================================
+VALIDATION REPORT — PRODUCTS DATASET
+Generated: 2026-07-20 23:56:09
+Source File: data\raw\products_500_textile_dataset.xlsx
+======================================================================
+
+📊 DATASET SUMMARY
+----------------------------------------
+  Total Rows    : 500
+  Total Columns : 16
+  Column Names  : ['ProductID', 'SKU', 'ProductName', 'Category', 'SubCategory', 'Brand', 'Color', 'Size', 'Fabric', 'SeasonalDemandTag', 'Gender', 'Price', 'CostPrice', 'SupplierID', 'ProductStatus', 'ImageURL']
+
+1️⃣  SCHEMA VALIDATION
+----------------------------------------
+  Status  : ✅ PASSED
+
+2️⃣  MISSING VALUES CHECK
+----------------------------------------
+  Status      : ✅ PASSED
+  Total Nulls : 0
+
+3️⃣  DUPLICATE CHECK
+----------------------------------------
+  Status             : ✅ PASSED
+  Duplicate ProductIDs : 0
+  Duplicate SKUs       : 0
+  Fully Duplicated Rows: 0
+
+4️⃣  DATA TYPE VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+5️⃣  BUSINESS RULES VALIDATION
+----------------------------------------
+  Status : ✅ PASSED
+
+======================================================================
+OVERALL RESULT: ✅ ALL CHECKS PASSED
+======================================================================

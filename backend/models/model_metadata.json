@@ -1,0 +1,12 @@
+{
+  "recommendation_model_version": "v1.6",
+  "forecast_model_version": "v1.6",
+  "trained_on": "2026-08-10",
+  "products": 500,
+  "customers": 2000,
+  "sales": 50000,
+  "inventory": 500,
+  "accuracy": 0.0,
+  "forecast_rmse": 4.48,
+  "forecast_mae": 3.56
+}

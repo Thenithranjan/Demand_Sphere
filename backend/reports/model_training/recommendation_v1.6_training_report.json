@@ -1,0 +1,42 @@
+{
+  "training_id": "TRN-20260810-005253",
+  "model_type": "recommendation",
+  "version": "v1.6",
+  "training_date": "2026-08-10T00:52:53.819555",
+  "dataset_version": "dataset-v4",
+  "dataset_size": {
+    "Products": 500,
+    "Customers": 2000,
+    "Sales": 50000,
+    "Inventory": 500,
+    "ForecastResults": 11500
+  },
+  "training_duration_seconds": 7.8,
+  "algorithm": "Hybrid (Collaborative + Content-Based)",
+  "metrics": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "f1_at_k": 0.0,
+    "hit_rate_at_k": "N/A",
+    "coverage": 35.6,
+    "novelty": 8.6077,
+    "diversity": 0.789
+  },
+  "old_model_metrics": {
+    "precision_at_k": 0.0
+  },
+  "new_model_metrics": {
+    "precision_at_k": 0.0,
+    "recall_at_k": 0.0,
+    "f1_at_k": 0.0,
+    "hit_rate_at_k": "N/A",
+    "coverage": 35.6,
+    "novelty": 8.6077,
+    "diversity": 0.789
+  },
+  "improvement": {
+    "precision": "N/A"
+  },
+  "approval_status": "Automatic",
+  "final_status": "ACTIVE"
+}
