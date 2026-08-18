@@ -127,19 +127,19 @@ export default function AdminPage() {
                     className={cn('border-b last:border-0 hover:bg-zinc-800/10 transition-colors', isDark ? 'border-zinc-800/50' : 'border-zinc-100')}
                   >
                     <td className="px-6 py-4 font-mono text-xs text-brand-400">{u.UserID}</td>
-                    <td className="px-6 py-4 font-medium text-zinc-200">{u.FullName}</td>
-                    <td className="px-6 py-4 text-zinc-400">{u.Username}</td>
-                    <td className="px-6 py-4 text-zinc-400">{u.Email}</td>
-                    {showRole && <td className="px-6 py-4 text-zinc-400 capitalize">{u.Role}</td>}
+                    <td className={cn('px-6 py-4 font-medium', isDark ? 'text-zinc-200' : 'text-zinc-800')}>{u.FullName}</td>
+                    <td className={cn('px-6 py-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{u.Username}</td>
+                    <td className={cn('px-6 py-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{u.Email}</td>
+                    {showRole && <td className={cn('px-6 py-4 capitalize', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{u.Role}</td>}
                     {!isEmployee && (
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">
-                          <span className="font-mono text-zinc-300">
+                          <span className={cn('font-mono', isDark ? 'text-zinc-300' : 'text-zinc-700')}>
                             {visiblePasswords[u.UserID] ? (u.Password || '—') : '••••••••'}
                           </span>
                           <button
                             onClick={() => togglePasswordVisibility(u.UserID)}
-                            className="text-zinc-500 hover:text-zinc-300 transition-colors p-1"
+                            className={cn('transition-colors p-1', isDark ? 'text-zinc-500 hover:text-zinc-300' : 'text-zinc-400 hover:text-zinc-700')}
                           >
                             {visiblePasswords[u.UserID] ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
                           </button>
@@ -336,7 +336,8 @@ export default function AdminPage() {
                     value="Employee"
                     readOnly
                     className={cn(
-                      'w-full px-3 py-2 rounded-xl text-sm outline-none border opacity-60 bg-zinc-800 border-zinc-700 text-zinc-400'
+                      'w-full px-3 py-2 rounded-xl text-sm outline-none border opacity-60',
+                      isDark ? 'bg-zinc-800 border-zinc-700 text-zinc-400' : 'bg-zinc-100 border-zinc-200 text-zinc-500'
                     )}
                   />
                 )}

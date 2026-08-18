@@ -1,5 +1,5 @@
 import api from './api';
-import type { PaginatedResponse, Sale } from '../types';
+import type { PaginatedResponse, Sale, SaleCreate } from '../types';
 
 export interface SaleParams {
   skip?: number;
@@ -16,5 +16,11 @@ export const salesApi = {
 
   getById: (id: string) =>
     api.get<Sale>(`/sales/${id}`).then((r) => r.data),
+
+  create: (data: SaleCreate) =>
+    api.post<Sale>('/sales', data).then((r) => r.data),
+
+  delete: (id: string) =>
+    api.delete(`/sales/${id}`),
 };
 export const salesService = salesApi;

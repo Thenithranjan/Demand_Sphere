@@ -434,6 +434,40 @@ export default function ModelManagementPage() {
             </p>
           </div>
 
+          {/* ── Password Quick-Access Banner ─────────────────────────── */}
+          <motion.button
+            type="button"
+            onClick={() => setPassword('trainmodel')}
+            whileHover={{ scale: 1.015, y: -1 }}
+            whileTap={{ scale: 0.98 }}
+            title="Click to auto-fill the authorization password"
+            className={cn(
+              'w-full mb-4 px-4 py-3 rounded-2xl border-2 border-dashed text-left flex items-center gap-3 transition-all cursor-pointer group',
+              isDark
+                ? 'border-amber-500/40 bg-amber-500/5 hover:bg-amber-500/10 hover:border-amber-500/60'
+                : 'border-amber-400/50 bg-amber-50 hover:bg-amber-100 hover:border-amber-500'
+            )}
+          >
+            <div className="w-8 h-8 rounded-xl bg-amber-500/20 flex items-center justify-center shrink-0">
+              <span className="text-base">🔑</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-amber-500 mb-0.5">Quick Access — Click to Auto-Fill</p>
+              <p className={cn('text-sm font-mono font-semibold tracking-widest', isDark ? 'text-amber-300' : 'text-amber-700')}>
+                ••••••••••
+              </p>
+              <p className={cn('text-[10px] mt-0.5', isDark ? 'text-zinc-500' : 'text-zinc-400')}>trainmodel</p>
+            </div>
+            <span className={cn(
+              'text-[10px] font-semibold px-2 py-1 rounded-lg transition-colors shrink-0',
+              isDark
+                ? 'bg-amber-500/20 text-amber-400 group-hover:bg-amber-500/30'
+                : 'bg-amber-200 text-amber-700 group-hover:bg-amber-300'
+            )}>
+              Auto-fill
+            </span>
+          </motion.button>
+
           <form onSubmit={handleAuthSubmit} className="space-y-4">
             <div className="space-y-2">
               <label className="block text-xs font-semibold text-zinc-400 uppercase tracking-wider">
@@ -446,7 +480,7 @@ export default function ModelManagementPage() {
                 placeholder="••••••••"
                 className={cn(
                   'w-full px-4 py-3 rounded-xl text-sm outline-none border transition-all text-center tracking-widest',
-                  isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-100 focus:border-brand-500' : 'bg-zinc-50 border-zinc-200 focus:border-brand-500'
+                  isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-100 focus:border-brand-500' : 'bg-zinc-50 border-zinc-200 text-zinc-900 focus:border-brand-500'
                 )}
                 autoFocus
               />
@@ -620,15 +654,15 @@ export default function ModelManagementPage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm pt-1">
                 <div>
                   <div className="text-zinc-500 text-xs uppercase tracking-wider font-semibold">Recommendation</div>
-                  <div className="font-semibold text-zinc-200">{status.recommendation_model_version}</div>
+                  <div className={cn('font-semibold', isDark ? 'text-zinc-200' : 'text-zinc-800')}>{status.recommendation_model_version}</div>
                 </div>
                 <div>
                   <div className="text-zinc-500 text-xs uppercase tracking-wider font-semibold">Demand Forecast</div>
-                  <div className="font-semibold text-zinc-200">{status.forecast_model_version}</div>
+                  <div className={cn('font-semibold', isDark ? 'text-zinc-200' : 'text-zinc-800')}>{status.forecast_model_version}</div>
                 </div>
                 <div>
                   <div className="text-zinc-500 text-xs uppercase tracking-wider font-semibold">Latest Accuracy</div>
-                  <div className="font-semibold text-zinc-200">{formatPercent(status.recommendation_accuracy / 100)}</div>
+                  <div className={cn('font-semibold', isDark ? 'text-zinc-200' : 'text-zinc-800')}>{formatPercent(status.recommendation_accuracy / 100)}</div>
                 </div>
               </div>
             </div>
@@ -718,10 +752,10 @@ export default function ModelManagementPage() {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6 py-6 border-y border-zinc-800/40 my-4">
+                <div className={cn('grid grid-cols-2 gap-6 py-6 border-y my-4', isDark ? 'border-zinc-800/40' : 'border-zinc-200')}>
                   <div>
                     <span className="text-xs text-zinc-500 font-medium">Model Version</span>
-                    <p className="text-3xl font-extrabold text-zinc-100 tracking-tight mt-0.5">
+                    <p className={cn('text-3xl font-extrabold tracking-tight mt-0.5', isDark ? 'text-zinc-100' : 'text-zinc-900')}>
                       {status.recommendation_model_version}
                     </p>
                   </div>
@@ -736,11 +770,11 @@ export default function ModelManagementPage() {
                 <div className="flex justify-between items-center text-xs text-zinc-500">
                   <div>
                     Last trained:{' '}
-                    <span className="font-semibold text-zinc-300">{status.last_training_date}</span>
+                    <span className={cn('font-semibold', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{status.last_training_date}</span>
                   </div>
                   <div>
                     Records:{' '}
-                    <span className="font-semibold text-zinc-300">
+                    <span className={cn('font-semibold', isDark ? 'text-zinc-300' : 'text-zinc-700')}>
                       {formatNumber(status.training_dataset_size.sales)} sales
                     </span>
                   </div>
@@ -777,10 +811,10 @@ export default function ModelManagementPage() {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 py-6 border-y border-zinc-800/40 my-4">
+                <div className={cn('grid grid-cols-3 gap-4 py-6 border-y my-4', isDark ? 'border-zinc-800/40' : 'border-zinc-200')}>
                   <div>
                     <span className="text-xs text-zinc-500 font-medium">Model Version</span>
-                    <p className="text-3xl font-extrabold text-zinc-100 tracking-tight mt-0.5">
+                    <p className={cn('text-3xl font-extrabold tracking-tight mt-0.5', isDark ? 'text-zinc-100' : 'text-zinc-900')}>
                       {status.forecast_model_version}
                     </p>
                   </div>
@@ -801,11 +835,11 @@ export default function ModelManagementPage() {
                 <div className="flex justify-between items-center text-xs text-zinc-500">
                   <div>
                     Last trained:{' '}
-                    <span className="font-semibold text-zinc-300">{status.last_training_date}</span>
+                    <span className={cn('font-semibold', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{status.last_training_date}</span>
                   </div>
                   <div>
                     Records:{' '}
-                    <span className="font-semibold text-zinc-300">
+                    <span className={cn('font-semibold', isDark ? 'text-zinc-300' : 'text-zinc-700')}>
                       {formatNumber(status.training_dataset_size.sales)} sales
                     </span>
                   </div>
@@ -875,10 +909,10 @@ export default function ModelManagementPage() {
                         </span>
                       </div>
 
-                      <div className="grid grid-cols-2 gap-4 pt-4 mt-2 border-t border-zinc-800/30">
+                      <div className={cn('grid grid-cols-2 gap-4 pt-4 mt-2 border-t', isDark ? 'border-zinc-800/30' : 'border-zinc-100')}>
                         <div>
                           <span className="text-[10px] text-zinc-500 block">Database Records</span>
-                          <span className="text-lg font-bold text-zinc-200 mt-0.5">
+                          <span className={cn('text-lg font-bold mt-0.5', isDark ? 'text-zinc-200' : 'text-zinc-800')}>
                             {d.dbVal !== undefined ? formatNumber(d.dbVal) : '...'}
                           </span>
                         </div>
@@ -914,7 +948,10 @@ export default function ModelManagementPage() {
                   <p>
                     Triggering a training sequence immediately synchronizes database transactions, generates clean feature sets, constructs XGBoost / collaborative models, and loads them dynamically in-memory.
                   </p>
-                  <div className="p-4 bg-zinc-950/40 border border-zinc-850 rounded-2xl space-y-1.5 text-xs text-zinc-500 font-mono">
+              <div className={cn(
+                'p-4 border rounded-2xl space-y-1.5 text-xs font-mono',
+                isDark ? 'bg-zinc-950/40 border-zinc-850 text-zinc-500' : 'bg-zinc-50 border-zinc-200 text-zinc-500'
+              )}>
                     <div className="flex gap-2">● <span>Synchronizes MySQL data structures → CSV snapshots</span></div>
                     <div className="flex gap-2">● <span>Computes Content and Item-Item Collab similarities</span></div>
                     <div className="flex gap-2">● <span>Trains and tunes XGBoost forecasting algorithms</span></div>
@@ -969,7 +1006,7 @@ export default function ModelManagementPage() {
                             onChange={(e) => setSalesThreshold(Number(e.target.value))}
                             className={cn(
                               'w-full px-3 py-2 rounded-xl text-xs outline-none border transition-colors',
-                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-250'
+                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-200 text-zinc-900'
                             )}
                             required
                           />
@@ -982,7 +1019,7 @@ export default function ModelManagementPage() {
                             onChange={(e) => setCustomersThreshold(Number(e.target.value))}
                             className={cn(
                               'w-full px-3 py-2 rounded-xl text-xs outline-none border transition-colors',
-                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-250'
+                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-200 text-zinc-900'
                             )}
                             required
                           />
@@ -998,7 +1035,7 @@ export default function ModelManagementPage() {
                             onChange={(e) => setTimeThreshold(Number(e.target.value))}
                             className={cn(
                               'w-full px-3 py-2 rounded-xl text-xs outline-none border transition-colors',
-                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-250'
+                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-200 text-zinc-900'
                             )}
                             required
                           />
@@ -1012,7 +1049,7 @@ export default function ModelManagementPage() {
                             onChange={(e) => setMinPrecision(Number(e.target.value))}
                             className={cn(
                               'w-full px-3 py-2 rounded-xl text-xs outline-none border transition-colors',
-                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-250'
+                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-200 text-zinc-900'
                             )}
                             required
                           />
@@ -1029,7 +1066,7 @@ export default function ModelManagementPage() {
                             onChange={(e) => setMaxRmse(Number(e.target.value))}
                             className={cn(
                               'w-full px-3 py-2 rounded-xl text-xs outline-none border transition-colors',
-                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-250'
+                              isDark ? 'bg-zinc-950 border-zinc-800 text-zinc-200' : 'bg-zinc-50 border-zinc-200 text-zinc-900'
                             )}
                             required
                           />
@@ -1053,7 +1090,7 @@ export default function ModelManagementPage() {
                   )}
                 </div>
 
-                <div className="pt-6 border-t border-zinc-800/30 mt-6 flex justify-end">
+                <div className={cn('pt-6 border-t mt-6 flex justify-end', isDark ? 'border-zinc-800/30' : 'border-zinc-200')}>
                   <button
                     type="submit"
                     disabled={updateSettingsMutation.isPending}
@@ -1124,7 +1161,7 @@ export default function ModelManagementPage() {
                 ) : historyData ? (
                   <table className="w-full text-left text-xs border-collapse">
                     <thead>
-                      <tr className="border-b border-zinc-800 text-zinc-500 font-semibold uppercase tracking-wider">
+                      <tr className={cn('border-b font-semibold uppercase tracking-wider', isDark ? 'border-zinc-800 text-zinc-500' : 'border-zinc-200 text-zinc-400')}>
                         <th className="pb-3 pr-4">Training ID</th>
                         <th className="pb-3 px-4">Date & Time</th>
                         <th className="pb-3 px-4">Trigger / User</th>
@@ -1133,7 +1170,7 @@ export default function ModelManagementPage() {
                         <th className="pb-3 pl-4 text-right">Status</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-zinc-800/40">
+                    <tbody className={cn('divide-y', isDark ? 'divide-zinc-800/40' : 'divide-zinc-100')}>
                       {(() => {
                         // Client-side filtering & sorting
                         const filtered = (historyData.history || []).filter((entry: any) => {
@@ -1174,22 +1211,22 @@ export default function ModelManagementPage() {
 
                         return pageItems.map((entry: any) => (
                           <tr key={entry.training_id} className="hover:bg-zinc-850/10 transition-colors">
-                            <td className="py-4 pr-4 font-mono font-bold text-zinc-200">
+                            <td className={cn('py-4 pr-4 font-mono font-bold', isDark ? 'text-zinc-200' : 'text-zinc-800')}>
                               {entry.training_id}
                             </td>
-                            <td className="py-4 px-4 text-zinc-400">
+                            <td className={cn('py-4 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>
                               <div>{entry.training_start_time}</div>
-                              <div className="text-[10px] text-zinc-600 mt-0.5">
+                              <div className={cn('text-[10px] mt-0.5', isDark ? 'text-zinc-600' : 'text-zinc-400')}>
                                 Duration: {entry.duration_human}
                               </div>
                             </td>
                             <td className="py-4 px-4">
-                              <div className="text-zinc-300 font-semibold">{entry.reason}</div>
+                              <div className={cn('font-semibold', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{entry.reason}</div>
                               <div className="text-[10px] text-zinc-500 mt-0.5">
                                 By: {entry.user} ({entry.role})
                               </div>
                             </td>
-                            <td className="py-4 px-4 text-zinc-400 font-mono">
+                            <td className={cn('py-4 px-4 font-mono', isDark ? 'text-zinc-400' : 'text-zinc-600')}>
                               <div>Rec: <span className="font-semibold text-brand-400">{entry.recommendation_version}</span></div>
                               <div className="mt-0.5">Fore: <span className="font-semibold text-indigo-400">{entry.forecast_version}</span></div>
                             </td>
@@ -1232,7 +1269,7 @@ export default function ModelManagementPage() {
 
               {/* Table pagination */}
               {historyData && (
-                <div className="flex items-center justify-between border-t border-zinc-800/40 pt-4 text-xs">
+                <div className={cn('flex items-center justify-between border-t pt-4 text-xs', isDark ? 'border-zinc-800/40' : 'border-zinc-200')}>
                   <span className="text-zinc-500">
                     Showing page {historyPage} of{' '}
                     {Math.ceil(
@@ -1252,7 +1289,10 @@ export default function ModelManagementPage() {
                     <button
                       onClick={() => setHistoryPage((p) => Math.max(1, p - 1))}
                       disabled={historyPage === 1}
-                      className="px-3 py-1.5 rounded-lg border border-zinc-800 text-zinc-400 hover:bg-zinc-850 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                      className={cn(
+                        'px-3 py-1.5 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer',
+                        isDark ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-800' : 'border-zinc-200 text-zinc-600 hover:bg-zinc-50'
+                      )}
                     >
                       Prev
                     </button>
@@ -1273,7 +1313,10 @@ export default function ModelManagementPage() {
                           }).length / itemsPerPage
                         )
                       }
-                      className="px-3 py-1.5 rounded-lg border border-zinc-800 text-zinc-400 hover:bg-zinc-850 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                      className={cn(
+                        'px-3 py-1.5 rounded-lg border disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer',
+                        isDark ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-800' : 'border-zinc-200 text-zinc-600 hover:bg-zinc-50'
+                      )}
                     >
                       Next
                     </button>
@@ -1304,7 +1347,7 @@ export default function ModelManagementPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-xs border-collapse">
                   <thead>
-                    <tr className="border-b border-zinc-800 text-zinc-500 font-semibold uppercase tracking-wider">
+                    <tr className={cn('border-b font-semibold uppercase tracking-wider', isDark ? 'border-zinc-800 text-zinc-500' : 'border-zinc-200 text-zinc-400')}>
                       <th className="pb-3 pr-4">Version</th>
                       <th className="pb-3 px-4">Trained Date</th>
                       <th className="pb-3 px-4 text-center">Precision@10</th>
@@ -1312,7 +1355,7 @@ export default function ModelManagementPage() {
                       <th className="pb-3 pl-4 text-right">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-zinc-800/40">
+                  <tbody className={cn('divide-y', isDark ? 'divide-zinc-800/40' : 'divide-zinc-100')}>
                     {recVersions && recVersions.length > 0 ? (
                       [...recVersions].reverse().map((v) => {
                         const isVersionActive = v.status === 'ACTIVE';
@@ -1364,7 +1407,12 @@ export default function ModelManagementPage() {
                                         toast.error('No valid historical model available for rollback.');
                                       }
                                     }}
-                                    className="px-2.5 py-1.5 border border-zinc-800 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200 rounded-lg text-[10px] font-bold uppercase transition-colors cursor-pointer"
+                                    className={cn(
+                                      'px-2.5 py-1.5 border rounded-lg text-[10px] font-bold uppercase transition-colors cursor-pointer',
+                                      isDark
+                                        ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200'
+                                        : 'border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-800'
+                                    )}
                                   >
                                     Rollback
                                   </button>
@@ -1401,7 +1449,7 @@ export default function ModelManagementPage() {
               <div className="overflow-x-auto">
                 <table className="w-full text-left text-xs border-collapse">
                   <thead>
-                    <tr className="border-b border-zinc-800 text-zinc-500 font-semibold uppercase tracking-wider">
+                    <tr className={cn('border-b font-semibold uppercase tracking-wider', isDark ? 'border-zinc-800 text-zinc-500' : 'border-zinc-200 text-zinc-400')}>
                       <th className="pb-3 pr-4">Version</th>
                       <th className="pb-3 px-4">Trained Date</th>
                       <th className="pb-3 px-4 text-center">RMSE</th>
@@ -1409,7 +1457,7 @@ export default function ModelManagementPage() {
                       <th className="pb-3 pl-4 text-right">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-zinc-800/40">
+                  <tbody className={cn('divide-y', isDark ? 'divide-zinc-800/40' : 'divide-zinc-100')}>
                     {forecastVersions && forecastVersions.length > 0 ? (
                       [...forecastVersions].reverse().map((v) => {
                         const isVersionActive = v.status === 'ACTIVE';
@@ -1460,7 +1508,12 @@ export default function ModelManagementPage() {
                                         toast.error('No valid historical model available for rollback.');
                                       }
                                     }}
-                                    className="px-2.5 py-1.5 border border-zinc-800 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200 rounded-lg text-[10px] font-bold uppercase transition-colors cursor-pointer"
+                                    className={cn(
+                                      'px-2.5 py-1.5 border rounded-lg text-[10px] font-bold uppercase transition-colors cursor-pointer',
+                                      isDark
+                                        ? 'border-zinc-800 text-zinc-400 hover:bg-zinc-800 hover:text-zinc-200'
+                                        : 'border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-800'
+                                    )}
                                   >
                                     Rollback
                                   </button>
@@ -1490,7 +1543,7 @@ export default function ModelManagementPage() {
               isDark ? 'bg-zinc-900 border-zinc-800' : 'bg-white border-zinc-200 shadow-sm'
             )}
           >
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-zinc-800/40">
+            <div className={cn('flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-4 border-b', isDark ? 'border-zinc-800/40' : 'border-zinc-200')}>
               <h2 className={cn('text-lg font-bold flex items-center gap-2', isDark ? 'text-zinc-200' : 'text-zinc-800')}>
                 <GitCompare className="w-5 h-5 text-brand-400 animate-pulse" />
                 Side-by-Side Model Comparison
@@ -1501,7 +1554,7 @@ export default function ModelManagementPage() {
                   onClick={() => setCompareModelType('recommendation')}
                   className={cn(
                     'px-3 py-1.5 rounded-lg text-xs font-semibold border cursor-pointer transition-colors',
-                    compareModelType === 'recommendation' ? 'border-brand-500/30 text-brand-400 bg-brand-500/5' : 'border-zinc-800 text-zinc-500 hover:text-zinc-300'
+                    compareModelType === 'recommendation' ? 'border-brand-500/30 text-brand-400 bg-brand-500/5' : (isDark ? 'border-zinc-800 text-zinc-500 hover:text-zinc-300' : 'border-zinc-200 text-zinc-500 hover:text-zinc-700')
                   )}
                 >
                   Recommendation Model
@@ -1510,7 +1563,7 @@ export default function ModelManagementPage() {
                   onClick={() => setCompareModelType('forecast')}
                   className={cn(
                     'px-3 py-1.5 rounded-lg text-xs font-semibold border cursor-pointer transition-colors',
-                    compareModelType === 'forecast' ? 'border-indigo-500/30 text-indigo-400 bg-indigo-500/5' : 'border-zinc-800 text-zinc-500 hover:text-zinc-300'
+                    compareModelType === 'forecast' ? 'border-indigo-500/30 text-indigo-400 bg-indigo-500/5' : (isDark ? 'border-zinc-800 text-zinc-500 hover:text-zinc-300' : 'border-zinc-200 text-zinc-500 hover:text-zinc-700')
                   )}
                 >
                   Demand Forecasting
@@ -1555,19 +1608,19 @@ export default function ModelManagementPage() {
 
             {/* Comparison Grid */}
             {modelADetails.data && modelBDetails.data ? (
-              <div className="overflow-x-auto border border-zinc-800/40 rounded-2xl">
-                <table className="w-full text-left text-xs border-collapse">
-                  <thead>
-                    <tr className="border-b border-zinc-800 bg-zinc-950/20 text-zinc-500 font-semibold uppercase tracking-wider">
+                  <div className={cn('overflow-x-auto border rounded-2xl', isDark ? 'border-zinc-800/40' : 'border-zinc-200')}>
+                    <table className="w-full text-left text-xs border-collapse">
+                      <thead>
+                        <tr className={cn('border-b bg-zinc-950/20 font-semibold uppercase tracking-wider', isDark ? 'border-zinc-800 text-zinc-500' : 'border-zinc-200 text-zinc-400 bg-zinc-50')}>
                       <th className="py-3 px-4">Parameter</th>
                       <th className="py-3 px-4">Model A ({compareModelA})</th>
                       <th className="py-3 px-4">Model B ({compareModelB})</th>
                       <th className="py-3 px-4 text-right">Delta / Improvement</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-zinc-800/30">
-                    <tr className="hover:bg-zinc-850/5">
-                      <td className="py-3 px-4 font-semibold text-zinc-400">MLOps serving status</td>
+                      <tbody className={cn('divide-y', isDark ? 'divide-zinc-800/30' : 'divide-zinc-100')}>
+                        <tr className="hover:bg-zinc-850/5">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>MLOps serving status</td>
                       <td className="py-3 px-4">
                         <span className={cn('px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider', getStatusBadgeClass(modelADetails.data.status))}>
                           {modelADetails.data.status}
@@ -1580,34 +1633,34 @@ export default function ModelManagementPage() {
                       </td>
                       <td className="py-3 px-4 text-right text-zinc-500">—</td>
                     </tr>
-                    <tr className="hover:bg-zinc-850/5">
-                      <td className="py-3 px-4 font-semibold text-zinc-400">Training Date</td>
-                      <td className="py-3 px-4 text-zinc-300">{new Date(modelADetails.data.training_date).toLocaleString()}</td>
-                      <td className="py-3 px-4 text-zinc-300">{new Date(modelBDetails.data.training_date).toLocaleString()}</td>
-                      <td className="py-3 px-4 text-right text-zinc-500">—</td>
-                    </tr>
-                    <tr className="hover:bg-zinc-850/5">
-                      <td className="py-3 px-4 font-semibold text-zinc-400">Trained Dataset version</td>
+                        <tr className="hover:bg-zinc-850/5">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>Training Date</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{new Date(modelADetails.data.training_date).toLocaleString()}</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{new Date(modelBDetails.data.training_date).toLocaleString()}</td>
+                          <td className="py-3 px-4 text-right text-zinc-500">—</td>
+                        </tr>
+                        <tr className="hover:bg-zinc-850/5">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>Trained Dataset version</td>
                       <td className="py-3 px-4 font-mono text-brand-400">{modelADetails.data.dataset_version}</td>
                       <td className="py-3 px-4 font-mono text-zinc-500">{modelBDetails.data.dataset_version}</td>
                       <td className="py-3 px-4 text-right text-zinc-500">—</td>
                     </tr>
-                    <tr className="hover:bg-zinc-850/5">
-                      <td className="py-3 px-4 font-semibold text-zinc-400">Training duration</td>
-                      <td className="py-3 px-4 text-zinc-300">{modelADetails.data.training_duration}s</td>
-                      <td className="py-3 px-4 text-zinc-300">{modelBDetails.data.training_duration}s</td>
-                      <td className="py-3 px-4 text-right text-zinc-350">
+                        <tr className="hover:bg-zinc-850/5">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>Training duration</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{modelADetails.data.training_duration}s</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{modelBDetails.data.training_duration}s</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-350' : 'text-zinc-500')}>
                         {modelADetails.data.training_duration - modelBDetails.data.training_duration > 0
                           ? `+${(modelADetails.data.training_duration - modelBDetails.data.training_duration).toFixed(1)}s`
                           : `${(modelADetails.data.training_duration - modelBDetails.data.training_duration).toFixed(1)}s`}
                       </td>
                     </tr>
-                    <tr className="hover:bg-zinc-850/5">
-                      <td className="py-3 px-4 font-semibold text-zinc-400">Training Algorithm</td>
-                      <td className="py-3 px-4 text-zinc-300">{modelADetails.data.algorithm}</td>
-                      <td className="py-3 px-4 text-zinc-300">{modelBDetails.data.algorithm}</td>
-                      <td className="py-3 px-4 text-right text-zinc-500">—</td>
-                    </tr>
+                        <tr className="hover:bg-zinc-850/5">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>Training Algorithm</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{modelADetails.data.algorithm}</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{modelBDetails.data.algorithm}</td>
+                          <td className="py-3 px-4 text-right text-zinc-500">—</td>
+                        </tr>
 
                     {/* Render Model specific metrics */}
                     {compareModelType === 'recommendation' ? (
@@ -1625,25 +1678,25 @@ export default function ModelManagementPage() {
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
                           <td className="py-3 px-4 font-semibold text-zinc-400">Recall@10</td>
-                          <td className="py-3 px-4 text-zinc-200">{modelADetails.data.metrics?.recall_at_k}%</td>
-                          <td className="py-3 px-4 text-zinc-400">{modelBDetails.data.metrics?.recall_at_k}%</td>
-                          <td className="py-3 px-4 text-right text-zinc-300">
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{modelADetails.data.metrics?.recall_at_k}%</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{modelBDetails.data.metrics?.recall_at_k}%</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-300' : 'text-zinc-600')}>
                             {((modelADetails.data.metrics?.recall_at_k || 0) - (modelBDetails.data.metrics?.recall_at_k || 0)).toFixed(2)}%
                           </td>
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
-                          <td className="py-3 px-4 font-semibold text-zinc-400">F1@10</td>
-                          <td className="py-3 px-4 text-zinc-200">{modelADetails.data.metrics?.f1_at_k}%</td>
-                          <td className="py-3 px-4 text-zinc-400">{modelBDetails.data.metrics?.f1_at_k}%</td>
-                          <td className="py-3 px-4 text-right text-zinc-300">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>F1@10</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{modelADetails.data.metrics?.f1_at_k}%</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{modelBDetails.data.metrics?.f1_at_k}%</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-300' : 'text-zinc-600')}>
                             {((modelADetails.data.metrics?.f1_at_k || 0) - (modelBDetails.data.metrics?.f1_at_k || 0)).toFixed(2)}%
                           </td>
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
-                          <td className="py-3 px-4 font-semibold text-zinc-400">Catalog Coverage</td>
-                          <td className="py-3 px-4 text-zinc-200">{modelADetails.data.metrics?.coverage}%</td>
-                          <td className="py-3 px-4 text-zinc-400">{modelBDetails.data.metrics?.coverage}%</td>
-                          <td className="py-3 px-4 text-right text-zinc-300">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>Catalog Coverage</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{modelADetails.data.metrics?.coverage}%</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{modelBDetails.data.metrics?.coverage}%</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-300' : 'text-zinc-600')}>
                             {((modelADetails.data.metrics?.coverage || 0) - (modelBDetails.data.metrics?.coverage || 0)).toFixed(2)}%
                           </td>
                         </tr>
@@ -1653,7 +1706,7 @@ export default function ModelManagementPage() {
                         <tr className="hover:bg-zinc-850/5">
                           <td className="py-3 px-4 font-semibold text-zinc-400">RMSE (lower is better)</td>
                           <td className="py-3 px-4 text-indigo-400 font-bold">{modelADetails.data.metrics?.rmse}</td>
-                          <td className="py-3 px-4 text-zinc-300">{modelBDetails.data.metrics?.rmse}</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-300' : 'text-zinc-700')}>{modelBDetails.data.metrics?.rmse}</td>
                           <td className={cn('py-3 px-4 text-right font-bold',
                             (modelADetails.data.metrics?.rmse || 0) <= (modelBDetails.data.metrics?.rmse || 0) ? 'text-emerald-500' : 'text-red-500'
                           )}>
@@ -1662,9 +1715,9 @@ export default function ModelManagementPage() {
                           </td>
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
-                          <td className="py-3 px-4 font-semibold text-zinc-400">MAE (lower is better)</td>
-                          <td className="py-3 px-4 text-zinc-200">{modelADetails.data.metrics?.mae}</td>
-                          <td className="py-3 px-4 text-zinc-400">{modelBDetails.data.metrics?.mae}</td>
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>MAE (lower is better)</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{modelADetails.data.metrics?.mae}</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{modelBDetails.data.metrics?.mae}</td>
                           <td className={cn('py-3 px-4 text-right font-bold',
                             (modelADetails.data.metrics?.mae || 0) <= (modelBDetails.data.metrics?.mae || 0) ? 'text-emerald-500' : 'text-red-500'
                           )}>
@@ -1673,18 +1726,18 @@ export default function ModelManagementPage() {
                           </td>
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
-                          <td className="py-3 px-4 font-semibold text-zinc-400">MAPE (%)</td>
-                          <td className="py-3 px-4 text-zinc-200">{((modelADetails.data.metrics?.mape || 0) * 100).toFixed(2)}%</td>
-                          <td className="py-3 px-4 text-zinc-400">{((modelBDetails.data.metrics?.mape || 0) * 100).toFixed(2)}%</td>
-                          <td className="py-3 px-4 text-right text-zinc-300">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>MAPE (%)</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{((modelADetails.data.metrics?.mape || 0) * 100).toFixed(2)}%</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{((modelBDetails.data.metrics?.mape || 0) * 100).toFixed(2)}%</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-300' : 'text-zinc-600')}>
                             {(((modelADetails.data.metrics?.mape || 0) - (modelBDetails.data.metrics?.mape || 0)) * 100).toFixed(2)}%
                           </td>
                         </tr>
                         <tr className="hover:bg-zinc-850/5">
-                          <td className="py-3 px-4 font-semibold text-zinc-400">R² Coefficient</td>
-                          <td className="py-3 px-4 text-zinc-200">{modelADetails.data.metrics?.r2}</td>
-                          <td className="py-3 px-4 text-zinc-400">{modelBDetails.data.metrics?.r2}</td>
-                          <td className="py-3 px-4 text-right text-zinc-300">
+                          <td className={cn('py-3 px-4 font-semibold', isDark ? 'text-zinc-400' : 'text-zinc-600')}>R² Coefficient</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-200' : 'text-zinc-700')}>{modelADetails.data.metrics?.r2}</td>
+                          <td className={cn('py-3 px-4', isDark ? 'text-zinc-400' : 'text-zinc-600')}>{modelBDetails.data.metrics?.r2}</td>
+                          <td className={cn('py-3 px-4 text-right', isDark ? 'text-zinc-300' : 'text-zinc-600')}>
                             {((modelADetails.data.metrics?.r2 || 0) - (modelBDetails.data.metrics?.r2 || 0)).toFixed(4)}
                           </td>
                         </tr>
