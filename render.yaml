@@ -3,7 +3,7 @@ services:
     name: retail-ai-backend
     env: python
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    startCommand: sh -c "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-10000}"
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
