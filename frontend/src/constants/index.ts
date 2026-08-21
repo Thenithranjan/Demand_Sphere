@@ -82,7 +82,11 @@ export const RECOMMENDATION_LABELS: Record<string, { color: string; label: strin
 };
 
 // ─── API Base URL ────────────────────────────────────────────────────────────
-export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
+const rawApiUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api/v1';
+const cleanedUrl = rawApiUrl.replace(/\/+$/, '');
+export const API_BASE_URL = cleanedUrl.endsWith('/api/v1')
+  ? cleanedUrl
+  : `${cleanedUrl}/api/v1`;
 
 // ─── Application Info ────────────────────────────────────────────────────────
 export const APP_NAME = 'RetailAI';
