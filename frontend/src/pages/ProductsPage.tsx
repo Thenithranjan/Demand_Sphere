@@ -1,5 +1,5 @@
 /**
- * Products Page — Retail AI Frontend
+ * Products Page — Demand Sphere Frontend
  * =====================================
  * Modern searchable data table with filters, CRUD operations,
  * and detailed product views.

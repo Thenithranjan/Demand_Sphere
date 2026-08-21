@@ -1,5 +1,5 @@
 /**
- * Forecast Page — Retail AI Frontend
+ * Forecast Page — Demand Sphere Frontend
  * ====================================
  * Exposes AI-powered product demand forecasting from XGBoost models.
  * Includes actual vs predicted charts and seasonal/festival trends.

@@ -1,5 +1,5 @@
 /**
- * Theme Context — Retail AI Frontend
+ * Theme Context — Demand Sphere Frontend
  * =====================================
  * Dark/Light mode management persisted in localStorage.
  *
@@ -21,7 +21,7 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'retailai_theme';
+const STORAGE_KEY = 'demandsphere_theme';
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {

@@ -1,4 +1,4 @@
-# Retail AI — FastAPI Backend
+# Demand Sphere — FastAPI Backend
 
 Production-ready REST API for the **Retail Product Recommendation System**, built with FastAPI and connected to a MySQL database.
 
@@ -40,7 +40,7 @@ backend/
 ### Prerequisites
 
 - **Python 3.10+**
-- **MySQL Server** with `retail_ai` database created and populated
+- **MySQL Server** with `demand_sphere` database created and populated
 - **pip** (Python package manager)
 
 ### 1. Configure Environment
@@ -52,7 +52,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=your_password_here
-DB_NAME=retail_ai
+DB_NAME=demand_sphere
 SECRET_KEY=your-super-secret-key
 ```
 

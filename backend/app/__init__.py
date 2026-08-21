@@ -1,3 +1,3 @@
 """
-Retail AI - FastAPI Backend Application Package
+Demand Sphere - FastAPI Backend Application Package
 """

@@ -1,5 +1,5 @@
 /**
- * Framer Motion Animation Variants — Retail AI Frontend
+ * Framer Motion Animation Variants — Demand Sphere Frontend
  * ======================================================
  * Reusable animation presets for consistent micro-interactions.
  *

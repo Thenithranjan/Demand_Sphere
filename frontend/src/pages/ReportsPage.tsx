@@ -1,5 +1,5 @@
 /**
- * Reports Page — Retail AI Frontend
+ * Reports Page — Demand Sphere Frontend
  * ===================================
  * Generates and exports client-side reports for Sales, Inventory,
  * Forecasts, and Customer recommendations.

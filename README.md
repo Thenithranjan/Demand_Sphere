@@ -1,4 +1,4 @@
-﻿# Demand Sphere — Retail AI Product Recommendation System
+# Demand Sphere — Retail AI Product Recommendation System
 
 A full-stack, production-ready Retail AI platform for product recommendations, demand forecasting, inventory management, customer analytics, and MLOps model lifecycle management.
 
@@ -171,7 +171,7 @@ cd Demand_Sphere
 Create the database:
 
 ```sql
-CREATE DATABASE retail_ai CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE demand_sphere CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
 
 ### 3. Backend Setup
@@ -209,7 +209,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
 DB_PASSWORD=your_database_password
-DB_NAME=retail_ai
+DB_NAME=demand_sphere
 
 SECRET_KEY=your_super_secret_key_here_change_this
 ALGORITHM=HS256

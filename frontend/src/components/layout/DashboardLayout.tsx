@@ -1,5 +1,5 @@
 /**
- * Dashboard Layout — Retail AI Frontend
+ * Dashboard Layout — Demand Sphere Frontend
  * ========================================
  * Root layout wrapping Sidebar + TopNav + <Outlet /> + Footer.
  * Uses Framer Motion for smooth page transitions on route changes.

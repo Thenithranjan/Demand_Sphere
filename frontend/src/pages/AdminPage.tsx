@@ -1,5 +1,5 @@
 /**
- * Admin Page — Retail AI Frontend
+ * Admin Page — Demand Sphere Frontend
  * =====================================
  * Modern user management board allowing Admins and Managers
  * to view, add, and remove staff members, and inspect passwords.
@@ -287,7 +287,7 @@ export default function AdminPage() {
                   type="email"
                   name="Email"
                   required
-                  placeholder="e.g. rajesh@retailai.com"
+                  placeholder="e.g. rajesh@demandsphere.com"
                   className={cn(
                     'w-full px-3 py-2 rounded-xl text-sm outline-none border transition-colors',
                     isDark

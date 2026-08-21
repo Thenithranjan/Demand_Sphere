@@ -1,5 +1,5 @@
 /**
- * StatusBadge — Retail AI Frontend
+ * StatusBadge — Demand Sphere Frontend
  * ===================================
  * Color-coded badge for inventory status, membership tiers, etc.
  */

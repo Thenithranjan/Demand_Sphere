@@ -1,5 +1,5 @@
 /**
- * DataTable — Retail AI Frontend
+ * DataTable — Demand Sphere Frontend
  * =================================
  * Reusable sortable/filterable table with pagination, search,
  * and loading skeleton support.

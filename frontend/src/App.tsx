@@ -1,5 +1,5 @@
 /**
- * App Component — Retail AI Frontend
+ * App Component — Demand Sphere Frontend
  * =====================================
  * Main application entry point setting up:
  * - QueryClientProvider for API cache management

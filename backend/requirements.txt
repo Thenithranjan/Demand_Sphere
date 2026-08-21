@@ -1,5 +1,5 @@
 # ============================================
-# Retail AI - FastAPI Backend Dependencies
+# Demand Sphere - FastAPI Backend Dependencies
 # ============================================
 
 # Web Framework

@@ -1,5 +1,5 @@
 /**
- * Authentication API Service — Retail AI Frontend
+ * Authentication API Service — Demand Sphere Frontend
  * ===================================================
  * Exposes login endpoints and token management.
  */

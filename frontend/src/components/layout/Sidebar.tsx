@@ -1,5 +1,5 @@
 /**
- * Aceternity UI Sidebar — Retail AI Frontend Layout
+ * Aceternity UI Sidebar — Demand Sphere Frontend Layout
  * ===================================================
  * Integrated Aceternity UI Sidebar component with expand/collapse animations,
  * active route highlighting, user profile menu, and role-based access popups.

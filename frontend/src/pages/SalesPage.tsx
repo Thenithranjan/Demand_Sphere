@@ -1,5 +1,5 @@
 /**
- * Sales Page — Retail AI Frontend
+ * Sales Page — Demand Sphere Frontend
  * ==================================
  * Transaction log displaying invoice list, seasonal tags,
  * festival categories, and CRUD operations.

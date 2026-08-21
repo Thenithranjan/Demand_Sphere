@@ -1,5 +1,5 @@
 /**
- * StatsCard — Retail AI Frontend
+ * StatsCard — Demand Sphere Frontend
  * =================================
  * Animated glassmorphic metric card with icon, title, value,
  * optional trend indicator, and gradient accent stripe.

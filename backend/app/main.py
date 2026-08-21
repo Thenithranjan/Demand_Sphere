@@ -1,5 +1,5 @@
 """
-Retail AI — FastAPI Application Entry Point
+Demand Sphere — FastAPI Application Entry Point
 =============================================
 Configures the FastAPI application with:
 - CORS middleware for React frontend integration
@@ -84,9 +84,9 @@ async def lifespan(app: FastAPI):
 # FastAPI Application
 # ---------------------------------------------------------------------------
 app = FastAPI(
-    title="Retail AI — Product Recommendation System API",
+    title="Demand Sphere — Product Recommendation System API",
     description=(
-        "Production-ready REST API for the Retail Product Recommendation System.\n\n"
+        "Production-ready REST API for Demand Sphere Product Recommendation System.\n\n"
         "**Features:**\n"
         "- Full CRUD operations for Products, Customers, Sales, Inventory, Suppliers, Forecasts, and Users\n"
         "- Pagination and filtering on all list endpoints\n"
@@ -178,7 +178,7 @@ def root():
     """Root endpoint — API health check."""
     return {
         "status": "healthy",
-        "service": "Retail AI API",
+        "service": "Demand Sphere API",
         "version": "1.0.0",
         "docs": "/docs",
     }

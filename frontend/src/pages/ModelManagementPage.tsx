@@ -1,5 +1,5 @@
 /**
- * AI Model Management Page — Retail AI Frontend
+ * AI Model Management Page — Demand Sphere Frontend
  * ===============================================
  * Premium modern dashboard for managing recommendation and demand forecasting models.
  */
@@ -64,7 +64,7 @@ export default function ModelManagementPage() {
 
   // ─── Authorization State ──────────────────────────────────────────────────
   const [isAuthorized, setIsAuthorized] = useState(() => {
-    return sessionStorage.getItem('retailai_model_authorized') === 'true';
+    return sessionStorage.getItem('demandsphere_model_authorized') === 'true';
   });
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
@@ -257,7 +257,7 @@ export default function ModelManagementPage() {
   const verifyMutation = useMutation({
     mutationFn: (pwd: string) => modelManagementApi.verifyTrainingPassword(pwd),
     onSuccess: () => {
-      sessionStorage.setItem('retailai_model_authorized', 'true');
+      sessionStorage.setItem('demandsphere_model_authorized', 'true');
       setIsAuthorized(true);
       setAuthError('');
       toast.success('Authorized successfully');

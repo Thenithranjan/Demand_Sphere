@@ -1,5 +1,5 @@
 /**
- * Recommendations Page — Retail AI Frontend
+ * Recommendations Page — Demand Sphere Frontend
  * ============================================
  * Exposes AI-powered hybrid product recommendations.
  * Combines Collaborative Filtering and Content-Based models with fallback logic.

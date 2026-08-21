@@ -1,5 +1,5 @@
 /**
- * Auth Context — Retail AI Frontend
+ * Auth Context — Demand Sphere Frontend
  * ====================================
  * Client-side authentication with role-based access control.
  *
@@ -22,7 +22,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'retailai_user';
+const STORAGE_KEY = 'demandsphere_user';
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(() => {

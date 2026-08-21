@@ -1,5 +1,5 @@
 /**
- * Customers Page — Retail AI Frontend
+ * Customers Page — Demand Sphere Frontend
  * ======================================
  * Customer management with membership badges, loyalty points,
  * search/filter, CRUD operations, and recommendation navigation.

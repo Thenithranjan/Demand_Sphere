@@ -1,5 +1,5 @@
 /**
- * Login Page — Retail AI Frontend
+ * Login Page — Demand Sphere Frontend
  * ==================================
  * Modern login with animated gradient background, glassmorphic card,
  * Zod validation, and role-based authentication.
@@ -60,9 +60,9 @@ export default function LoginPage() {
 
     // Predefined seeded credentials list for offline fallback
     const MOCK_USERS = [
-      { username: 'admin', password: 'admin123', UserID: 'U0001', FullName: 'System Administrator', Email: 'admin@retailai.com', Role: 'Admin' },
-      { username: 'manager', password: 'manager123', UserID: 'U0002', FullName: 'Store Manager', Email: 'manager@retailai.com', Role: 'Manager' },
-      { username: 'employee1', password: 'employee123', UserID: 'U0003', FullName: 'Sales Associate', Email: 'employee1@retailai.com', Role: 'Employee' },
+      { username: 'admin', password: 'admin123', UserID: 'U0001', FullName: 'System Administrator', Email: 'admin@demandsphere.com', Role: 'Admin' },
+      { username: 'manager', password: 'manager123', UserID: 'U0002', FullName: 'Store Manager', Email: 'manager@demandsphere.com', Role: 'Manager' },
+      { username: 'employee1', password: 'employee123', UserID: 'U0003', FullName: 'Sales Associate', Email: 'employee1@demandsphere.com', Role: 'Employee' },
     ];
 
     try {
@@ -73,7 +73,7 @@ export default function LoginPage() {
       });
 
       // Save token in localStorage
-      localStorage.setItem('retailai_token', response.access_token);
+      localStorage.setItem('demandsphere_token', response.access_token);
 
       login({
         UserID: response.user.UserID,
@@ -91,7 +91,7 @@ export default function LoginPage() {
       );
 
       if (matchedMock) {
-        localStorage.setItem('retailai_token', `mock-jwt-${matchedMock.UserID}`);
+        localStorage.setItem('demandsphere_token', `mock-jwt-${matchedMock.UserID}`);
         login({
           UserID: matchedMock.UserID,
           Username: matchedMock.username,
@@ -159,7 +159,7 @@ export default function LoginPage() {
               <Sparkles className="w-7 h-7 text-white" />
             </motion.div>
             <h1 className="text-2xl font-bold text-zinc-100">Welcome back</h1>
-            <p className="text-sm text-zinc-500 mt-1">Sign in to RetailAI Intelligence Suite</p>
+            <p className="text-sm text-zinc-500 mt-1">Sign in to Demand Sphere Intelligence Suite</p>
           </div>
 
           {/* Form */}

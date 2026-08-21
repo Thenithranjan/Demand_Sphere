@@ -1,5 +1,5 @@
 /**
- * Footer — Retail AI Frontend
+ * Footer — Demand Sphere Frontend
  * ==============================
  * Minimal footer with project name, version, and copyright.
  */

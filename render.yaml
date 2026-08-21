@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: retail-ai-backend
+    name: demand-sphere-backend
     env: python
     buildCommand: pip install -r backend/requirements.txt
     startCommand: sh -c "uvicorn backend.app.main:app --host 0.0.0.0 --port ${PORT:-10000}"
@@ -24,4 +24,4 @@ services:
       - key: SUPABASE_STORAGE_BUCKET
         value: reports
       - key: CORS_ORIGINS
-        value: http://localhost:5173,https://retail-backend.netlify.app,https://demand-sphere.vercel.app
+        value: http://localhost:5173,https://demand-sphere.netlify.app,https://demand-sphere.vercel.app

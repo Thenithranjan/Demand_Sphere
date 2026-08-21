@@ -1,5 +1,5 @@
 /**
- * Application Constants — Retail AI Frontend
+ * Application Constants — Demand Sphere Frontend
  * =============================================
  * Centralized configuration for navigation, chart colors, status maps, and labels.
  */
@@ -89,6 +89,6 @@ export const API_BASE_URL = cleanedUrl.endsWith('/api/v1')
   : `${cleanedUrl}/api/v1`;
 
 // ─── Application Info ────────────────────────────────────────────────────────
-export const APP_NAME = 'RetailAI';
+export const APP_NAME = 'Demand Sphere';
 export const APP_VERSION = '1.0.0';
 export const APP_DESCRIPTION = 'AI-Powered Retail Intelligence System';

@@ -1,5 +1,5 @@
 /**
- * Reusable Chart Components — Retail AI Frontend
+ * Reusable Chart Components — Demand Sphere Frontend
  * =================================================
  * All chart wrappers use Recharts with consistent theming,
  * custom tooltips, and Framer Motion reveal animations.

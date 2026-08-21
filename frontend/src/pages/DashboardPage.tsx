@@ -1,7 +1,7 @@
 /**
- * Dashboard Page — Retail AI Frontend
+ * Dashboard Page — Demand Sphere Frontend
  * ======================================
- * AI Retail Intelligence Dashboard with KPI cards, charts,
+ * AI Demand Sphere Dashboard with KPI cards, charts,
  * and real-time data from analytics endpoints.
  */
 
@@ -40,7 +40,7 @@ export default function DashboardPage() {
           Dashboard
         </h1>
         <p className="text-sm text-zinc-500 mt-1">
-          AI-Powered Retail Intelligence Overview
+          AI-Powered Demand Sphere Overview
         </p>
       </div>
 

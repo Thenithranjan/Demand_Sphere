@@ -1,5 +1,5 @@
 /**
- * Utility Functions — Retail AI Frontend
+ * Utility Functions — Demand Sphere Frontend
  * ========================================
  * Shared helper functions used across the application.
  */

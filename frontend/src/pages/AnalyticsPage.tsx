@@ -1,5 +1,5 @@
 /**
- * Analytics Page — Retail AI Frontend
+ * Analytics Page — Demand Sphere Frontend
  * =====================================
  * Complete Executive BI Dashboard showcasing Sales trends, Customer LTV,
  * and Warehouse capacity analytics.
@@ -38,7 +38,7 @@ export default function AnalyticsPage() {
       {/* Header */}
       <div>
         <h1 className={cn('text-2xl font-bold', isDark ? 'text-zinc-100' : 'text-zinc-900')}>
-          Retail Intelligence
+          Demand Sphere Intelligence
         </h1>
         <p className="text-sm text-zinc-500 mt-1">
           Executive business metrics, sales insights, and customer segmentation

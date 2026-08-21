@@ -1,5 +1,5 @@
 /**
- * TypeScript Interfaces — Retail AI Frontend
+ * TypeScript Interfaces — Demand Sphere Frontend
  * ============================================
  * Mirrors all Pydantic schemas from the FastAPI backend.
  * Every API response is strongly typed for compile-time safety.

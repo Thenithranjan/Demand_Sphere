@@ -1,5 +1,5 @@
 /**
- * Centralized API configuration — Retail AI Frontend
+ * Centralized API configuration — Demand Sphere Frontend
  * ====================================================
  * Configures Axios with:
  * - Base URL from constants
@@ -22,7 +22,7 @@ const api = axios.create({
 // ─── Request Interceptor: Token Injection ────────────────────────────────────
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('retailai_token');
+    const token = localStorage.getItem('demandsphere_token');
     if (token && config.headers) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -39,8 +39,8 @@ api.interceptors.response.use(
       const { status } = error.response;
       if (status === 401) {
         console.warn('[Auth] Token expired or invalid, signing out...');
-        localStorage.removeItem('retailai_token');
-        localStorage.removeItem('retailai_user');
+        localStorage.removeItem('demandsphere_token');
+        localStorage.removeItem('demandsphere_user');
         // If not already on login page, redirect
         if (!window.location.pathname.endsWith('/login')) {
           window.location.href = '/login';

@@ -1,5 +1,5 @@
 /**
- * Inventory Page — Retail AI Frontend
+ * Inventory Page — Demand Sphere Frontend
  * ======================================
  * Stock management with alerts, low-stock warnings,
  * recommendations, and warehouse analytics.

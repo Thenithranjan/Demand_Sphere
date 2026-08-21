@@ -1,5 +1,5 @@
 /**
- * Profile Page — Retail AI Frontend
+ * Profile Page — Demand Sphere Frontend
  * ===================================
  * Manages user metadata, theme toggle, and credentials.
  */

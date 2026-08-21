@@ -1,5 +1,5 @@
 /**
- * SkeletonCard — Retail AI Frontend
+ * SkeletonCard — Demand Sphere Frontend
  * ====================================
  * Shimmer loading skeleton for stats cards and chart containers.
  */

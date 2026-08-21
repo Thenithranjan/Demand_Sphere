@@ -1,5 +1,5 @@
 /**
- * EmptyState — Retail AI Frontend
+ * EmptyState — Demand Sphere Frontend
  * ==================================
  * Illustrated empty state with icon, message, and optional action button.
  */

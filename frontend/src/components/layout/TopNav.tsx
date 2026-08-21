@@ -1,5 +1,5 @@
 /**
- * Top Navigation Bar — Retail AI Frontend
+ * Top Navigation Bar — Demand Sphere Frontend
  * ==========================================
  * Sticky header with breadcrumbs, search, notifications, theme toggle,
  * and profile dropdown.

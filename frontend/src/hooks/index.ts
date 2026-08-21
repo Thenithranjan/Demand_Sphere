@@ -1,5 +1,5 @@
 /**
- * Custom Hooks — Retail AI Frontend
+ * Custom Hooks — Demand Sphere Frontend
  * ====================================
  * Reusable hooks wrapping TanStack Query for data fetching,
  * plus utility hooks for debouncing and media queries.

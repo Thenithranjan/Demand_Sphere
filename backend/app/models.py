@@ -1,7 +1,7 @@
 """
 SQLAlchemy ORM Models
 =====================
-Defines ORM models for all 7 tables in the retail_ai MySQL database.
+Defines ORM models for all 7 tables in the demand_sphere database.
 Models map directly to existing database tables — no migrations needed.
 
 Tables:
