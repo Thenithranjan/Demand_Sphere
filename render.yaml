@@ -24,4 +24,4 @@ services:
       - key: SUPABASE_STORAGE_BUCKET
         value: reports
       - key: CORS_ORIGINS
-        value: http://localhost:5173,https://retail-backend.netlify.app
+        value: http://localhost:5173,https://retail-backend.netlify.app,https://demand-sphere.vercel.app

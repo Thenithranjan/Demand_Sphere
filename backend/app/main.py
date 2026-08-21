@@ -111,12 +111,22 @@ print("========== FASTAPI SERVER STARTED ==========")
 # ---------------------------------------------------------------------------
 # CORS Middleware
 # ---------------------------------------------------------------------------
-cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173")
-cors_origins = [origin.strip() for origin in cors_origins_str.split(",")]
+cors_origins_str = os.getenv("CORS_ORIGINS", "http://localhost:3000,http://localhost:5173,https://demand-sphere.vercel.app")
+cors_origins = [origin.strip().rstrip("/") for origin in cors_origins_str.split(",") if origin.strip()]
+
+default_origins = [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://demand-sphere.vercel.app",
+]
+for default_origin in default_origins:
+    if default_origin not in cors_origins:
+        cors_origins.append(default_origin)
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=cors_origins,
+    allow_origin_regex=r"https://.*\.vercel\.app|https://.*\.onrender\.com|https://.*\.netlify\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
