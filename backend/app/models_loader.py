@@ -39,7 +39,9 @@ def load_recommendation_model() -> Dict[str, Any]:
 
     model_path = MODELS_DIR / "recommendation_model.pkl"
     if not model_path.exists():
-        raise FileNotFoundError(f"Recommendation model file not found at: {model_path}")
+        logger.warning(f"Recommendation model file not found at: {model_path}. Returning fallback configuration.")
+        _recommendation_model_cache = {}
+        return _recommendation_model_cache
 
     logger.info(f"Loading recommendation model from {model_path}...")
     with open(model_path, "rb") as f:
@@ -63,7 +65,9 @@ def load_forecast_model() -> Dict[str, Any]:
 
     model_path = MODELS_DIR / "forecast_model.pkl"
     if not model_path.exists():
-        raise FileNotFoundError(f"Forecasting model file not found at: {model_path}")
+        logger.warning(f"Forecasting model file not found at: {model_path}. Returning fallback configuration.")
+        _forecast_model_cache = {}
+        return _forecast_model_cache
 
     logger.info(f"Loading forecasting model from {model_path}...")
     with open(model_path, "rb") as f:
