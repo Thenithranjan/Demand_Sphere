@@ -14,13 +14,13 @@ services:
       - key: SUPABASE_DB_USER
         value: postgres
       - key: SUPABASE_DB_PASSWORD
-        value: MhRphDuLyqYr3CVC
+        sync: false
       - key: SUPABASE_DB_NAME
         value: postgres
       - key: SUPABASE_URL
         value: https://pdbybnpspykpdswotygx.supabase.co
       - key: SUPABASE_KEY
-        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBkYnlibnBzcHlrcGRzd290eWd4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NzIwNjYxOSwiZXhwIjoyMTAyNzgyNjE5fQ.-0TKFFNhF4pEsAoHRv886nl4aaNtcTthzrgn_cz_iTQ
+        sync: false
       - key: SUPABASE_STORAGE_BUCKET
         value: reports
       - key: CORS_ORIGINS
