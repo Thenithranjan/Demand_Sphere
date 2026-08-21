@@ -27,11 +27,19 @@ load_dotenv(dotenv_path=Path(__file__).resolve().parent.parent / ".env")
 # ---------------------------------------------------------------------------
 # Supabase PostgreSQL configuration from environment
 # ---------------------------------------------------------------------------
-SUPABASE_DB_HOST     = os.getenv("SUPABASE_DB_HOST", "localhost").strip("'\"")
-SUPABASE_DB_PORT     = os.getenv("SUPABASE_DB_PORT", "5432").strip("'\"")
-SUPABASE_DB_USER     = os.getenv("SUPABASE_DB_USER", "postgres").strip("'\"")
+SUPABASE_DB_HOST     = os.getenv("SUPABASE_DB_HOST", "aws-0-ap-south-1.pooler.supabase.com").strip("'\"")
+SUPABASE_DB_PORT     = os.getenv("SUPABASE_DB_PORT", "6543").strip("'\"")
+SUPABASE_DB_USER     = os.getenv("SUPABASE_DB_USER", "postgres.pdbybnpspykpdswotygx").strip("'\"")
 SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD", "").strip("'\"")
 SUPABASE_DB_NAME     = os.getenv("SUPABASE_DB_NAME", "postgres").strip("'\"")
+
+# Auto-fix IPv6-only direct host to IPv4 pooler for cloud servers (Render / Vercel)
+if SUPABASE_DB_HOST.startswith("db.") and SUPABASE_DB_HOST.endswith(".supabase.co"):
+    project_ref = SUPABASE_DB_HOST.split(".")[1]
+    SUPABASE_DB_HOST = "aws-0-ap-south-1.pooler.supabase.com"
+    SUPABASE_DB_PORT = "6543"
+    if not SUPABASE_DB_USER.endswith(f".{project_ref}"):
+        SUPABASE_DB_USER = f"{SUPABASE_DB_USER}.{project_ref}"
 
 from urllib.parse import quote_plus as _qp
 
