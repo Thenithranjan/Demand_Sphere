@@ -1,7 +1,7 @@
 {
-  "recommendation_model_version": "v1.6",
-  "forecast_model_version": "v1.6",
-  "trained_on": "2026-08-10",
+  "recommendation_model_version": "v1.7",
+  "forecast_model_version": "v1.7",
+  "trained_on": "2026-08-18",
   "products": 500,
   "customers": 2000,
   "sales": 50000,

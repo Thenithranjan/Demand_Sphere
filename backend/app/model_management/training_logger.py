@@ -1,8 +1,10 @@
 """
 Training Logger
 ================
-Appends structured log entries to ``backend/models/training_logs.json``
+Appends structured log entries to Supabase Storage (``training_logs.json``)
 after every training run (successful or failed).
+A local disk copy at ``backend/models/training_logs.json`` is maintained
+as a fallback for offline or pre-Supabase-configured runs.
 
 Why maintain training logs?
     Training logs provide a full audit trail:
@@ -28,15 +30,34 @@ from . import MODELS_DIR
 
 logger = logging.getLogger("model_management.training_logger")
 
-# Path to the training logs JSON file
+# ─── Storage paths ────────────────────────────────────────────────────────────
+# Local fallback file (unchanged from original)
 TRAINING_LOGS_FILE = MODELS_DIR / "training_logs.json"
 
+# Supabase Storage path (inside the 'reports' bucket)
+STORAGE_LOGS_PATH = "training_logs.json"
+
+
+# ---------------------------------------------------------------------------
+# Internal helpers — load / save with Supabase + local-disk dual write
+# ---------------------------------------------------------------------------
 
 def _load_logs() -> List[Dict[str, Any]]:
     """
-    Load existing training logs from disk.
-    Returns an empty list if the file doesn't exist or is corrupted.
+    Load existing training logs.
+    Priority: Supabase Storage → local disk → empty list.
     """
+    # 1. Try Supabase Storage first
+    try:
+        from app.storage import download_json
+        remote_data = download_json(STORAGE_LOGS_PATH)
+        if isinstance(remote_data, list):
+            logger.info("[training_logger] Loaded training logs from Supabase Storage")
+            return remote_data
+    except Exception as exc:
+        logger.warning(f"[training_logger] Could not load logs from Supabase: {exc}")
+
+    # 2. Fall back to local disk
     if not TRAINING_LOGS_FILE.exists():
         return []
     try:
@@ -44,19 +65,35 @@ def _load_logs() -> List[Dict[str, Any]]:
             data = json.load(f)
             return data if isinstance(data, list) else []
     except (json.JSONDecodeError, IOError) as e:
-        logger.warning(f"Could not read training logs (will create fresh): {e}")
+        logger.warning(f"Could not read local training logs (will create fresh): {e}")
         return []
 
 
 def _save_logs(logs: List[Dict[str, Any]]) -> None:
-    """Persist the full logs list to disk."""
+    """
+    Persist the full logs list.
+    Writes to both Supabase Storage (primary) and local disk (fallback).
+    """
+    # 1. Upload to Supabase Storage
+    try:
+        from app.storage import upload_json
+        upload_json(STORAGE_LOGS_PATH, logs)
+        logger.info(f"[training_logger] Training logs synced to Supabase Storage")
+    except Exception as exc:
+        logger.warning(f"[training_logger] Could not upload logs to Supabase: {exc}")
+
+    # 2. Always write local disk copy as fallback
     try:
         with open(TRAINING_LOGS_FILE, "w", encoding="utf-8") as f:
             json.dump(logs, f, indent=2, default=str)
         logger.info(f"Training log saved → {TRAINING_LOGS_FILE}")
     except IOError as e:
-        logger.error(f"Failed to save training logs: {e}")
+        logger.error(f"Failed to save training logs locally: {e}")
 
+
+# ---------------------------------------------------------------------------
+# Public API — unchanged signatures
+# ---------------------------------------------------------------------------
 
 def append_training_log(
     start_time: datetime,
@@ -128,7 +165,7 @@ def append_training_log(
     if error_message:
         entry["error_message"] = error_message
 
-    # Append to existing logs
+    # Append to existing logs and persist (Supabase + local disk)
     logs = _load_logs()
     logs.append(entry)
     _save_logs(logs)

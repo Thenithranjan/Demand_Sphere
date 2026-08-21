@@ -1,6 +1,6 @@
 {
   "recommendation": {
-    "active_version": "v1.6",
+    "active_version": "v1.7",
     "versions": {
       "v1.3": {
         "model_type": "recommendation",
@@ -104,7 +104,7 @@
       "v1.6": {
         "model_type": "recommendation",
         "version": "v1.6",
-        "status": "ACTIVE",
+        "status": "ARCHIVED",
         "dataset_version": "dataset-v4",
         "algorithm": "Hybrid (Collaborative + Content-Based)",
         "hyperparameters": {
@@ -127,17 +127,50 @@
         "training_duration": 7.65,
         "training_date": "2026-08-10T00:52:53.661989",
         "activation_date": "2026-08-10T00:52:53.733546",
-        "deactivation_date": null,
+        "deactivation_date": "2026-08-18T15:48:21.552039",
         "approval_user": "admin",
         "approval_role": "Admin",
         "approval_date": "2026-08-10T00:52:53.733667",
+        "rejection_reason": null,
+        "rollback_from": null
+      },
+      "v1.7": {
+        "model_type": "recommendation",
+        "version": "v1.7",
+        "status": "ACTIVE",
+        "dataset_version": "dataset-v5",
+        "algorithm": "Hybrid (Collaborative + Content-Based)",
+        "hyperparameters": {
+          "collab_weight": 0.5,
+          "content_weight": 0.5,
+          "top_n_collab": 50,
+          "top_n_content": 50
+        },
+        "metrics": {
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "f1_at_k": 0.0,
+          "hit_rate_at_k": "N/A",
+          "coverage": 35.6,
+          "novelty": 8.61,
+          "diversity": 0.789
+        },
+        "trigger": "manual",
+        "triggered_by": "admin",
+        "training_duration": 11.91,
+        "training_date": "2026-08-18T15:48:21.461329",
+        "activation_date": "2026-08-18T15:48:21.552029",
+        "deactivation_date": null,
+        "approval_user": "admin",
+        "approval_role": "Admin",
+        "approval_date": "2026-08-18T15:48:21.552288",
         "rejection_reason": null,
         "rollback_from": null
       }
     }
   },
   "forecast": {
-    "active_version": "v1.6",
+    "active_version": "v1.7",
     "versions": {
       "v1.3": {
         "model_type": "forecast",
@@ -262,7 +295,7 @@
       "v1.6": {
         "model_type": "forecast",
         "version": "v1.6",
-        "status": "ACTIVE",
+        "status": "ARCHIVED",
         "dataset_version": "dataset-v4",
         "algorithm": "XGBoost Regressor",
         "hyperparameters": {
@@ -292,10 +325,50 @@
         "training_duration": 7.66,
         "training_date": "2026-08-10T00:52:53.687457",
         "activation_date": "2026-08-10T00:52:53.745314",
-        "deactivation_date": null,
+        "deactivation_date": "2026-08-18T15:48:21.570620",
         "approval_user": "admin",
         "approval_role": "Admin",
         "approval_date": "2026-08-10T00:52:53.745434",
+        "rejection_reason": null,
+        "rollback_from": null
+      },
+      "v1.7": {
+        "model_type": "forecast",
+        "version": "v1.7",
+        "status": "ACTIVE",
+        "dataset_version": "dataset-v5",
+        "algorithm": "XGBoost Regressor",
+        "hyperparameters": {
+          "quantity_best_params": {
+            "learning_rate": 0.05,
+            "max_depth": 3,
+            "n_estimators": 50,
+            "random_state": 42,
+            "subsample": 0.8
+          },
+          "revenue_best_params": {
+            "learning_rate": 0.05,
+            "max_depth": 3,
+            "n_estimators": 100,
+            "random_state": 42,
+            "subsample": 1.0
+          }
+        },
+        "metrics": {
+          "rmse": 4.4825,
+          "mae": 3.562,
+          "mape": 0.6935,
+          "r2": 0.0886
+        },
+        "trigger": "manual",
+        "triggered_by": "admin",
+        "training_duration": 11.93,
+        "training_date": "2026-08-18T15:48:21.493064",
+        "activation_date": "2026-08-18T15:48:21.570612",
+        "deactivation_date": null,
+        "approval_user": "admin",
+        "approval_role": "Admin",
+        "approval_date": "2026-08-18T15:48:21.570860",
         "rejection_reason": null,
         "rollback_from": null
       }

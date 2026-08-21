@@ -178,5 +178,50 @@
     "model_type": "forecast",
     "version": "v1.6",
     "details": null
+  },
+  {
+    "timestamp": "2026-08-18T15:48:21.457342",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_TRAINING_COMPLETED",
+    "model_type": null,
+    "version": null,
+    "details": "Retraining completed inside pipeline"
+  },
+  {
+    "timestamp": "2026-08-18T15:48:21.587737",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "recommendation",
+    "version": "v1.7",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-18T15:48:21.604482",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_APPROVED",
+    "model_type": "forecast",
+    "version": "v1.7",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-18T15:48:21.623685",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "recommendation",
+    "version": "v1.7",
+    "details": null
+  },
+  {
+    "timestamp": "2026-08-18T15:48:21.640809",
+    "user_id": "admin",
+    "role": "Admin",
+    "action": "MODEL_ACTIVATED",
+    "model_type": "forecast",
+    "version": "v1.7",
+    "details": null
   }
 ]

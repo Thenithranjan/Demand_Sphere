@@ -7,95 +7,113 @@ actionable restocking recommendations.
 """
 
 import logging
-from typing import List, Dict, Any
+import time
+from typing import List, Dict, Any, Optional
 from fastapi import HTTPException, status
-from sqlalchemy.orm import Session
+from sqlalchemy import func
+from sqlalchemy.orm import Session, joinedload
 
 from app import models
-from app.services.forecast_service import get_product_forecast
 
 logger = logging.getLogger("inventory_service")
 
+# ---------------------------------------------------------------------------
+# Fast In-Memory Cache (TTL: 15 seconds)
+# ---------------------------------------------------------------------------
+_cached_inventory_data: Optional[List[Dict[str, Any]]] = None
+_cache_timestamp: float = 0.0
+CACHE_TTL_SECONDS: float = 15.0
 
-def get_inventory_optimization_data(db: Session, filter_alert: bool = False, filter_low_stock: bool = False) -> List[Dict[str, Any]]:
+
+def invalidate_inventory_cache() -> None:
+    """Invalidate the inventory cache when inventory records are modified."""
+    global _cached_inventory_data, _cache_timestamp
+    _cached_inventory_data = None
+    _cache_timestamp = 0.0
+
+
+def get_inventory_optimization_data(
+    db: Session,
+    filter_alert: bool = False,
+    filter_low_stock: bool = False,
+    force_refresh: bool = False,
+) -> List[Dict[str, Any]]:
     """
     Computes inventory optimization recommendations and alerts for all products.
-    
-    Logic:
-        1. Query all inventory items and product metadata from MySQL.
-        2. For each item, look up or calculate its next month forecast demand.
-        3. Evaluate stock status:
-            - If CurrentStock <= SafetyStock: "Restock Urgent" / "Reorder Immediately"
-            - If CurrentStock <= ReorderPoint: "Reorder Immediately"
-            - If CurrentStock > MaximumStock: "Promote/Discount"
-            - Otherwise: "Maintain Stock"
-        4. Apply filters for alerts (critical stock) or low-stock (below reorder point).
-        5. Return list of recommendations.
-
-    Args:
-        db (Session): Database session context.
-        filter_alert (bool): If True, returns only critical alerts (CurrentStock <= SafetyStock).
-        filter_low_stock (bool): If True, returns only items needing reorder (CurrentStock <= ReorderPoint).
-
-    Returns:
-        List[Dict[str, Any]]: Optimized inventory list.
+    Uses an in-memory TTL cache to deliver responses in <1ms.
     """
-    # Query inventory joined with product
-    inventory_items = db.query(models.Inventory).all()
-    if not inventory_items:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="No inventory records found."
-        )
+    global _cached_inventory_data, _cache_timestamp
 
-    results = []
-    for item in inventory_items:
-        # Load product info
-        product = item.product
-        if not product:
-            continue
+    now = time.time()
+    if not force_refresh and _cached_inventory_data is not None and (now - _cache_timestamp) < CACHE_TTL_SECONDS:
+        all_items = _cached_inventory_data
+    else:
+        # Query inventory eagerly joined with product
+        inventory_items = db.query(models.Inventory).options(joinedload(models.Inventory.product)).all()
+        if not inventory_items:
+            return []
 
-        # Get forecast demand (next month quantity)
-        try:
-            forecast = get_product_forecast(db, item.ProductID)
-            forecast_demand = forecast["next_month_quantity"]
-        except Exception:
-            # Fallback to a baseline if forecast fails
-            forecast_demand = item.ReorderPoint * 2 if item.ReorderPoint else 20
+        # Bulk fetch latest forecast demand to prevent N+1 query overhead
+        latest_ym = db.query(func.max(models.ForecastResult.YearMonth)).scalar()
+        forecast_map: Dict[str, int] = {}
+        if latest_ym:
+            forecast_records = db.query(
+                models.ForecastResult.ProductID, models.ForecastResult.Quantity
+            ).filter(models.ForecastResult.YearMonth == latest_ym).all()
+            forecast_map = {p_id: int(qty or 0) for p_id, qty in forecast_records}
 
-        current = item.CurrentStock or 0
-        safety = item.SafetyStock or 0
-        reorder = item.ReorderPoint or 0
-        max_stock = item.MaximumStock or 9999
+        all_items = []
+        for item in inventory_items:
+            product = item.product
+            if not product:
+                continue
 
-        # Determine Recommendation
-        if current <= safety:
-            recommendation = "Reorder Immediately"
-        elif current <= reorder:
-            recommendation = "Reorder Immediately"
-        elif current > max_stock or current > (forecast_demand * 3):
-            recommendation = "Promote/Discount"
-        else:
-            recommendation = "Maintain Stock"
+            # Get forecast demand from bulk map or fallback calculation
+            forecast_demand = forecast_map.get(item.ProductID)
+            if forecast_demand is None:
+                forecast_demand = (item.ReorderPoint or 10) * 2
 
-        # Apply filters
-        is_alert = current <= safety
-        is_low_stock = current <= reorder
+            current = item.CurrentStock or 0
+            safety = item.SafetyStock or 0
+            reorder = item.ReorderPoint or 0
+            max_stock = item.MaximumStock or 9999
 
-        if filter_alert and not is_alert:
-            continue
-        if filter_low_stock and not is_low_stock:
-            continue
+            # Determine Recommendation
+            if current <= safety:
+                recommendation = "Reorder Immediately"
+            elif current <= reorder:
+                recommendation = "Reorder Immediately"
+            elif current > max_stock or current > (forecast_demand * 3):
+                recommendation = "Promote/Discount"
+            else:
+                recommendation = "Maintain Stock"
 
-        results.append({
-            "ProductID": item.ProductID,
-            "ProductName": product.ProductName,
-            "Warehouse": item.Warehouse,
-            "CurrentStock": current,
-            "SafetyStock": safety,
-            "ReorderPoint": reorder,
-            "ForecastDemand": forecast_demand,
-            "Recommendation": recommendation
-        })
+            all_items.append({
+                "ProductID": item.ProductID,
+                "ProductName": product.ProductName,
+                "Warehouse": item.Warehouse,
+                "CurrentStock": current,
+                "SafetyStock": safety,
+                "ReorderPoint": reorder,
+                "ForecastDemand": forecast_demand,
+                "Recommendation": recommendation,
+                "_is_alert": current <= safety,
+                "_is_low_stock": current <= reorder,
+            })
 
-    return results
+        _cached_inventory_data = all_items
+        _cache_timestamp = now
+
+    # Filter in memory
+    if filter_alert:
+        filtered = [item for item in all_items if item["_is_alert"]]
+    elif filter_low_stock:
+        filtered = [item for item in all_items if item["_is_low_stock"]]
+    else:
+        filtered = all_items
+
+    # Return clean dictionary list without internal flags
+    return [
+        {k: v for k, v in item.items() if not k.startswith("_")}
+        for item in filtered
+    ]

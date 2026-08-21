@@ -1,13 +1,18 @@
 """
 Database Configuration Module
 =============================
-Configures SQLAlchemy engine and session factory for MySQL connection.
+Configures SQLAlchemy engine and session factory for Supabase PostgreSQL.
 Reads credentials from .env file using python-dotenv.
+
+Migration note:
+    Replaces the previous MySQL/pymysql connection with a direct
+    PostgreSQL connection to Supabase using psycopg2-binary.
+    All downstream ORM models, CRUD functions, and FastAPI routers
+    are completely unchanged — only the driver and env-var names differ.
 """
 
 import os
 from pathlib import Path
-from urllib.parse import quote_plus
 
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
@@ -16,33 +21,30 @@ from sqlalchemy.orm import DeclarativeBase, sessionmaker
 # ---------------------------------------------------------------------------
 # Load environment variables from .env file
 # ---------------------------------------------------------------------------
-env_path = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(dotenv_path=env_path)
+load_dotenv()
 
 # ---------------------------------------------------------------------------
-# Database configuration from environment
+# Supabase PostgreSQL configuration from environment
 # ---------------------------------------------------------------------------
-# We strip quotes in case environment variables contain extra wrapping quotes
-DB_HOST = os.getenv("DB_HOST", "localhost").strip("'\"")
-DB_PORT = os.getenv("DB_PORT", "3306").strip("'\"")
-DB_USER = os.getenv("DB_USER", "root").strip("'\"")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "").strip("'\"")
-DB_NAME = os.getenv("DB_NAME", "retail_ai").strip("'\"")
+SUPABASE_DB_HOST     = os.getenv("SUPABASE_DB_HOST", "localhost").strip("'\"")
+SUPABASE_DB_PORT     = os.getenv("SUPABASE_DB_PORT", "5432").strip("'\"")
+SUPABASE_DB_USER     = os.getenv("SUPABASE_DB_USER", "postgres").strip("'\"")
+SUPABASE_DB_PASSWORD = os.getenv("SUPABASE_DB_PASSWORD", "").strip("'\"")
+SUPABASE_DB_NAME     = os.getenv("SUPABASE_DB_NAME", "postgres").strip("'\"")
 
-# Encode the password using quote_plus to safely handle reserved URL characters like '@'
+from urllib.parse import quote_plus as _qp
+
 DATABASE_URL = (
-    f"mysql+pymysql://{DB_USER}:"
-    f"{quote_plus(DB_PASSWORD)}@"
-    f"{DB_HOST}:{DB_PORT}/{DB_NAME}"
+    f"postgresql+psycopg2://{_qp(SUPABASE_DB_USER)}:{_qp(SUPABASE_DB_PASSWORD)}"
+    f"@{SUPABASE_DB_HOST}:{SUPABASE_DB_PORT}/{SUPABASE_DB_NAME}"
+    "?sslmode=require"
 )
 
-# TEMPORARY DEBUG PRINT: Displays the generated database URL.
-# NOTE: This print is strictly for debugging the connection issue during startup and should be removed before production.
-# The password is masked to prevent sensitive credentials from leaking into application logs.
 print(
-    f"[DEBUG] Generated DATABASE_URL (masked password): "
-    f"mysql+pymysql://{DB_USER}:***@{DB_HOST}:{DB_PORT}/{DB_NAME}",
-    flush=True
+    f"[INFO] Connecting to Supabase PostgreSQL: "
+    f"postgresql+psycopg2://{SUPABASE_DB_USER}:***@"
+    f"{SUPABASE_DB_HOST}:{SUPABASE_DB_PORT}/{SUPABASE_DB_NAME}",
+    flush=True,
 )
 
 # ---------------------------------------------------------------------------
@@ -50,12 +52,15 @@ print(
 # ---------------------------------------------------------------------------
 engine = create_engine(
     DATABASE_URL,
-    pool_pre_ping=True,        # Verify connections before use
-    pool_size=10,              # Connection pool size
-    max_overflow=20,           # Extra connections beyond pool_size
-    pool_recycle=3600,         # Recycle connections after 1 hour
-    echo=False,                # Set True for SQL query logging (debug)
+    pool_pre_ping=True,   # Drop stale connections before use
+    pool_size=5,
+    max_overflow=10,
+    pool_recycle=1800,    # Recycle every 30 min (Supabase idles at ~5 min)
+    echo=False,
+    connect_args={"options": "-c statement_timeout=30000"},
 )
+
+
 
 SessionLocal = sessionmaker(
     autocommit=False,

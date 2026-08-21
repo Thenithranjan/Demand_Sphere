@@ -1,8 +1,9 @@
 """
 Model Metadata Manager
 =======================
-Reads and writes ``backend/models/model_metadata.json`` — a single JSON file
-that captures the latest training snapshot: model versions, training date,
+Reads and writes model metadata to Supabase Storage (``model_metadata.json``)
+with a local disk fallback at ``backend/models/model_metadata.json``.
+Captures the latest training snapshot: model versions, training date,
 dataset sizes, and accuracy metrics.
 
 Why maintain metadata?
@@ -30,8 +31,11 @@ from . import MODELS_DIR
 
 logger = logging.getLogger("model_management.metadata_manager")
 
-# Path to the metadata JSON file
+# Local metadata file path (fallback)
 METADATA_FILE = MODELS_DIR / "model_metadata.json"
+
+# Supabase Storage path (inside the 'reports' bucket)
+STORAGE_METADATA_PATH = "model_metadata.json"
 
 # Default metadata (used when no metadata file exists yet)
 DEFAULT_METADATA: Dict[str, Any] = {
@@ -50,20 +54,38 @@ DEFAULT_METADATA: Dict[str, Any] = {
 
 def load_metadata() -> Dict[str, Any]:
     """
-    Load current model metadata from disk.
+    Load current model metadata.
+    Priority: Supabase Storage → local disk → defaults.
 
-    Returns the default metadata structure if the file doesn't exist,
+    Returns the default metadata structure if nothing is found,
     which is the case before the first training run.  This ensures the
     ``GET /api/v1/model/status`` endpoint always returns a valid response.
     """
+    # 1. Try Supabase Storage first
+    try:
+        from app.storage import download_json
+        remote_data = download_json(STORAGE_METADATA_PATH)
+        if isinstance(remote_data, dict):
+            logger.info("[metadata_manager] Loaded model metadata from Supabase Storage")
+            return remote_data
+    except Exception as exc:
+        logger.warning(f"[metadata_manager] Could not load metadata from Supabase: {exc}")
+
+    # 2. Fall back to local disk
     if not METADATA_FILE.exists():
-        logger.info("No model_metadata.json found — returning defaults")
+        logger.info("No model_metadata.json found locally or remotely — returning defaults")
         return DEFAULT_METADATA.copy()
 
     try:
         with open(METADATA_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        logger.info("Loaded model metadata from disk")
+        logger.info("Loaded model metadata from local disk")
+        # Auto-seed to Supabase Storage so future loads hit remote storage
+        try:
+            from app.storage import upload_json
+            upload_json(STORAGE_METADATA_PATH, data)
+        except Exception:
+            pass
         return data
     except (json.JSONDecodeError, IOError) as e:
         logger.warning(f"Could not read model metadata (returning defaults): {e}")
@@ -71,13 +93,22 @@ def load_metadata() -> Dict[str, Any]:
 
 
 def save_metadata(metadata: Dict[str, Any]) -> None:
-    """Persist metadata to disk."""
+    """Persist metadata to both Supabase Storage (primary) and local disk (fallback)."""
+    # 1. Upload to Supabase Storage
+    try:
+        from app.storage import upload_json
+        upload_json(STORAGE_METADATA_PATH, metadata)
+        logger.info("[metadata_manager] Model metadata synced to Supabase Storage")
+    except Exception as exc:
+        logger.warning(f"[metadata_manager] Could not upload metadata to Supabase: {exc}")
+
+    # 2. Always write local disk copy
     try:
         with open(METADATA_FILE, "w", encoding="utf-8") as f:
             json.dump(metadata, f, indent=2, default=str)
-        logger.info(f"Model metadata saved → {METADATA_FILE}")
+        logger.info(f"Model metadata saved locally → {METADATA_FILE}")
     except IOError as e:
-        logger.error(f"Failed to save model metadata: {e}")
+        logger.error(f"Failed to save model metadata locally: {e}")
         raise
 
 

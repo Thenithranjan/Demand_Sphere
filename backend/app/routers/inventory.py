@@ -157,7 +157,10 @@ def create_inventory(
             status_code=status.HTTP_409_CONFLICT,
             detail=f"Inventory for product '{inventory.ProductID}' already exists",
         )
-    return crud.create_inventory(db, inventory)
+    result = crud.create_inventory(db, inventory)
+    from app.services.inventory_service import invalidate_inventory_cache
+    invalidate_inventory_cache()
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -176,6 +179,8 @@ def update_inventory(
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"Inventory record for product '{product_id}' not found",
         )
+    from app.services.inventory_service import invalidate_inventory_cache
+    invalidate_inventory_cache()
     return updated
 
 
@@ -191,4 +196,6 @@ def delete_inventory(product_id: str, db: Session = Depends(get_db)):
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f"Inventory record for product '{product_id}' not found",
         )
+    from app.services.inventory_service import invalidate_inventory_cache
+    invalidate_inventory_cache()
     return None

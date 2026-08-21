@@ -190,5 +190,30 @@
     "status": "success",
     "recommendation_model_version": "v1.6",
     "forecast_model_version": "v1.6"
+  },
+  {
+    "training_id": "TRN-20260818-154809",
+    "training_start_time": "2026-08-18T15:48:09.553362",
+    "training_end_time": "2026-08-18T15:48:21.709607",
+    "duration_seconds": 12.16,
+    "duration_human": "12.2s",
+    "user": "admin",
+    "role": "Admin",
+    "reason": "manual",
+    "dataset_sizes": {
+      "products": 500,
+      "customers": 2000,
+      "sales": 50000,
+      "inventory": 500,
+      "forecast_results": 11500
+    },
+    "metrics": {
+      "recommendation_accuracy": 0.0,
+      "forecast_rmse": 4.4825,
+      "forecast_mae": 3.562
+    },
+    "status": "success",
+    "recommendation_model_version": "v1.7",
+    "forecast_model_version": "v1.7"
   }
 ]

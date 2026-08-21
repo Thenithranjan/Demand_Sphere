@@ -18,6 +18,18 @@ joblib>=1.2.0          # Model serialization and saving
 # --- Visualization ---
 matplotlib>=3.7.0      # Plotting and visualization
 
-# --- Logging & Utilities ---
-# (Python standard library — no install needed for logging, os, sys, pathlib)
+# --- FastAPI & Web Services ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+sqlalchemy==2.0.35
+psycopg2-binary
+supabase==2.9.1
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+bcrypt==4.2.0
+cryptography==43.0.1
+python-multipart==0.0.12
 

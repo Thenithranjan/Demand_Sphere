@@ -66,5 +66,22 @@
     },
     "feature_count": 14,
     "checksum": "0d2ac9a280f683020c52cfacfaed629d"
+  },
+  "dataset-v5": {
+    "version": "dataset-v5",
+    "created_at": "2026-08-18T15:48:12.845005",
+    "products_count": 500,
+    "customers_count": 2000,
+    "sales_count": 50000,
+    "inventory_count": 500,
+    "csv_paths": {
+      "products": "data/processed/products_clean.csv",
+      "customers": "data/processed/customers_clean.csv",
+      "sales": "data/processed/sales_clean.csv",
+      "inventory": "data/processed/inventory_clean.csv",
+      "forecast_results": "data/processed/forecast_results.csv"
+    },
+    "feature_count": 14,
+    "checksum": "0d2ac9a280f683020c52cfacfaed629d"
   }
 }

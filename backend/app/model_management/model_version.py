@@ -24,6 +24,13 @@ Naming convention:
     The "unversioned" file (recommendation_model.pkl) is always a copy of
     the latest version.  This ensures backward compatibility with the
     existing models_loader.py which expects files at fixed paths.
+
+Supabase Storage:
+    After every training run, metrics.json and training report JSONs are
+    uploaded to the ``reports`` bucket under:
+        model_training/recommendation_{version}_training_report.json
+        model_training/forecast_{version}_training_report.json
+    Model .pkl files are NOT uploaded (they are large binary blobs).
 """
 
 import json
@@ -96,7 +103,7 @@ def save_versioned_models(
     rec_met = recommendation_metrics or {}
     with open(rec_dir / "metrics.json", "w") as f:
         json.dump(rec_met, f, indent=2)
-        
+
     # Write metadata.json
     rec_meta_summary = {
         "model_type": "recommendation",
@@ -105,6 +112,16 @@ def save_versioned_models(
     }
     with open(rec_dir / "metadata.json", "w") as f:
         json.dump(rec_meta_summary, f, indent=2)
+
+    # ── Upload training report to Supabase Storage ────────────────────────────
+    try:
+        from app.storage import upload_json
+        rec_report = {"model_type": "recommendation", "version": new_rec_version, **rec_met}
+        storage_path = f"model_training/recommendation_{new_rec_version}_training_report.json"
+        upload_json(storage_path, rec_report)
+        logger.info(f"[model_version] Recommendation training report uploaded: {storage_path}")
+    except Exception as exc:
+        logger.warning(f"[model_version] Could not upload recommendation report to Supabase: {exc}")
 
     # Legacy flat file copy for backward compatibility
     rec_flat_path = MODELS_DIR / f"recommendation_model_{new_rec_version}.pkl"
@@ -135,7 +152,7 @@ def save_versioned_models(
     fc_met = forecast_metrics or {}
     with open(forecast_dir / "metrics.json", "w") as f:
         json.dump(fc_met, f, indent=2)
-        
+
     forecast_meta_summary = {
         "model_type": "forecast",
         "version": new_forecast_version,
@@ -143,6 +160,16 @@ def save_versioned_models(
     }
     with open(forecast_dir / "metadata.json", "w") as f:
         json.dump(forecast_meta_summary, f, indent=2)
+
+    # ── Upload training report to Supabase Storage ────────────────────────────
+    try:
+        from app.storage import upload_json
+        fc_report = {"model_type": "forecast", "version": new_forecast_version, **fc_met}
+        storage_path = f"model_training/forecast_{new_forecast_version}_training_report.json"
+        upload_json(storage_path, fc_report)
+        logger.info(f"[model_version] Forecast training report uploaded: {storage_path}")
+    except Exception as exc:
+        logger.warning(f"[model_version] Could not upload forecast report to Supabase: {exc}")
 
     # Legacy flat file copy
     forecast_flat_path = MODELS_DIR / f"forecast_model_{new_forecast_version}.pkl"

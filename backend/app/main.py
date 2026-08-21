@@ -88,12 +88,14 @@ app = FastAPI(
         "- Full CRUD operations for Products, Customers, Sales, Inventory, Suppliers, Forecasts, and Users\n"
         "- Pagination and filtering on all list endpoints\n"
         "- Inventory health monitoring with low-stock and overstock alerts\n"
-        "- MySQL database integration via SQLAlchemy ORM\n"
+        "- **Supabase PostgreSQL** database integration via SQLAlchemy ORM\n"
+        "- **Supabase Storage** for training reports, metadata, and training logs\n"
         "- CORS enabled for React frontend\n\n"
-        "**Coming Soon:**\n"
+        "**AI Model Management:**\n"
         "- ML-powered product recommendations\n"
         "- Demand forecasting engine\n"
-        "- JWT authentication"
+        "- Model versioning, retraining, and audit logs\n"
+        "- Training reports via `GET /api/v1/model/reports`"
     ),
     version="1.0.0",
     docs_url="/docs",
@@ -153,7 +155,8 @@ def health_check():
     """Detailed health check endpoint."""
     return {
         "status": "healthy",
-        "database": "MySQL (retail_ai)",
+        "database": "Supabase PostgreSQL",
+        "storage": "Supabase Storage (reports bucket)",
         "api_version": "v1",
         "endpoints": {
             "products": f"{API_PREFIX}/products",
@@ -163,5 +166,6 @@ def health_check():
             "suppliers": f"{API_PREFIX}/suppliers",
             "forecast": f"{API_PREFIX}/forecast",
             "users": f"{API_PREFIX}/users",
+            "model_reports": f"{API_PREFIX}/model/reports",
         },
     }

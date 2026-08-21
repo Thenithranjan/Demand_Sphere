@@ -855,3 +855,89 @@ def get_training_history_endpoint(
         "history": page_items
     }
 
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Endpoint: GET /model/reports
+# ═══════════════════════════════════════════════════════════════════════════════
+@router.get("/reports", summary="List training reports from Supabase Storage")
+def list_training_reports(prefix: str = "model_training"):
+    """
+    List all training report files stored in Supabase Storage.
+
+    Parameters
+    ----------
+    prefix : str
+        Folder prefix inside the bucket (default: ``model_training``).
+        Use an empty string to list all files in the bucket root.
+
+    Returns
+    -------
+    dict
+        ``files`` — list of file objects (name, size, created_at, etc.)
+        ``bucket`` — the Supabase bucket name
+        ``prefix`` — the queried prefix
+
+    Note
+    ----
+    Returns an empty list when Supabase is not configured or the bucket
+    is empty.  Does not raise an error in those cases.
+    """
+    from app.storage import list_reports, BUCKET_NAME
+
+    files = list_reports(prefix)
+    return {
+        "bucket": BUCKET_NAME,
+        "prefix": prefix,
+        "count": len(files),
+        "files": files,
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# Endpoint: GET /model/reports/{filename}
+# ═══════════════════════════════════════════════════════════════════════════════
+@router.get(
+    "/reports/{filename:path}",
+    summary="Fetch a specific training report from Supabase Storage",
+)
+def get_training_report(filename: str):
+    """
+    Download and return the JSON content of a specific training report.
+
+    Parameters
+    ----------
+    filename : str
+        Path inside the bucket, e.g.
+        ``model_training/recommendation_v1.3_training_report.json``.
+
+    Returns
+    -------
+    dict
+        Parsed JSON content of the report file.
+
+    Raises
+    ------
+    HTTPException 404
+        If the file does not exist in Supabase Storage.
+    HTTPException 503
+        If Supabase Storage is not configured.
+    """
+    from app.storage import download_json, _get_client
+
+    if _get_client() is None:
+        raise HTTPException(
+            status_code=503,
+            detail=(
+                "Supabase Storage is not configured. "
+                "Set SUPABASE_URL and SUPABASE_KEY in backend/.env to enable report access."
+            ),
+        )
+
+    data = download_json(filename)
+    if data is None:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Report '{filename}' not found in Supabase Storage.",
+        )
+
+    return data
