@@ -52,6 +52,7 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    is_vercel = os.getenv("VERCEL") is not None
     # Pre-load machine learning models during application startup
     print("========== PRE-LOADING MACHINE LEARNING MODELS ==========", flush=True)
     try:
@@ -61,21 +62,23 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         print(f"!!! ML MODEL STARTUP LOAD FAILURE: {e} !!!", flush=True)
         
-    # Start the automatic model retraining scheduler
-    try:
-        from app.model_management.scheduler import start_scheduler
-        await start_scheduler()
-    except Exception as e:
-        print(f"!!! SCHEDULER STARTUP FAILURE: {e} !!!", flush=True)
+    # Start the automatic model retraining scheduler (only on continuous servers, not serverless)
+    if not is_vercel:
+        try:
+            from app.model_management.scheduler import start_scheduler
+            await start_scheduler()
+        except Exception as e:
+            print(f"!!! SCHEDULER STARTUP FAILURE: {e} !!!", flush=True)
         
     yield
     
     # Stop the automatic model retraining scheduler
-    try:
-        from app.model_management.scheduler import stop_scheduler
-        await stop_scheduler()
-    except Exception as e:
-        print(f"!!! SCHEDULER SHUTDOWN FAILURE: {e} !!!", flush=True)
+    if not is_vercel:
+        try:
+            from app.model_management.scheduler import stop_scheduler
+            await stop_scheduler()
+        except Exception as e:
+            print(f"!!! SCHEDULER SHUTDOWN FAILURE: {e} !!!", flush=True)
 
 # ---------------------------------------------------------------------------
 # FastAPI Application

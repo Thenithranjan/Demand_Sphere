@@ -32,6 +32,7 @@ logger = logging.getLogger("app.supabase_client")
 # Load .env if not already loaded
 # ---------------------------------------------------------------------------
 load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
 
 SUPABASE_URL = os.getenv("SUPABASE_URL", "").strip("'\"")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY", "").strip("'\"")

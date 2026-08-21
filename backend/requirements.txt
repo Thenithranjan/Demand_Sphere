@@ -9,6 +9,7 @@ uvicorn[standard]==0.30.6
 # Database — Supabase PostgreSQL via SQLAlchemy
 sqlalchemy==2.0.35
 psycopg2-binary            # PostgreSQL adapter (replaces pymysql) — uses prebuilt wheel
+pg8000>=1.31.0
 
 
 # Supabase Client — Storage API + Auth helpers
