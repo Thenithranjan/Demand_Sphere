@@ -149,3 +149,21 @@ html:not(.dark) .recharts-cartesian-grid-vertical line {
 .recharts-tooltip-wrapper {
   outline: none !important;
 }
+
+/* ─── Hide Scrollbar Utility ───────────────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+

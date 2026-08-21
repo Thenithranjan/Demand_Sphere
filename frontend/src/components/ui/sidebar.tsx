@@ -168,7 +168,7 @@ export const MobileSidebar = ({
                 damping: 30,
               }}
               className={cn(
-                "fixed h-full w-[280px] left-0 top-0 bg-zinc-900 border-r border-zinc-800 p-6 z-50 flex flex-col justify-between overflow-y-auto shadow-2xl",
+                "fixed h-full w-[280px] left-0 top-0 bg-zinc-900 border-r border-zinc-800 p-6 z-50 flex flex-col justify-between overflow-y-auto no-scrollbar shadow-2xl",
                 className
               )}
             >
