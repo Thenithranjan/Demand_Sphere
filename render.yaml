@@ -8,11 +8,11 @@ services:
       - key: PYTHON_VERSION
         value: 3.11.9
       - key: SUPABASE_DB_HOST
-        value: db.pdbybnpspykpdswotygx.supabase.co
+        value: aws-0-ap-south-1.pooler.supabase.com
       - key: SUPABASE_DB_PORT
-        value: "5432"
+        value: "6543"
       - key: SUPABASE_DB_USER
-        value: postgres
+        value: postgres.pdbybnpspykpdswotygx
       - key: SUPABASE_DB_PASSWORD
         sync: false
       - key: SUPABASE_DB_NAME
