@@ -10,6 +10,50 @@ A full-stack, production-ready Retail AI platform for product recommendations, d
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Executive Intelligence Dashboard
+![Executive Intelligence Dashboard](docs/screenshots/dashboard.png)
+
+### 2. Product Catalog Management
+![Product Catalog Management](docs/screenshots/products.png)
+
+### 3. Customer Directory & Loyalty Tiers
+![Customer Directory & Loyalty Tiers](docs/screenshots/customers.png)
+
+### 4. Sales Transactions & Invoice History
+![Sales Transactions & Invoice History](docs/screenshots/sales.png)
+
+### 5. Smart Inventory & Restocking Alerts
+![Smart Inventory & Restocking Alerts](docs/screenshots/inventory.png)
+
+### 6. AI-Powered Demand Forecasting (XGBoost)
+![Demand Forecasting](docs/screenshots/forecast.png)
+
+### 7. Personalized AI Recommendations
+![Personalized AI Recommendations](docs/screenshots/recommendations.png)
+
+### 8. Demand Sphere Business Intelligence Analytics
+![Analytics BI Dashboard](docs/screenshots/analytics.png)
+
+### 9. Automated Reports & CSV Exports
+![Automated Reports & CSV Exports](docs/screenshots/reports.png)
+
+### 10. MLOps Model Lifecycle & Version Audit
+![AI Model Management](docs/screenshots/model_management.png)
+
+### 11. Model Registry & Version History
+![Model Registry](docs/screenshots/model_registry.png)
+
+### 12. Side-by-Side Model Comparison
+![Side-by-Side Model Comparison](docs/screenshots/model_comparison.png)
+
+### 13. Staff Management & Role Permissions
+![Staff Management](docs/screenshots/admin_section.png)
+
+### 14. User Profile & Account Settings
+![User Profile](docs/screenshots/user_profile.png)
+
 ## Features
 
 ### AI Recommendation System
