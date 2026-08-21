@@ -70,6 +70,9 @@ backend/models/*.pkl
 backend/models/*.joblib
 backend/models/recommendation/
 backend/models/forecast/
+!backend/models/recommendation_model.pkl
+!backend/models/forecast_model.pkl
+!backend/models/*.joblib
 !backend/models/model_registry.json
 !backend/models/model_metadata.json
 !backend/models/training_settings.json
@@ -82,7 +85,7 @@ backend/models/forecast/
 # -----------------------------------------------
 data/backups/
 data/processed/master_dataset.csv
-data/processed/forecasting_features.csv
+!data/processed/forecasting_features.csv
 
 # Root-level generated CSV outputs
 forecast_results.csv

@@ -132,6 +132,27 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+from fastapi import Request
+from fastapi.responses import JSONResponse
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    """Global exception handler ensuring CORS headers are present even on internal errors."""
+    origin = request.headers.get("origin", "*")
+    headers = {
+        "Access-Control-Allow-Origin": origin if origin != "*" else "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "*",
+        "Access-Control-Allow-Headers": "*",
+    }
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal Server Error", "error": str(exc)},
+        headers=headers,
+    )
+
+
 # ---------------------------------------------------------------------------
 # Register Routers
 # ---------------------------------------------------------------------------
