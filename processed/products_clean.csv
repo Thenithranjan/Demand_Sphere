@@ -1,0 +1,501 @@
+ProductID,SKU,ProductName,Category,SubCategory,Brand,Color,Size,Fabric,SeasonalDemandTag,Gender,Price,CostPrice,SupplierID,ProductStatus,ImageURL,ProfitMargin
+P0001,RAM-VESH-0001,Ramraj Cotton Veshti Purple Standard,Men,Veshti,Ramraj Cotton,Purple,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,1380.0,896.0,SUP001,Active,images/products/P0001.jpg,35.07
+P0002,UAT-LUNG-0002,Uathayam Lungi Red 4m,Men,Lungi,Uathayam,Red,4m,Cotton,"Summer, Aadi Sale",Men,440.0,351.0,SUP002,Active,images/products/P0002.jpg,20.23
+P0003,BIB-KURT-0003,Biba Kurtas Black M,Women,Kurtas,Biba,Black,M,Silk,"Diwali, Temple Festival",Women,2020.0,1200.0,SUP003,Active,images/products/P0003.jpg,40.59
+P0004,FAB-BEDC-0004,Fabindia Bed Covers Yellow King,Home & Lifestyle,Bed Covers,Fabindia,Yellow,King,Cotton,Summer,Unisex,1030.0,764.0,SUP004,Active,images/products/P0004.jpg,25.83
+P0005,FAB-PILL-0005,Fabindia Pillow Covers Orange Single,Home & Lifestyle,Pillow Covers,Fabindia,Orange,Single,Cotton,All Season,Unisex,700.0,503.0,SUP005,Active,images/products/P0005.jpg,28.14
+P0006,PRI-BABY-0006,Prisma Baby Dresses Gold 1-5 Years,Kids,Baby Dresses,Prisma,Gold,1-5 Years,Cotton,All Season,Kids,760.0,468.0,SUP006,Active,images/products/P0006.jpg,38.42
+P0007,FAB-BEDS-0007,Fabindia Bedsheets Gold Single,Home & Lifestyle,Bedsheets,Fabindia,Gold,Single,Cotton,Summer,Unisex,600.0,344.0,SUP007,Active,images/products/P0007.jpg,42.67
+P0008,BIB-SHRE-0008,Biba Shree Orange XL,Women,Shree,Biba,Orange,XL,Handloom,"Navratri, Wedding",Women,1600.0,1217.0,SUP008,Active,images/products/P0008.jpg,23.94
+P0009,PRI-GIFT-0009,Prisma Gift Boxes CSK Yellow L,Kids,Gift Boxes,Prisma,CSK Yellow,L,Cotton,All Season,Kids,2360.0,1389.0,SUP009,Active,images/products/P0009.jpg,41.14
+P0010,UAT-LUNG-0010,Uathayam Lungi Maroon 2m,Men,Lungi,Uathayam,Maroon,2m,Cotton,"Summer, Aadi Sale",Men,420.0,313.0,SUP010,Active,images/products/P0010.jpg,25.48
+P0011,FAB-BEDC-0011,Fabindia Bed Covers RCB Red Double,Home & Lifestyle,Bed Covers,Fabindia,RCB Red,Double,Cotton,Summer,Unisex,1970.0,1464.0,SUP011,Active,images/products/P0011.jpg,25.69
+P0012,WES-BABY-0012,Westside Baby Dresses Cream 1-5 Years,Kids,Baby Dresses,Westside,Cream,1-5 Years,Cotton,All Season,Kids,920.0,624.0,SUP012,Active,images/products/P0012.jpg,32.17
+P0013,GUE-IPLJ-0013,Guess IPL Jerseys Black S,Accessories,IPL Jerseys,Guess,Black,S,Polyester,IPL Season,Unisex,2000.0,1379.0,SUP013,Active,images/products/P0013.jpg,31.05
+P0014,RAM-POLI-0014,Ramraj Cotton Political Veshti Cream 4m,Men,Political Veshti,Ramraj Cotton,Cream,4m,Cotton,"Political Campaign, Independence Day",Men,1310.0,913.0,SUP014,Active,images/products/P0014.jpg,30.31
+P0015,PRI-GIFT-0015,Prisma Gift Boxes Gold L,Kids,Gift Boxes,Prisma,Gold,L,Cotton,All Season,Kids,2410.0,1454.0,SUP015,Active,images/products/P0015.jpg,39.67
+P0016,NET-PANT-0016,Netplay Pants Cream XS,Men,Pants,Netplay,Cream,XS,Polyester Blend,All Season,Men,890.0,590.0,SUP016,Active,images/products/P0016.jpg,33.71
+P0017,UAT-TOWE-0017,Uathayam Towels Pink L,Accessories,Towels,Uathayam,Pink,L,Cotton,All Season,Unisex,300.0,226.0,SUP017,Active,images/products/P0017.jpg,24.67
+P0018,PRI-TOWE-0018,Prisma Towels Black XL,Men,Towels,Prisma,Black,XL,Cotton,All Season,Men,360.0,282.0,SUP018,Active,images/products/P0018.jpg,21.67
+P0019,PRI-GIFT-0019,Prisma Gift Boxes Green M,Kids,Gift Boxes,Prisma,Green,M,Cotton,All Season,Kids,1610.0,907.0,SUP019,Active,images/products/P0019.jpg,43.66
+P0020,FAB-BEDC-0020,Fabindia Bed Covers White Single,Home & Lifestyle,Bed Covers,Fabindia,White,Single,Cotton,Summer,Unisex,2410.0,1352.0,SUP020,Active,images/products/P0020.jpg,43.9
+P0021,NET-IPLJ-0021,Netplay IPL Jerseys Maroon XL,Accessories,IPL Jerseys,Netplay,Maroon,XL,Polyester,IPL Season,Unisex,1820.0,1094.0,SUP021,Active,images/products/P0021.jpg,39.89
+P0022,FAB-PILL-0022,Fabindia Pillow Covers Black King,Home & Lifestyle,Pillow Covers,Fabindia,Black,King,Cotton,All Season,Unisex,370.0,203.0,SUP022,Active,images/products/P0022.jpg,45.14
+P0023,FAB-CURT-0023,Fabindia Curtains Cream King,Home & Lifestyle,Curtains,Fabindia,Cream,King,Cotton,All Season,Unisex,1020.0,711.0,SUP023,Active,images/products/P0023.jpg,30.29
+P0024,WES-FROC-0024,Westside Frocks CSK Yellow S,Women,Frocks,Westside,CSK Yellow,S,Polyester Blend,"Christmas, New Year",Women,2320.0,1742.0,SUP024,Active,images/products/P0024.jpg,24.91
+P0025,NET-SOCK-0025,Netplay Socks RCB Red S,Accessories,Socks,Netplay,RCB Red,S,Cotton,"School Season, Winter",Unisex,90.0,69.0,SUP025,Active,images/products/P0025.jpg,23.33
+P0026,PRI-RAIN-0026,Prisma Raincoats Gold XXL,Accessories,Raincoats,Prisma,Gold,XXL,Polyester,Monsoon,Unisex,920.0,557.0,SUP001,Active,images/products/P0026.jpg,39.46
+P0027,PRI-RAIN-0027,Prisma Raincoats Gold XL,Accessories,Raincoats,Prisma,Gold,XL,Polyester,Monsoon,Unisex,640.0,378.0,SUP002,Active,images/products/P0027.jpg,40.94
+P0028,FAB-PILL-0028,Fabindia Pillow Covers Yellow Single,Home & Lifestyle,Pillow Covers,Fabindia,Yellow,Single,Cotton,All Season,Unisex,530.0,320.0,SUP003,Active,images/products/P0028.jpg,39.62
+P0029,UAT-VESH-0029,Uathayam Veshti Yellow Standard,Men,Veshti,Uathayam,Yellow,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,2040.0,1314.0,SUP004,Active,images/products/P0029.jpg,35.59
+P0030,FAB-KURT-0030,Fabindia Kurtas CSK Yellow M,Women,Kurtas,Fabindia,CSK Yellow,M,Silk,"Diwali, Temple Festival",Women,1590.0,1199.0,SUP005,Active,images/products/P0030.jpg,24.59
+P0031,FAB-PUTT-0031,Fabindia Puttu Vasti Black L,Women,Puttu Vasti,Fabindia,Black,L,Silk,Wedding,Women,24730.0,18960.0,SUP006,Active,images/products/P0031.jpg,23.33
+P0032,KAN-SARE-0032,Kanchipuram Handloom Sarees Maroon 4m,Women,Sarees,Kanchipuram Handloom,Maroon,4m,Handloom,"Wedding, Diwali, Navratri",Women,7950.0,6329.0,SUP007,Active,images/products/P0032.jpg,20.39
+P0033,PRI-TOWE-0033,Prisma Towels Gold M,Men,Towels,Prisma,Gold,M,Cotton,All Season,Men,270.0,149.0,SUP008,Active,images/products/P0033.jpg,44.81
+P0034,PRI-GIFT-0034,Prisma Gift Boxes Black S,Kids,Gift Boxes,Prisma,Black,S,Cotton,All Season,Kids,1710.0,1332.0,SUP009,Active,images/products/P0034.jpg,22.11
+P0035,FAB-KURT-0035,Fabindia Kurtas Gold S,Women,Kurtas,Fabindia,Gold,S,Cotton,"Diwali, Temple Festival",Women,2290.0,1708.0,SUP010,Active,images/products/P0035.jpg,25.41
+P0036,UAT-TOWE-0036,Uathayam Towels Pink XS,Men,Towels,Uathayam,Pink,XS,Cotton,All Season,Men,430.0,311.0,SUP011,Active,images/products/P0036.jpg,27.67
+P0037,KAN-SARE-0037,Kanchipuram Handloom Sarees Blue Standard,Women,Sarees,Kanchipuram Handloom,Blue,Standard,Handloom,"Wedding, Diwali, Navratri",Women,12000.0,8412.0,SUP012,Active,images/products/P0037.jpg,29.9
+P0038,FAB-PILL-0038,Fabindia Pillow Covers Red King,Home & Lifestyle,Pillow Covers,Fabindia,Red,King,Cotton,All Season,Unisex,350.0,220.0,SUP013,Active,images/products/P0038.jpg,37.14
+P0039,NET-IPLJ-0039,Netplay IPL Jerseys Orange S,Accessories,IPL Jerseys,Netplay,Orange,S,Polyester,IPL Season,Unisex,1930.0,1450.0,SUP014,Active,images/products/P0039.jpg,24.87
+P0040,BIB-KURT-0040,Biba Kurtas MI Blue XS,Women,Kurtas,Biba,MI Blue,XS,Cotton,"Diwali, Temple Festival",Women,1700.0,1305.0,SUP015,Active,images/products/P0040.jpg,23.24
+P0041,UAT-LUNG-0041,Uathayam Lungi Black 4m,Men,Lungi,Uathayam,Black,4m,Cotton,"Summer, Aadi Sale",Men,450.0,320.0,SUP016,Active,images/products/P0041.jpg,28.89
+P0042,FAB-BEDC-0042,Fabindia Bed Covers Yellow Double,Home & Lifestyle,Bed Covers,Fabindia,Yellow,Double,Cotton,Summer,Unisex,2340.0,1516.0,SUP017,Active,images/products/P0042.jpg,35.21
+P0043,BIB-SARE-0043,Biba Sarees Cream 4m,Women,Sarees,Biba,Cream,4m,Silk,"Wedding, Diwali, Navratri",Women,7890.0,4826.0,SUP018,Active,images/products/P0043.jpg,38.83
+P0044,KAN-PUTT-0044,Kanchipuram Handloom Puttu Vasti Red L,Women,Puttu Vasti,Kanchipuram Handloom,Red,L,Silk,Wedding,Women,22410.0,15943.0,SUP019,Active,images/products/P0044.jpg,28.86
+P0045,FAB-CURT-0045,Fabindia Curtains Maroon Single,Home & Lifestyle,Curtains,Fabindia,Maroon,Single,Polyester,All Season,Unisex,1390.0,866.0,SUP020,Active,images/products/P0045.jpg,37.7
+P0046,PRI-SCHO-0046,Prisma School Uniforms Maroon XL,Kids,School Uniforms,Prisma,Maroon,XL,Polyester Blend,"School Season, Monsoon",Kids,580.0,395.0,SUP021,Active,images/products/P0046.jpg,31.9
+P0047,PRI-UMBR-0047,Prisma Umbrellas Green L,Accessories,Umbrellas,Prisma,Green,L,Polyester,Monsoon,Unisex,650.0,388.0,SUP022,Active,images/products/P0047.jpg,40.31
+P0048,WES-BABY-0048,Westside Baby Dresses Orange 3-6 Months,Kids,Baby Dresses,Westside,Orange,3-6 Months,Cotton,All Season,Kids,1020.0,806.0,SUP023,Active,images/products/P0048.jpg,20.98
+P0049,PRI-BABY-0049,Prisma Baby Dresses RCB Red 6-12 Years,Kids,Baby Dresses,Prisma,RCB Red,6-12 Years,Cotton,All Season,Kids,1100.0,693.0,SUP024,Active,images/products/P0049.jpg,37.0
+P0050,NET-IPLJ-0050,Netplay IPL Jerseys Gold XS,Accessories,IPL Jerseys,Netplay,Gold,XS,Polyester,IPL Season,Unisex,880.0,514.0,SUP025,Active,images/products/P0050.jpg,41.59
+P0051,FAB-BEDS-0051,Fabindia Bedsheets Yellow Double,Home & Lifestyle,Bedsheets,Fabindia,Yellow,Double,Cotton,Summer,Unisex,960.0,560.0,SUP001,Active,images/products/P0051.jpg,41.67
+P0052,RAM-TOWE-0052,Ramraj Cotton Towels White XS,Accessories,Towels,Ramraj Cotton,White,XS,Cotton,All Season,Unisex,180.0,115.0,SUP002,Active,images/products/P0052.jpg,36.11
+P0053,GUE-BELT-0053,Guess Belts Red XS,Accessories,Belts,Guess,Red,XS,Leather,All Season,Unisex,620.0,419.0,SUP003,Active,images/products/P0053.jpg,32.42
+P0054,BIB-SARE-0054,Biba Sarees Green Standard,Women,Sarees,Biba,Green,Standard,Handloom,"Wedding, Diwali, Navratri",Women,8800.0,4952.0,SUP004,Active,images/products/P0054.jpg,43.73
+P0055,RAY-SHIR-0055,Raymond Shirts Gold XS,Men,Shirts,Raymond,Gold,XS,Linen,"Summer, Independence Day, Republic Day",Men,970.0,749.0,SUP005,Active,images/products/P0055.jpg,22.78
+P0056,WES-FROC-0056,Westside Frocks CSK Yellow S,Women,Frocks,Westside,CSK Yellow,S,Polyester Blend,"Christmas, New Year",Women,1920.0,1378.0,SUP006,Active,images/products/P0056.jpg,28.23
+P0057,PRI-SCHO-0057,Prisma School Uniforms CSK Yellow XL,Kids,School Uniforms,Prisma,CSK Yellow,XL,Polyester Blend,"School Season, Monsoon",Kids,970.0,772.0,SUP007,Active,images/products/P0057.jpg,20.41
+P0058,FAB-CURT-0058,Fabindia Curtains CSK Yellow Single,Home & Lifestyle,Curtains,Fabindia,CSK Yellow,Single,Polyester,All Season,Unisex,2090.0,1334.0,SUP008,Active,images/products/P0058.jpg,36.17
+P0059,RAM-TOWE-0059,Ramraj Cotton Towels Green XL,Men,Towels,Ramraj Cotton,Green,XL,Cotton,All Season,Men,290.0,207.0,SUP009,Active,images/products/P0059.jpg,28.62
+P0060,PRI-SOCK-0060,Prisma Socks Gold XXL,Accessories,Socks,Prisma,Gold,XXL,Cotton,"School Season, Winter",Unisex,60.0,34.0,SUP010,Active,images/products/P0060.jpg,43.33
+P0061,UAT-VESH-0061,Uathayam Veshti Gold 4m,Men,Veshti,Uathayam,Gold,4m,Cotton,"Pongal, Temple Festival, Summer",Men,790.0,534.0,SUP011,Active,images/products/P0061.jpg,32.41
+P0062,FAB-BEDC-0062,Fabindia Bed Covers Yellow King,Home & Lifestyle,Bed Covers,Fabindia,Yellow,King,Cotton,Summer,Unisex,2030.0,1584.0,SUP012,Active,images/products/P0062.jpg,21.97
+P0063,NET-SOCK-0063,Netplay Socks CSK Yellow L,Accessories,Socks,Netplay,CSK Yellow,L,Cotton,"School Season, Winter",Unisex,120.0,79.0,SUP013,Active,images/products/P0063.jpg,34.17
+P0064,KAN-PUTT-0064,Kanchipuram Handloom Puttu Vasti Orange S,Women,Puttu Vasti,Kanchipuram Handloom,Orange,S,Silk,Wedding,Women,8390.0,4742.0,SUP014,Active,images/products/P0064.jpg,43.48
+P0065,PRI-GIFT-0065,Prisma Gift Boxes Blue XXL,Kids,Gift Boxes,Prisma,Blue,XXL,Cotton,All Season,Kids,1070.0,740.0,SUP015,Active,images/products/P0065.jpg,30.84
+P0066,BIB-KURT-0066,Biba Kurtas Orange S,Women,Kurtas,Biba,Orange,S,Silk,"Diwali, Temple Festival",Women,890.0,557.0,SUP016,Active,images/products/P0066.jpg,37.42
+P0067,KAN-PUTT-0067,Kanchipuram Handloom Puttu Vasti Cream XXL,Women,Puttu Vasti,Kanchipuram Handloom,Cream,XXL,Silk,Wedding,Women,16270.0,11629.0,SUP017,Active,images/products/P0067.jpg,28.52
+P0068,RAY-SHIR-0068,Raymond Shirts Pink XXL,Men,Shirts,Raymond,Pink,XXL,Linen,"Summer, Independence Day, Republic Day",Men,930.0,653.0,SUP018,Active,images/products/P0068.jpg,29.78
+P0069,WES-FROC-0069,Westside Frocks Pink S,Women,Frocks,Westside,Pink,S,Polyester Blend,"Christmas, New Year",Women,2410.0,1671.0,SUP019,Active,images/products/P0069.jpg,30.66
+P0070,WES-FROC-0070,Westside Frocks Purple XS,Women,Frocks,Westside,Purple,XS,Cotton,"Christmas, New Year",Women,2490.0,1518.0,SUP020,Active,images/products/P0070.jpg,39.04
+P0071,PRI-GIFT-0071,Prisma Gift Boxes CSK Yellow S,Kids,Gift Boxes,Prisma,CSK Yellow,S,Cotton,All Season,Kids,2030.0,1600.0,SUP021,Active,images/products/P0071.jpg,21.18
+P0072,FAB-SARE-0072,Fabindia Sarees Red Standard,Women,Sarees,Fabindia,Red,Standard,Silk,"Wedding, Diwali, Navratri",Women,2380.0,1806.0,SUP022,Active,images/products/P0072.jpg,24.12
+P0073,PRI-BABY-0073,Prisma Baby Dresses Yellow 0-3 Months,Kids,Baby Dresses,Prisma,Yellow,0-3 Months,Cotton,All Season,Kids,520.0,291.0,SUP023,Active,images/products/P0073.jpg,44.04
+P0074,PRI-RAIN-0074,Prisma Raincoats Maroon M,Accessories,Raincoats,Prisma,Maroon,M,Polyester,Monsoon,Unisex,750.0,445.0,SUP024,Active,images/products/P0074.jpg,40.67
+P0075,PRI-PANT-0075,Prisma Pants Yellow XL,Men,Pants,Prisma,Yellow,XL,Linen,All Season,Men,680.0,451.0,SUP025,Active,images/products/P0075.jpg,33.68
+P0076,FAB-BEDS-0076,Fabindia Bedsheets Purple Single,Home & Lifestyle,Bedsheets,Fabindia,Purple,Single,Cotton,Summer,Unisex,1050.0,630.0,SUP001,Active,images/products/P0076.jpg,40.0
+P0077,PRI-UMBR-0077,Prisma Umbrellas Gold L,Accessories,Umbrellas,Prisma,Gold,L,Polyester,Monsoon,Unisex,440.0,278.0,SUP002,Active,images/products/P0077.jpg,36.82
+P0078,PRI-SCHO-0078,Prisma School Uniforms Maroon M,Kids,School Uniforms,Prisma,Maroon,M,Cotton,"School Season, Monsoon",Kids,300.0,191.0,SUP003,Active,images/products/P0078.jpg,36.33
+P0079,PRI-BABY-0079,Prisma Baby Dresses Orange 6-12 Years,Kids,Baby Dresses,Prisma,Orange,6-12 Years,Cotton,All Season,Kids,440.0,271.0,SUP004,Active,images/products/P0079.jpg,38.41
+P0080,FAB-PILL-0080,Fabindia Pillow Covers Orange King,Home & Lifestyle,Pillow Covers,Fabindia,Orange,King,Cotton,All Season,Unisex,790.0,558.0,SUP005,Active,images/products/P0080.jpg,29.37
+P0081,PRI-UMBR-0081,Prisma Umbrellas CSK Yellow M,Accessories,Umbrellas,Prisma,CSK Yellow,M,Polyester,Monsoon,Unisex,430.0,287.0,SUP006,Active,images/products/P0081.jpg,33.26
+P0082,UAT-LUNG-0082,Uathayam Lungi Pink 9 Yards,Men,Lungi,Uathayam,Pink,9 Yards,Cotton,"Summer, Aadi Sale",Men,780.0,447.0,SUP007,Active,images/products/P0082.jpg,42.69
+P0083,FAB-SARE-0083,Fabindia Sarees Purple 9 Yards,Women,Sarees,Fabindia,Purple,9 Yards,Handloom,"Wedding, Diwali, Navratri",Women,7130.0,4388.0,SUP008,Active,images/products/P0083.jpg,38.46
+P0084,FAB-PILL-0084,Fabindia Pillow Covers Yellow Single,Home & Lifestyle,Pillow Covers,Fabindia,Yellow,Single,Cotton,All Season,Unisex,740.0,457.0,SUP009,Active,images/products/P0084.jpg,38.24
+P0085,RAY-BELT-0085,Raymond Belts Gold XXL,Accessories,Belts,Raymond,Gold,XXL,Leather,All Season,Unisex,230.0,135.0,SUP010,Active,images/products/P0085.jpg,41.3
+P0086,UAT-TOWE-0086,Uathayam Towels Gold XS,Accessories,Towels,Uathayam,Gold,XS,Cotton,All Season,Unisex,440.0,253.0,SUP011,Active,images/products/P0086.jpg,42.5
+P0087,NET-SOCK-0087,Netplay Socks Black S,Accessories,Socks,Netplay,Black,S,Cotton,"School Season, Winter",Unisex,110.0,69.0,SUP012,Active,images/products/P0087.jpg,37.27
+P0088,RAM-TOWE-0088,Ramraj Cotton Towels CSK Yellow S,Accessories,Towels,Ramraj Cotton,CSK Yellow,S,Cotton,All Season,Unisex,350.0,196.0,SUP013,Active,images/products/P0088.jpg,44.0
+P0089,UAT-LUNG-0089,Uathayam Lungi Green Standard,Men,Lungi,Uathayam,Green,Standard,Cotton,"Summer, Aadi Sale",Men,460.0,344.0,SUP014,Active,images/products/P0089.jpg,25.22
+P0090,BIB-FROC-0090,Biba Frocks RCB Red XXL,Women,Frocks,Biba,RCB Red,XXL,Polyester Blend,"Christmas, New Year",Women,2100.0,1254.0,SUP015,Active,images/products/P0090.jpg,40.29
+P0091,FAB-SHRE-0091,Fabindia Shree MI Blue M,Women,Shree,Fabindia,MI Blue,M,Handloom,"Navratri, Wedding",Women,1390.0,969.0,SUP016,Active,images/products/P0091.jpg,30.29
+P0092,NET-PANT-0092,Netplay Pants Black XXL,Men,Pants,Netplay,Black,XXL,Linen,All Season,Men,1330.0,1008.0,SUP017,Active,images/products/P0092.jpg,24.21
+P0093,PRI-GIFT-0093,Prisma Gift Boxes MI Blue XL,Kids,Gift Boxes,Prisma,MI Blue,XL,Cotton,All Season,Kids,1870.0,1065.0,SUP018,Active,images/products/P0093.jpg,43.05
+P0094,WES-BABY-0094,Westside Baby Dresses Black 0-3 Months,Kids,Baby Dresses,Westside,Black,0-3 Months,Cotton,All Season,Kids,990.0,552.0,SUP019,Active,images/products/P0094.jpg,44.24
+P0095,FAB-CURT-0095,Fabindia Curtains Blue King,Home & Lifestyle,Curtains,Fabindia,Blue,King,Polyester,All Season,Unisex,1530.0,981.0,SUP020,Active,images/products/P0095.jpg,35.88
+P0096,PRI-SCHO-0096,Prisma School Uniforms Purple S,Kids,School Uniforms,Prisma,Purple,S,Polyester Blend,"School Season, Monsoon",Kids,500.0,340.0,SUP021,Active,images/products/P0096.jpg,32.0
+P0097,PRI-UMBR-0097,Prisma Umbrellas White M,Accessories,Umbrellas,Prisma,White,M,Polyester,Monsoon,Unisex,410.0,235.0,SUP022,Active,images/products/P0097.jpg,42.68
+P0098,PRI-UMBR-0098,Prisma Umbrellas Orange XL,Accessories,Umbrellas,Prisma,Orange,XL,Polyester,Monsoon,Unisex,920.0,552.0,SUP023,Active,images/products/P0098.jpg,40.0
+P0099,PRI-GIFT-0099,Prisma Gift Boxes Pink L,Kids,Gift Boxes,Prisma,Pink,L,Cotton,All Season,Kids,2190.0,1235.0,SUP024,Active,images/products/P0099.jpg,43.61
+P0100,PRI-RAIN-0100,Prisma Raincoats Green XXL,Accessories,Raincoats,Prisma,Green,XXL,Polyester,Monsoon,Unisex,590.0,397.0,SUP025,Active,images/products/P0100.jpg,32.71
+P0101,PRI-BABY-0101,Prisma Baby Dresses Cream 3-6 Months,Kids,Baby Dresses,Prisma,Cream,3-6 Months,Cotton,All Season,Kids,1450.0,1055.0,SUP001,Active,images/products/P0101.jpg,27.24
+P0102,RAM-VESH-0102,Ramraj Cotton Veshti Pink 2m,Men,Veshti,Ramraj Cotton,Pink,2m,Cotton,"Pongal, Temple Festival, Summer",Men,1510.0,1096.0,SUP002,Active,images/products/P0102.jpg,27.42
+P0103,RAM-TOWE-0103,Ramraj Cotton Towels Purple M,Men,Towels,Ramraj Cotton,Purple,M,Cotton,All Season,Men,110.0,78.0,SUP003,Active,images/products/P0103.jpg,29.09
+P0104,RAM-TOWE-0104,Ramraj Cotton Towels RCB Red XS,Men,Towels,Ramraj Cotton,RCB Red,XS,Cotton,All Season,Men,470.0,281.0,SUP004,Active,images/products/P0104.jpg,40.21
+P0105,RAM-TOWE-0105,Ramraj Cotton Towels CSK Yellow XS,Accessories,Towels,Ramraj Cotton,CSK Yellow,XS,Cotton,All Season,Unisex,280.0,173.0,SUP005,Active,images/products/P0105.jpg,38.21
+P0106,PRI-RAIN-0106,Prisma Raincoats RCB Red L,Accessories,Raincoats,Prisma,RCB Red,L,Polyester,Monsoon,Unisex,1320.0,892.0,SUP006,Active,images/products/P0106.jpg,32.42
+P0107,FAB-BEDC-0107,Fabindia Bed Covers RCB Red Double,Home & Lifestyle,Bed Covers,Fabindia,RCB Red,Double,Cotton,Summer,Unisex,1730.0,1167.0,SUP007,Active,images/products/P0107.jpg,32.54
+P0108,FAB-CURT-0108,Fabindia Curtains White Single,Home & Lifestyle,Curtains,Fabindia,White,Single,Cotton,All Season,Unisex,1430.0,941.0,SUP008,Active,images/products/P0108.jpg,34.2
+P0109,FAB-PUTT-0109,Fabindia Puttu Vasti CSK Yellow XS,Women,Puttu Vasti,Fabindia,CSK Yellow,XS,Silk,Wedding,Women,18800.0,13982.0,SUP009,Active,images/products/P0109.jpg,25.63
+P0110,UAT-TOWE-0110,Uathayam Towels Black XXL,Accessories,Towels,Uathayam,Black,XXL,Cotton,All Season,Unisex,280.0,180.0,SUP010,Active,images/products/P0110.jpg,35.71
+P0111,FAB-PILL-0111,Fabindia Pillow Covers Yellow Double,Home & Lifestyle,Pillow Covers,Fabindia,Yellow,Double,Cotton,All Season,Unisex,380.0,218.0,SUP011,Active,images/products/P0111.jpg,42.63
+P0112,GUE-IPLJ-0112,Guess IPL Jerseys RCB Red M,Accessories,IPL Jerseys,Guess,RCB Red,M,Polyester,IPL Season,Unisex,910.0,581.0,SUP012,Active,images/products/P0112.jpg,36.15
+P0113,UAT-VESH-0113,Uathayam Veshti Red 9 Yards,Men,Veshti,Uathayam,Red,9 Yards,Cotton,"Pongal, Temple Festival, Summer",Men,730.0,506.0,SUP013,Active,images/products/P0113.jpg,30.68
+P0114,UAT-POLI-0114,Uathayam Political Veshti Cream 9 Yards,Men,Political Veshti,Uathayam,Cream,9 Yards,Cotton,"Political Campaign, Independence Day",Men,1140.0,858.0,SUP014,Active,images/products/P0114.jpg,24.74
+P0115,FAB-CURT-0115,Fabindia Curtains Black Single,Home & Lifestyle,Curtains,Fabindia,Black,Single,Polyester,All Season,Unisex,1850.0,1165.0,SUP015,Active,images/products/P0115.jpg,37.03
+P0116,PRI-RAIN-0116,Prisma Raincoats CSK Yellow M,Accessories,Raincoats,Prisma,CSK Yellow,M,Polyester,Monsoon,Unisex,560.0,362.0,SUP016,Active,images/products/P0116.jpg,35.36
+P0117,RAM-VESH-0117,Ramraj Cotton Veshti Orange 2m,Men,Veshti,Ramraj Cotton,Orange,2m,Cotton,"Pongal, Temple Festival, Summer",Men,1050.0,679.0,SUP017,Active,images/products/P0117.jpg,35.33
+P0118,WES-FROC-0118,Westside Frocks Maroon L,Women,Frocks,Westside,Maroon,L,Polyester Blend,"Christmas, New Year",Women,930.0,628.0,SUP018,Active,images/products/P0118.jpg,32.47
+P0119,GUE-IPLJ-0119,Guess IPL Jerseys Gold L,Accessories,IPL Jerseys,Guess,Gold,L,Polyester,IPL Season,Unisex,1090.0,807.0,SUP019,Active,images/products/P0119.jpg,25.96
+P0120,RAM-TOWE-0120,Ramraj Cotton Towels Blue XL,Men,Towels,Ramraj Cotton,Blue,XL,Cotton,All Season,Men,160.0,96.0,SUP020,Active,images/products/P0120.jpg,40.0
+P0121,FAB-BEDC-0121,Fabindia Bed Covers Yellow King,Home & Lifestyle,Bed Covers,Fabindia,Yellow,King,Cotton,Summer,Unisex,1430.0,859.0,SUP021,Active,images/products/P0121.jpg,39.93
+P0122,KAN-PUTT-0122,Kanchipuram Handloom Puttu Vasti Cream XS,Women,Puttu Vasti,Kanchipuram Handloom,Cream,XS,Silk,Wedding,Women,10550.0,7186.0,SUP022,Active,images/products/P0122.jpg,31.89
+P0123,KAN-PUTT-0123,Kanchipuram Handloom Puttu Vasti Cream XXL,Women,Puttu Vasti,Kanchipuram Handloom,Cream,XXL,Silk,Wedding,Women,10720.0,7827.0,SUP023,Active,images/products/P0123.jpg,26.99
+P0124,PRI-BABY-0124,Prisma Baby Dresses Red 3-6 Months,Kids,Baby Dresses,Prisma,Red,3-6 Months,Cotton,All Season,Kids,580.0,360.0,SUP024,Active,images/products/P0124.jpg,37.93
+P0125,FAB-BEDS-0125,Fabindia Bedsheets Cream Single,Home & Lifestyle,Bedsheets,Fabindia,Cream,Single,Cotton,Summer,Unisex,940.0,748.0,SUP025,Active,images/products/P0125.jpg,20.43
+P0126,BIB-KURT-0126,Biba Kurtas White XL,Women,Kurtas,Biba,White,XL,Cotton,"Diwali, Temple Festival",Women,1940.0,1111.0,SUP001,Active,images/products/P0126.jpg,42.73
+P0127,FAB-PUTT-0127,Fabindia Puttu Vasti Maroon L,Women,Puttu Vasti,Fabindia,Maroon,L,Silk,Wedding,Women,12900.0,7121.0,SUP002,Active,images/products/P0127.jpg,44.8
+P0128,NET-SOCK-0128,Netplay Socks Red L,Accessories,Socks,Netplay,Red,L,Cotton,"School Season, Winter",Unisex,230.0,130.0,SUP003,Active,images/products/P0128.jpg,43.48
+P0129,PRI-GIFT-0129,Prisma Gift Boxes Maroon L,Kids,Gift Boxes,Prisma,Maroon,L,Cotton,All Season,Kids,2100.0,1548.0,SUP004,Active,images/products/P0129.jpg,26.29
+P0130,RAM-VESH-0130,Ramraj Cotton Veshti Maroon 2m,Men,Veshti,Ramraj Cotton,Maroon,2m,Cotton,"Pongal, Temple Festival, Summer",Men,1060.0,637.0,SUP005,Active,images/products/P0130.jpg,39.91
+P0131,FAB-BEDC-0131,Fabindia Bed Covers Pink Single,Home & Lifestyle,Bed Covers,Fabindia,Pink,Single,Cotton,Summer,Unisex,2860.0,2052.0,SUP006,Active,images/products/P0131.jpg,28.25
+P0132,BIB-SHRE-0132,Biba Shree Black S,Women,Shree,Biba,Black,S,Silk,"Navratri, Wedding",Women,2000.0,1390.0,SUP007,Active,images/products/P0132.jpg,30.5
+P0133,GUE-DRES-0133,Guess Dresses Orange XL,Women,Dresses,Guess,Orange,XL,Cotton,"Christmas, New Year",Women,2060.0,1238.0,SUP008,Active,images/products/P0133.jpg,39.9
+P0134,PRI-UMBR-0134,Prisma Umbrellas Gold M,Accessories,Umbrellas,Prisma,Gold,M,Polyester,Monsoon,Unisex,600.0,422.0,SUP009,Active,images/products/P0134.jpg,29.67
+P0135,FAB-BEDS-0135,Fabindia Bedsheets Green Double,Home & Lifestyle,Bedsheets,Fabindia,Green,Double,Cotton,Summer,Unisex,990.0,616.0,SUP010,Active,images/products/P0135.jpg,37.78
+P0136,WES-BABY-0136,Westside Baby Dresses Green 6-12 Years,Kids,Baby Dresses,Westside,Green,6-12 Years,Cotton,All Season,Kids,1300.0,1022.0,SUP011,Active,images/products/P0136.jpg,21.38
+P0137,WES-BABY-0137,Westside Baby Dresses Purple 3-6 Months,Kids,Baby Dresses,Westside,Purple,3-6 Months,Cotton,All Season,Kids,1300.0,851.0,SUP012,Active,images/products/P0137.jpg,34.54
+P0138,PRI-SHIR-0138,Prisma Shirts Blue XL,Men,Shirts,Prisma,Blue,XL,Polyester Blend,"Summer, Independence Day, Republic Day",Men,320.0,178.0,SUP013,Active,images/products/P0138.jpg,44.38
+P0139,FAB-PILL-0139,Fabindia Pillow Covers Pink King,Home & Lifestyle,Pillow Covers,Fabindia,Pink,King,Cotton,All Season,Unisex,540.0,328.0,SUP014,Active,images/products/P0139.jpg,39.26
+P0140,NET-PANT-0140,Netplay Pants Green XXL,Men,Pants,Netplay,Green,XXL,Linen,All Season,Men,940.0,529.0,SUP015,Active,images/products/P0140.jpg,43.72
+P0141,PRI-GIFT-0141,Prisma Gift Boxes MI Blue XS,Kids,Gift Boxes,Prisma,MI Blue,XS,Cotton,All Season,Kids,1830.0,1146.0,SUP016,Active,images/products/P0141.jpg,37.38
+P0142,PRI-TOWE-0142,Prisma Towels Yellow XL,Accessories,Towels,Prisma,Yellow,XL,Cotton,All Season,Unisex,230.0,165.0,SUP017,Active,images/products/P0142.jpg,28.26
+P0143,FAB-CURT-0143,Fabindia Curtains CSK Yellow King,Home & Lifestyle,Curtains,Fabindia,CSK Yellow,King,Cotton,All Season,Unisex,1660.0,932.0,SUP018,Active,images/products/P0143.jpg,43.86
+P0144,NET-SOCK-0144,Netplay Socks Orange XS,Accessories,Socks,Netplay,Orange,XS,Cotton,"School Season, Winter",Unisex,110.0,60.0,SUP019,Active,images/products/P0144.jpg,45.45
+P0145,PRI-TOWE-0145,Prisma Towels Maroon M,Accessories,Towels,Prisma,Maroon,M,Cotton,All Season,Unisex,110.0,73.0,SUP020,Active,images/products/P0145.jpg,33.64
+P0146,FAB-PUTT-0146,Fabindia Puttu Vasti Purple XL,Women,Puttu Vasti,Fabindia,Purple,XL,Silk,Wedding,Women,19670.0,14788.0,SUP021,Active,images/products/P0146.jpg,24.82
+P0147,FAB-BEDS-0147,Fabindia Bedsheets Yellow Single,Home & Lifestyle,Bedsheets,Fabindia,Yellow,Single,Cotton,Summer,Unisex,1040.0,811.0,SUP022,Active,images/products/P0147.jpg,22.02
+P0148,RAM-TOWE-0148,Ramraj Cotton Towels MI Blue XS,Men,Towels,Ramraj Cotton,MI Blue,XS,Cotton,All Season,Men,210.0,122.0,SUP023,Active,images/products/P0148.jpg,41.9
+P0149,FAB-CURT-0149,Fabindia Curtains Cream King,Home & Lifestyle,Curtains,Fabindia,Cream,King,Cotton,All Season,Unisex,1260.0,767.0,SUP024,Active,images/products/P0149.jpg,39.13
+P0150,FAB-SHRE-0150,Fabindia Shree Black XS,Women,Shree,Fabindia,Black,XS,Silk,"Navratri, Wedding",Women,1880.0,1187.0,SUP025,Active,images/products/P0150.jpg,36.86
+P0151,RAM-TOWE-0151,Ramraj Cotton Towels Gold XXL,Accessories,Towels,Ramraj Cotton,Gold,XXL,Cotton,All Season,Unisex,280.0,197.0,SUP001,Active,images/products/P0151.jpg,29.64
+P0152,GUE-IPLJ-0152,Guess IPL Jerseys Cream M,Accessories,IPL Jerseys,Guess,Cream,M,Polyester,IPL Season,Unisex,1520.0,1066.0,SUP002,Active,images/products/P0152.jpg,29.87
+P0153,PRI-BABY-0153,Prisma Baby Dresses CSK Yellow 1-5 Years,Kids,Baby Dresses,Prisma,CSK Yellow,1-5 Years,Cotton,All Season,Kids,1500.0,919.0,SUP003,Active,images/products/P0153.jpg,38.73
+P0154,NAN-LUNG-0154,Nandu Lungi Lungi RCB Red 2m,Men,Lungi,Nandu Lungi,RCB Red,2m,Cotton,"Summer, Aadi Sale",Men,450.0,282.0,SUP004,Active,images/products/P0154.jpg,37.33
+P0155,FAB-BEDC-0155,Fabindia Bed Covers Yellow King,Home & Lifestyle,Bed Covers,Fabindia,Yellow,King,Cotton,Summer,Unisex,2600.0,1474.0,SUP005,Active,images/products/P0155.jpg,43.31
+P0156,PRI-BABY-0156,Prisma Baby Dresses Red 6-12 Years,Kids,Baby Dresses,Prisma,Red,6-12 Years,Cotton,All Season,Kids,910.0,657.0,SUP006,Active,images/products/P0156.jpg,27.8
+P0157,PRI-SOCK-0157,Prisma Socks Black XXL,Accessories,Socks,Prisma,Black,XXL,Cotton,"School Season, Winter",Unisex,190.0,145.0,SUP007,Active,images/products/P0157.jpg,23.68
+P0158,BIB-SHRE-0158,Biba Shree Gold XL,Women,Shree,Biba,Gold,XL,Silk,"Navratri, Wedding",Women,1680.0,1337.0,SUP008,Active,images/products/P0158.jpg,20.42
+P0159,PRI-RAIN-0159,Prisma Raincoats Orange S,Accessories,Raincoats,Prisma,Orange,S,Polyester,Monsoon,Unisex,1170.0,750.0,SUP009,Active,images/products/P0159.jpg,35.9
+P0160,RAM-TOWE-0160,Ramraj Cotton Towels Blue XXL,Accessories,Towels,Ramraj Cotton,Blue,XXL,Cotton,All Season,Unisex,130.0,82.0,SUP010,Active,images/products/P0160.jpg,36.92
+P0161,RAM-TOWE-0161,Ramraj Cotton Towels Orange XS,Accessories,Towels,Ramraj Cotton,Orange,XS,Cotton,All Season,Unisex,260.0,151.0,SUP011,Active,images/products/P0161.jpg,41.92
+P0162,PRI-UMBR-0162,Prisma Umbrellas Yellow XL,Accessories,Umbrellas,Prisma,Yellow,XL,Polyester,Monsoon,Unisex,610.0,413.0,SUP012,Active,images/products/P0162.jpg,32.3
+P0163,NAN-LUNG-0163,Nandu Lungi Lungi White 2m,Men,Lungi,Nandu Lungi,White,2m,Cotton,"Summer, Aadi Sale",Men,980.0,659.0,SUP013,Active,images/products/P0163.jpg,32.76
+P0164,PRI-BABY-0164,Prisma Baby Dresses CSK Yellow 6-12 Years,Kids,Baby Dresses,Prisma,CSK Yellow,6-12 Years,Cotton,All Season,Kids,660.0,391.0,SUP014,Active,images/products/P0164.jpg,40.76
+P0165,FAB-CURT-0165,Fabindia Curtains Yellow Single,Home & Lifestyle,Curtains,Fabindia,Yellow,Single,Cotton,All Season,Unisex,2650.0,2085.0,SUP015,Active,images/products/P0165.jpg,21.32
+P0166,FAB-PILL-0166,Fabindia Pillow Covers Blue Single,Home & Lifestyle,Pillow Covers,Fabindia,Blue,Single,Cotton,All Season,Unisex,650.0,443.0,SUP016,Active,images/products/P0166.jpg,31.85
+P0167,GUE-IPLJ-0167,Guess IPL Jerseys Blue XS,Accessories,IPL Jerseys,Guess,Blue,XS,Polyester,IPL Season,Unisex,1730.0,1213.0,SUP017,Active,images/products/P0167.jpg,29.88
+P0168,FAB-KURT-0168,Fabindia Kurtas Gold S,Women,Kurtas,Fabindia,Gold,S,Cotton,"Diwali, Temple Festival",Women,1700.0,990.0,SUP018,Active,images/products/P0168.jpg,41.76
+P0169,WES-FROC-0169,Westside Frocks Pink XS,Women,Frocks,Westside,Pink,XS,Polyester Blend,"Christmas, New Year",Women,580.0,380.0,SUP019,Active,images/products/P0169.jpg,34.48
+P0170,NET-SHIR-0170,Netplay Shirts RCB Red XS,Men,Shirts,Netplay,RCB Red,XS,Polyester Blend,"Summer, Independence Day, Republic Day",Men,630.0,384.0,SUP020,Active,images/products/P0170.jpg,39.05
+P0171,RAM-SHIR-0171,Ramraj Cotton Shirts Blue L,Men,Shirts,Ramraj Cotton,Blue,L,Polyester Blend,"Summer, Independence Day, Republic Day",Men,810.0,523.0,SUP021,Active,images/products/P0171.jpg,35.43
+P0172,NET-SHIR-0172,Netplay Shirts Pink XS,Men,Shirts,Netplay,Pink,XS,Linen,"Summer, Independence Day, Republic Day",Men,320.0,207.0,SUP022,Active,images/products/P0172.jpg,35.31
+P0173,FAB-PILL-0173,Fabindia Pillow Covers Maroon Double,Home & Lifestyle,Pillow Covers,Fabindia,Maroon,Double,Cotton,All Season,Unisex,390.0,295.0,SUP023,Active,images/products/P0173.jpg,24.36
+P0174,BIB-SHRE-0174,Biba Shree Cream S,Women,Shree,Biba,Cream,S,Handloom,"Navratri, Wedding",Women,3250.0,2453.0,SUP024,Active,images/products/P0174.jpg,24.52
+P0175,GUE-IPLJ-0175,Guess IPL Jerseys MI Blue XL,Accessories,IPL Jerseys,Guess,MI Blue,XL,Polyester,IPL Season,Unisex,1230.0,971.0,SUP025,Active,images/products/P0175.jpg,21.06
+P0176,PRI-TOWE-0176,Prisma Towels Maroon S,Men,Towels,Prisma,Maroon,S,Cotton,All Season,Men,460.0,329.0,SUP001,Active,images/products/P0176.jpg,28.48
+P0177,FAB-BEDC-0177,Fabindia Bed Covers Black Single,Home & Lifestyle,Bed Covers,Fabindia,Black,Single,Cotton,Summer,Unisex,1130.0,844.0,SUP002,Active,images/products/P0177.jpg,25.31
+P0178,BIB-SARE-0178,Biba Sarees Cream 2m,Women,Sarees,Biba,Cream,2m,Handloom,"Wedding, Diwali, Navratri",Women,7450.0,5088.0,SUP003,Active,images/products/P0178.jpg,31.7
+P0179,UAT-SCHO-0179,Uathayam School Uniforms MI Blue XXL,Kids,School Uniforms,Uathayam,MI Blue,XXL,Cotton,"School Season, Monsoon",Kids,480.0,319.0,SUP004,Active,images/products/P0179.jpg,33.54
+P0180,UAT-SCHO-0180,Uathayam School Uniforms Purple S,Kids,School Uniforms,Uathayam,Purple,S,Polyester Blend,"School Season, Monsoon",Kids,550.0,304.0,SUP005,Active,images/products/P0180.jpg,44.73
+P0181,KAN-PUTT-0181,Kanchipuram Handloom Puttu Vasti Orange XXL,Women,Puttu Vasti,Kanchipuram Handloom,Orange,XXL,Silk,Wedding,Women,17970.0,12511.0,SUP006,Active,images/products/P0181.jpg,30.38
+P0182,PRI-BABY-0182,Prisma Baby Dresses Pink 6-12 Years,Kids,Baby Dresses,Prisma,Pink,6-12 Years,Cotton,All Season,Kids,1060.0,617.0,SUP007,Active,images/products/P0182.jpg,41.79
+P0183,PRI-GIFT-0183,Prisma Gift Boxes Cream S,Kids,Gift Boxes,Prisma,Cream,S,Cotton,All Season,Kids,970.0,565.0,SUP008,Active,images/products/P0183.jpg,41.75
+P0184,FAB-SARE-0184,Fabindia Sarees Black 4m,Women,Sarees,Fabindia,Black,4m,Silk,"Wedding, Diwali, Navratri",Women,2650.0,1662.0,SUP009,Active,images/products/P0184.jpg,37.28
+P0185,FAB-PUTT-0185,Fabindia Puttu Vasti Black M,Women,Puttu Vasti,Fabindia,Black,M,Silk,Wedding,Women,11930.0,9331.0,SUP010,Active,images/products/P0185.jpg,21.79
+P0186,GUE-BELT-0186,Guess Belts MI Blue XS,Accessories,Belts,Guess,MI Blue,XS,Leather,All Season,Unisex,340.0,246.0,SUP011,Active,images/products/P0186.jpg,27.65
+P0187,RAM-TOWE-0187,Ramraj Cotton Towels Gold XL,Accessories,Towels,Ramraj Cotton,Gold,XL,Cotton,All Season,Unisex,140.0,94.0,SUP012,Active,images/products/P0187.jpg,32.86
+P0188,PRI-UMBR-0188,Prisma Umbrellas White XS,Accessories,Umbrellas,Prisma,White,XS,Polyester,Monsoon,Unisex,740.0,533.0,SUP013,Active,images/products/P0188.jpg,27.97
+P0189,PRI-BABY-0189,Prisma Baby Dresses Blue 3-6 Months,Kids,Baby Dresses,Prisma,Blue,3-6 Months,Cotton,All Season,Kids,340.0,254.0,SUP014,Active,images/products/P0189.jpg,25.29
+P0190,RAM-TOWE-0190,Ramraj Cotton Towels Gold XS,Men,Towels,Ramraj Cotton,Gold,XS,Cotton,All Season,Men,330.0,204.0,SUP015,Active,images/products/P0190.jpg,38.18
+P0191,PRI-BABY-0191,Prisma Baby Dresses Gold 3-6 Months,Kids,Baby Dresses,Prisma,Gold,3-6 Months,Cotton,All Season,Kids,830.0,534.0,SUP016,Active,images/products/P0191.jpg,35.66
+P0192,FAB-PUTT-0192,Fabindia Puttu Vasti Cream M,Women,Puttu Vasti,Fabindia,Cream,M,Silk,Wedding,Women,6860.0,5444.0,SUP017,Active,images/products/P0192.jpg,20.64
+P0193,FAB-CURT-0193,Fabindia Curtains RCB Red King,Home & Lifestyle,Curtains,Fabindia,RCB Red,King,Cotton,All Season,Unisex,2010.0,1468.0,SUP018,Active,images/products/P0193.jpg,26.97
+P0194,FAB-BEDS-0194,Fabindia Bedsheets Purple Double,Home & Lifestyle,Bedsheets,Fabindia,Purple,Double,Cotton,Summer,Unisex,1350.0,984.0,SUP019,Active,images/products/P0194.jpg,27.11
+P0195,FAB-BEDC-0195,Fabindia Bed Covers Maroon Double,Home & Lifestyle,Bed Covers,Fabindia,Maroon,Double,Cotton,Summer,Unisex,2880.0,1757.0,SUP020,Active,images/products/P0195.jpg,38.99
+P0196,RAY-PANT-0196,Raymond Pants Blue XL,Men,Pants,Raymond,Blue,XL,Linen,All Season,Men,700.0,441.0,SUP021,Active,images/products/P0196.jpg,37.0
+P0197,GUE-IPLJ-0197,Guess IPL Jerseys Orange M,Accessories,IPL Jerseys,Guess,Orange,M,Polyester,IPL Season,Unisex,810.0,485.0,SUP022,Active,images/products/P0197.jpg,40.12
+P0198,PRI-GIFT-0198,Prisma Gift Boxes Yellow S,Kids,Gift Boxes,Prisma,Yellow,S,Cotton,All Season,Kids,2220.0,1316.0,SUP023,Active,images/products/P0198.jpg,40.72
+P0199,UAT-VESH-0199,Uathayam Veshti Purple 4m,Men,Veshti,Uathayam,Purple,4m,Cotton,"Pongal, Temple Festival, Summer",Men,1320.0,978.0,SUP024,Active,images/products/P0199.jpg,25.91
+P0200,RAM-VESH-0200,Ramraj Cotton Veshti CSK Yellow Standard,Men,Veshti,Ramraj Cotton,CSK Yellow,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,1050.0,649.0,SUP025,Active,images/products/P0200.jpg,38.19
+P0201,GUE-DRES-0201,Guess Dresses Gold L,Women,Dresses,Guess,Gold,L,Cotton,"Christmas, New Year",Women,1240.0,963.0,SUP001,Active,images/products/P0201.jpg,22.34
+P0202,GUE-DRES-0202,Guess Dresses Maroon XL,Women,Dresses,Guess,Maroon,XL,Polyester Blend,"Christmas, New Year",Women,3260.0,2253.0,SUP002,Active,images/products/P0202.jpg,30.89
+P0203,PRI-GIFT-0203,Prisma Gift Boxes Black XL,Kids,Gift Boxes,Prisma,Black,XL,Cotton,All Season,Kids,1120.0,625.0,SUP003,Active,images/products/P0203.jpg,44.2
+P0204,PRI-SCHO-0204,Prisma School Uniforms Gold XS,Kids,School Uniforms,Prisma,Gold,XS,Cotton,"School Season, Monsoon",Kids,550.0,347.0,SUP004,Active,images/products/P0204.jpg,36.91
+P0205,PRI-GIFT-0205,Prisma Gift Boxes RCB Red XS,Kids,Gift Boxes,Prisma,RCB Red,XS,Cotton,All Season,Kids,2360.0,1775.0,SUP005,Active,images/products/P0205.jpg,24.79
+P0206,PRI-SCHO-0206,Prisma School Uniforms Red S,Kids,School Uniforms,Prisma,Red,S,Cotton,"School Season, Monsoon",Kids,960.0,659.0,SUP006,Active,images/products/P0206.jpg,31.35
+P0207,PRI-BABY-0207,Prisma Baby Dresses Black 3-6 Months,Kids,Baby Dresses,Prisma,Black,3-6 Months,Cotton,All Season,Kids,1420.0,832.0,SUP007,Active,images/products/P0207.jpg,41.41
+P0208,FAB-PUTT-0208,Fabindia Puttu Vasti White M,Women,Puttu Vasti,Fabindia,White,M,Silk,Wedding,Women,24080.0,17076.0,SUP008,Active,images/products/P0208.jpg,29.09
+P0209,UAT-SCHO-0209,Uathayam School Uniforms Black XS,Kids,School Uniforms,Uathayam,Black,XS,Cotton,"School Season, Monsoon",Kids,740.0,510.0,SUP009,Active,images/products/P0209.jpg,31.08
+P0210,BIB-SHRE-0210,Biba Shree Purple M,Women,Shree,Biba,Purple,M,Silk,"Navratri, Wedding",Women,3230.0,2330.0,SUP010,Active,images/products/P0210.jpg,27.86
+P0211,FAB-BEDS-0211,Fabindia Bedsheets Green Single,Home & Lifestyle,Bedsheets,Fabindia,Green,Single,Cotton,Summer,Unisex,1940.0,1355.0,SUP011,Active,images/products/P0211.jpg,30.15
+P0212,NAN-LUNG-0212,Nandu Lungi Lungi Orange Standard,Men,Lungi,Nandu Lungi,Orange,Standard,Cotton,"Summer, Aadi Sale",Men,710.0,446.0,SUP012,Active,images/products/P0212.jpg,37.18
+P0213,FAB-PILL-0213,Fabindia Pillow Covers CSK Yellow Single,Home & Lifestyle,Pillow Covers,Fabindia,CSK Yellow,Single,Cotton,All Season,Unisex,210.0,154.0,SUP013,Active,images/products/P0213.jpg,26.67
+P0214,UAT-VESH-0214,Uathayam Veshti White 2m,Men,Veshti,Uathayam,White,2m,Cotton,"Pongal, Temple Festival, Summer",Men,2240.0,1789.0,SUP014,Active,images/products/P0214.jpg,20.13
+P0215,WES-FROC-0215,Westside Frocks CSK Yellow S,Women,Frocks,Westside,CSK Yellow,S,Cotton,"Christmas, New Year",Women,1910.0,1152.0,SUP015,Active,images/products/P0215.jpg,39.69
+P0216,WES-DRES-0216,Westside Dresses Red XXL,Women,Dresses,Westside,Red,XXL,Cotton,"Christmas, New Year",Women,2750.0,1848.0,SUP016,Active,images/products/P0216.jpg,32.8
+P0217,FAB-BEDS-0217,Fabindia Bedsheets RCB Red Single,Home & Lifestyle,Bedsheets,Fabindia,RCB Red,Single,Cotton,Summer,Unisex,2340.0,1720.0,SUP017,Active,images/products/P0217.jpg,26.5
+P0218,RAY-BELT-0218,Raymond Belts White S,Accessories,Belts,Raymond,White,S,Leather,All Season,Unisex,570.0,440.0,SUP018,Active,images/products/P0218.jpg,22.81
+P0219,RAM-LUNG-0219,Ramraj Cotton Lungi CSK Yellow 4m,Men,Lungi,Ramraj Cotton,CSK Yellow,4m,Cotton,"Summer, Aadi Sale",Men,600.0,455.0,SUP019,Active,images/products/P0219.jpg,24.17
+P0220,PRI-BABY-0220,Prisma Baby Dresses Blue 3-6 Months,Kids,Baby Dresses,Prisma,Blue,3-6 Months,Cotton,All Season,Kids,1220.0,782.0,SUP020,Active,images/products/P0220.jpg,35.9
+P0221,NET-SOCK-0221,Netplay Socks RCB Red XXL,Accessories,Socks,Netplay,RCB Red,XXL,Cotton,"School Season, Winter",Unisex,220.0,168.0,SUP021,Active,images/products/P0221.jpg,23.64
+P0222,UAT-TOWE-0222,Uathayam Towels Blue XS,Men,Towels,Uathayam,Blue,XS,Cotton,All Season,Men,470.0,344.0,SUP022,Active,images/products/P0222.jpg,26.81
+P0223,PRI-GIFT-0223,Prisma Gift Boxes Yellow XS,Kids,Gift Boxes,Prisma,Yellow,XS,Cotton,All Season,Kids,1010.0,649.0,SUP023,Active,images/products/P0223.jpg,35.74
+P0224,FAB-SHRE-0224,Fabindia Shree Gold XL,Women,Shree,Fabindia,Gold,XL,Silk,"Navratri, Wedding",Women,2590.0,1441.0,SUP024,Active,images/products/P0224.jpg,44.36
+P0225,PRI-GIFT-0225,Prisma Gift Boxes Red M,Kids,Gift Boxes,Prisma,Red,M,Cotton,All Season,Kids,2110.0,1524.0,SUP025,Active,images/products/P0225.jpg,27.77
+P0226,PRI-GIFT-0226,Prisma Gift Boxes Red L,Kids,Gift Boxes,Prisma,Red,L,Cotton,All Season,Kids,1840.0,1299.0,SUP001,Active,images/products/P0226.jpg,29.4
+P0227,PRI-SOCK-0227,Prisma Socks Purple S,Accessories,Socks,Prisma,Purple,S,Cotton,"School Season, Winter",Unisex,90.0,61.0,SUP002,Active,images/products/P0227.jpg,32.22
+P0228,RAY-PANT-0228,Raymond Pants CSK Yellow M,Men,Pants,Raymond,CSK Yellow,M,Polyester Blend,All Season,Men,1120.0,878.0,SUP003,Active,images/products/P0228.jpg,21.61
+P0229,FAB-KURT-0229,Fabindia Kurtas RCB Red L,Women,Kurtas,Fabindia,RCB Red,L,Silk,"Diwali, Temple Festival",Women,1430.0,1040.0,SUP004,Active,images/products/P0229.jpg,27.27
+P0230,RAM-POLI-0230,Ramraj Cotton Political Veshti MI Blue Standard,Men,Political Veshti,Ramraj Cotton,MI Blue,Standard,Cotton,"Political Campaign, Independence Day",Men,500.0,384.0,SUP005,Active,images/products/P0230.jpg,23.2
+P0231,RAY-BELT-0231,Raymond Belts White S,Accessories,Belts,Raymond,White,S,Leather,All Season,Unisex,390.0,264.0,SUP006,Active,images/products/P0231.jpg,32.31
+P0232,FAB-CURT-0232,Fabindia Curtains White Double,Home & Lifestyle,Curtains,Fabindia,White,Double,Cotton,All Season,Unisex,1920.0,1372.0,SUP007,Active,images/products/P0232.jpg,28.54
+P0233,BIB-FROC-0233,Biba Frocks Cream L,Women,Frocks,Biba,Cream,L,Cotton,"Christmas, New Year",Women,780.0,571.0,SUP008,Active,images/products/P0233.jpg,26.79
+P0234,BIB-KURT-0234,Biba Kurtas Orange M,Women,Kurtas,Biba,Orange,M,Silk,"Diwali, Temple Festival",Women,1290.0,1030.0,SUP009,Active,images/products/P0234.jpg,20.16
+P0235,PRI-UMBR-0235,Prisma Umbrellas Black XS,Accessories,Umbrellas,Prisma,Black,XS,Polyester,Monsoon,Unisex,390.0,232.0,SUP010,Active,images/products/P0235.jpg,40.51
+P0236,FAB-CURT-0236,Fabindia Curtains Blue Single,Home & Lifestyle,Curtains,Fabindia,Blue,Single,Polyester,All Season,Unisex,1590.0,979.0,SUP011,Active,images/products/P0236.jpg,38.43
+P0237,PRI-TOWE-0237,Prisma Towels Black XS,Men,Towels,Prisma,Black,XS,Cotton,All Season,Men,250.0,147.0,SUP012,Active,images/products/P0237.jpg,41.2
+P0238,FAB-BEDC-0238,Fabindia Bed Covers White Double,Home & Lifestyle,Bed Covers,Fabindia,White,Double,Cotton,Summer,Unisex,2910.0,1883.0,SUP013,Active,images/products/P0238.jpg,35.29
+P0239,WES-DRES-0239,Westside Dresses RCB Red XL,Women,Dresses,Westside,RCB Red,XL,Polyester Blend,"Christmas, New Year",Women,2170.0,1245.0,SUP014,Active,images/products/P0239.jpg,42.63
+P0240,RAM-VESH-0240,Ramraj Cotton Veshti Yellow 9 Yards,Men,Veshti,Ramraj Cotton,Yellow,9 Yards,Cotton,"Pongal, Temple Festival, Summer",Men,1730.0,978.0,SUP015,Active,images/products/P0240.jpg,43.47
+P0241,WES-BABY-0241,Westside Baby Dresses Red 1-5 Years,Kids,Baby Dresses,Westside,Red,1-5 Years,Cotton,All Season,Kids,660.0,484.0,SUP016,Active,images/products/P0241.jpg,26.67
+P0242,FAB-CURT-0242,Fabindia Curtains MI Blue Double,Home & Lifestyle,Curtains,Fabindia,MI Blue,Double,Polyester,All Season,Unisex,1180.0,881.0,SUP017,Active,images/products/P0242.jpg,25.34
+P0243,FAB-KURT-0243,Fabindia Kurtas Gold XS,Women,Kurtas,Fabindia,Gold,XS,Silk,"Diwali, Temple Festival",Women,1800.0,1096.0,SUP018,Active,images/products/P0243.jpg,39.11
+P0244,FAB-KURT-0244,Fabindia Kurtas CSK Yellow L,Women,Kurtas,Fabindia,CSK Yellow,L,Cotton,"Diwali, Temple Festival",Women,1700.0,1029.0,SUP019,Active,images/products/P0244.jpg,39.47
+P0245,FAB-BEDC-0245,Fabindia Bed Covers White Single,Home & Lifestyle,Bed Covers,Fabindia,White,Single,Cotton,Summer,Unisex,1890.0,1223.0,SUP020,Active,images/products/P0245.jpg,35.29
+P0246,FAB-SARE-0246,Fabindia Sarees Yellow 9 Yards,Women,Sarees,Fabindia,Yellow,9 Yards,Cotton,"Wedding, Diwali, Navratri",Women,8130.0,4877.0,SUP021,Active,images/products/P0246.jpg,40.01
+P0247,RAM-POLI-0247,Ramraj Cotton Political Veshti CSK Yellow 2m,Men,Political Veshti,Ramraj Cotton,CSK Yellow,2m,Cotton,"Political Campaign, Independence Day",Men,1120.0,820.0,SUP022,Active,images/products/P0247.jpg,26.79
+P0248,FAB-BEDC-0248,Fabindia Bed Covers Red Single,Home & Lifestyle,Bed Covers,Fabindia,Red,Single,Cotton,Summer,Unisex,840.0,528.0,SUP023,Active,images/products/P0248.jpg,37.14
+P0249,UAT-SCHO-0249,Uathayam School Uniforms Orange XS,Kids,School Uniforms,Uathayam,Orange,XS,Cotton,"School Season, Monsoon",Kids,490.0,293.0,SUP024,Active,images/products/P0249.jpg,40.2
+P0250,PRI-GIFT-0250,Prisma Gift Boxes Orange XL,Kids,Gift Boxes,Prisma,Orange,XL,Cotton,All Season,Kids,2270.0,1708.0,SUP025,Active,images/products/P0250.jpg,24.76
+P0251,FAB-SHRE-0251,Fabindia Shree Red XS,Women,Shree,Fabindia,Red,XS,Handloom,"Navratri, Wedding",Women,2700.0,1583.0,SUP001,Active,images/products/P0251.jpg,41.37
+P0252,FAB-BEDC-0252,Fabindia Bed Covers Orange Double,Home & Lifestyle,Bed Covers,Fabindia,Orange,Double,Cotton,Summer,Unisex,2230.0,1583.0,SUP002,Active,images/products/P0252.jpg,29.01
+P0253,FAB-BEDC-0253,Fabindia Bed Covers Cream King,Home & Lifestyle,Bed Covers,Fabindia,Cream,King,Cotton,Summer,Unisex,1160.0,739.0,SUP003,Active,images/products/P0253.jpg,36.29
+P0254,RAY-PANT-0254,Raymond Pants MI Blue S,Men,Pants,Raymond,MI Blue,S,Linen,All Season,Men,1420.0,824.0,SUP004,Active,images/products/P0254.jpg,41.97
+P0255,RAY-BELT-0255,Raymond Belts Green L,Accessories,Belts,Raymond,Green,L,Leather,All Season,Unisex,240.0,167.0,SUP005,Active,images/products/P0255.jpg,30.42
+P0256,RAM-TOWE-0256,Ramraj Cotton Towels White S,Accessories,Towels,Ramraj Cotton,White,S,Cotton,All Season,Unisex,100.0,69.0,SUP006,Active,images/products/P0256.jpg,31.0
+P0257,PRI-RAIN-0257,Prisma Raincoats Red M,Accessories,Raincoats,Prisma,Red,M,Polyester,Monsoon,Unisex,1200.0,913.0,SUP007,Active,images/products/P0257.jpg,23.92
+P0258,FAB-PILL-0258,Fabindia Pillow Covers Pink Double,Home & Lifestyle,Pillow Covers,Fabindia,Pink,Double,Cotton,All Season,Unisex,220.0,134.0,SUP008,Active,images/products/P0258.jpg,39.09
+P0259,PRI-GIFT-0259,Prisma Gift Boxes Cream S,Kids,Gift Boxes,Prisma,Cream,S,Cotton,All Season,Kids,1480.0,958.0,SUP009,Active,images/products/P0259.jpg,35.27
+P0260,NAN-LUNG-0260,Nandu Lungi Lungi RCB Red 9 Yards,Men,Lungi,Nandu Lungi,RCB Red,9 Yards,Cotton,"Summer, Aadi Sale",Men,730.0,569.0,SUP010,Active,images/products/P0260.jpg,22.05
+P0261,RAM-VESH-0261,Ramraj Cotton Veshti MI Blue Standard,Men,Veshti,Ramraj Cotton,MI Blue,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,1460.0,1123.0,SUP011,Active,images/products/P0261.jpg,23.08
+P0262,PRI-GIFT-0262,Prisma Gift Boxes Orange S,Kids,Gift Boxes,Prisma,Orange,S,Cotton,All Season,Kids,2290.0,1510.0,SUP012,Active,images/products/P0262.jpg,34.06
+P0263,BIB-KURT-0263,Biba Kurtas Yellow S,Women,Kurtas,Biba,Yellow,S,Cotton,"Diwali, Temple Festival",Women,1650.0,912.0,SUP013,Active,images/products/P0263.jpg,44.73
+P0264,BIB-SHRE-0264,Biba Shree CSK Yellow L,Women,Shree,Biba,CSK Yellow,L,Handloom,"Navratri, Wedding",Women,1310.0,836.0,SUP014,Active,images/products/P0264.jpg,36.18
+P0265,FAB-KURT-0265,Fabindia Kurtas CSK Yellow L,Women,Kurtas,Fabindia,CSK Yellow,L,Silk,"Diwali, Temple Festival",Women,1390.0,897.0,SUP015,Active,images/products/P0265.jpg,35.47
+P0266,UAT-VESH-0266,Uathayam Veshti Pink Standard,Men,Veshti,Uathayam,Pink,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,1800.0,1153.0,SUP016,Active,images/products/P0266.jpg,35.94
+P0267,PRI-GIFT-0267,Prisma Gift Boxes Green XS,Kids,Gift Boxes,Prisma,Green,XS,Cotton,All Season,Kids,1840.0,1250.0,SUP017,Active,images/products/P0267.jpg,32.07
+P0268,FAB-BEDC-0268,Fabindia Bed Covers RCB Red King,Home & Lifestyle,Bed Covers,Fabindia,RCB Red,King,Cotton,Summer,Unisex,2230.0,1746.0,SUP018,Active,images/products/P0268.jpg,21.7
+P0269,NET-SOCK-0269,Netplay Socks Green S,Accessories,Socks,Netplay,Green,S,Cotton,"School Season, Winter",Unisex,150.0,91.0,SUP019,Active,images/products/P0269.jpg,39.33
+P0270,FAB-BEDC-0270,Fabindia Bed Covers Orange Single,Home & Lifestyle,Bed Covers,Fabindia,Orange,Single,Cotton,Summer,Unisex,2930.0,2236.0,SUP020,Active,images/products/P0270.jpg,23.69
+P0271,RAY-PANT-0271,Raymond Pants CSK Yellow XL,Men,Pants,Raymond,CSK Yellow,XL,Polyester Blend,All Season,Men,770.0,439.0,SUP021,Active,images/products/P0271.jpg,42.99
+P0272,UAT-VESH-0272,Uathayam Veshti Green 4m,Men,Veshti,Uathayam,Green,4m,Cotton,"Pongal, Temple Festival, Summer",Men,810.0,604.0,SUP022,Active,images/products/P0272.jpg,25.43
+P0273,RAY-PANT-0273,Raymond Pants White XXL,Men,Pants,Raymond,White,XXL,Polyester Blend,All Season,Men,730.0,444.0,SUP023,Active,images/products/P0273.jpg,39.18
+P0274,WES-FROC-0274,Westside Frocks Purple XL,Women,Frocks,Westside,Purple,XL,Polyester Blend,"Christmas, New Year",Women,2000.0,1136.0,SUP024,Active,images/products/P0274.jpg,43.2
+P0275,PRI-TOWE-0275,Prisma Towels Black XS,Accessories,Towels,Prisma,Black,XS,Cotton,All Season,Unisex,170.0,98.0,SUP025,Active,images/products/P0275.jpg,42.35
+P0276,GUE-IPLJ-0276,Guess IPL Jerseys Gold XL,Accessories,IPL Jerseys,Guess,Gold,XL,Polyester,IPL Season,Unisex,1190.0,761.0,SUP001,Active,images/products/P0276.jpg,36.05
+P0277,FAB-CURT-0277,Fabindia Curtains Orange King,Home & Lifestyle,Curtains,Fabindia,Orange,King,Polyester,All Season,Unisex,2980.0,1960.0,SUP002,Active,images/products/P0277.jpg,34.23
+P0278,RAM-LUNG-0278,Ramraj Cotton Lungi White 9 Yards,Men,Lungi,Ramraj Cotton,White,9 Yards,Cotton,"Summer, Aadi Sale",Men,1030.0,671.0,SUP003,Active,images/products/P0278.jpg,34.85
+P0279,BIB-FROC-0279,Biba Frocks Orange L,Women,Frocks,Biba,Orange,L,Polyester Blend,"Christmas, New Year",Women,770.0,615.0,SUP004,Active,images/products/P0279.jpg,20.13
+P0280,UAT-TOWE-0280,Uathayam Towels Pink S,Accessories,Towels,Uathayam,Pink,S,Cotton,All Season,Unisex,350.0,270.0,SUP005,Active,images/products/P0280.jpg,22.86
+P0281,NET-SOCK-0281,Netplay Socks White S,Accessories,Socks,Netplay,White,S,Cotton,"School Season, Winter",Unisex,90.0,67.0,SUP006,Active,images/products/P0281.jpg,25.56
+P0282,PRI-PANT-0282,Prisma Pants MI Blue L,Men,Pants,Prisma,MI Blue,L,Cotton,All Season,Men,1110.0,648.0,SUP007,Active,images/products/P0282.jpg,41.62
+P0283,FAB-BEDC-0283,Fabindia Bed Covers CSK Yellow Double,Home & Lifestyle,Bed Covers,Fabindia,CSK Yellow,Double,Cotton,Summer,Unisex,1460.0,819.0,SUP008,Active,images/products/P0283.jpg,43.9
+P0284,PRI-BABY-0284,Prisma Baby Dresses Yellow 0-3 Months,Kids,Baby Dresses,Prisma,Yellow,0-3 Months,Cotton,All Season,Kids,620.0,390.0,SUP009,Active,images/products/P0284.jpg,37.1
+P0285,PRI-GIFT-0285,Prisma Gift Boxes Gold S,Kids,Gift Boxes,Prisma,Gold,S,Cotton,All Season,Kids,1650.0,1297.0,SUP010,Active,images/products/P0285.jpg,21.39
+P0286,FAB-SHRE-0286,Fabindia Shree Blue XL,Women,Shree,Fabindia,Blue,XL,Handloom,"Navratri, Wedding",Women,1700.0,984.0,SUP011,Active,images/products/P0286.jpg,42.12
+P0287,UAT-TOWE-0287,Uathayam Towels Blue XXL,Men,Towels,Uathayam,Blue,XXL,Cotton,All Season,Men,220.0,129.0,SUP012,Active,images/products/P0287.jpg,41.36
+P0288,NET-SOCK-0288,Netplay Socks Cream S,Accessories,Socks,Netplay,Cream,S,Cotton,"School Season, Winter",Unisex,230.0,159.0,SUP013,Active,images/products/P0288.jpg,30.87
+P0289,GUE-DRES-0289,Guess Dresses Pink XS,Women,Dresses,Guess,Pink,XS,Polyester Blend,"Christmas, New Year",Women,1740.0,1012.0,SUP014,Active,images/products/P0289.jpg,41.84
+P0290,KAN-PUTT-0290,Kanchipuram Handloom Puttu Vasti Red XS,Women,Puttu Vasti,Kanchipuram Handloom,Red,XS,Silk,Wedding,Women,22400.0,17653.0,SUP015,Active,images/products/P0290.jpg,21.19
+P0291,RAM-SHIR-0291,Ramraj Cotton Shirts Maroon L,Men,Shirts,Ramraj Cotton,Maroon,L,Cotton,"Summer, Independence Day, Republic Day",Men,1040.0,678.0,SUP016,Active,images/products/P0291.jpg,34.81
+P0292,BIB-FROC-0292,Biba Frocks Black XXL,Women,Frocks,Biba,Black,XXL,Cotton,"Christmas, New Year",Women,2350.0,1712.0,SUP017,Active,images/products/P0292.jpg,27.15
+P0293,WES-BABY-0293,Westside Baby Dresses MI Blue 3-6 Months,Kids,Baby Dresses,Westside,MI Blue,3-6 Months,Cotton,All Season,Kids,1000.0,673.0,SUP018,Active,images/products/P0293.jpg,32.7
+P0294,FAB-SARE-0294,Fabindia Sarees Pink 2m,Women,Sarees,Fabindia,Pink,2m,Cotton,"Wedding, Diwali, Navratri",Women,9890.0,7515.0,SUP019,Active,images/products/P0294.jpg,24.01
+P0295,PRI-RAIN-0295,Prisma Raincoats White XL,Accessories,Raincoats,Prisma,White,XL,Polyester,Monsoon,Unisex,1490.0,969.0,SUP020,Active,images/products/P0295.jpg,34.97
+P0296,FAB-PUTT-0296,Fabindia Puttu Vasti White L,Women,Puttu Vasti,Fabindia,White,L,Silk,Wedding,Women,12790.0,8251.0,SUP021,Active,images/products/P0296.jpg,35.49
+P0297,UAT-SCHO-0297,Uathayam School Uniforms Purple XS,Kids,School Uniforms,Uathayam,Purple,XS,Cotton,"School Season, Monsoon",Kids,730.0,576.0,SUP022,Active,images/products/P0297.jpg,21.1
+P0298,NET-SHIR-0298,Netplay Shirts Purple M,Men,Shirts,Netplay,Purple,M,Polyester Blend,"Summer, Independence Day, Republic Day",Men,890.0,673.0,SUP023,Active,images/products/P0298.jpg,24.38
+P0299,PRI-SCHO-0299,Prisma School Uniforms White XXL,Kids,School Uniforms,Prisma,White,XXL,Cotton,"School Season, Monsoon",Kids,340.0,220.0,SUP024,Active,images/products/P0299.jpg,35.29
+P0300,WES-BABY-0300,Westside Baby Dresses Blue 1-5 Years,Kids,Baby Dresses,Westside,Blue,1-5 Years,Cotton,All Season,Kids,860.0,541.0,SUP025,Active,images/products/P0300.jpg,37.09
+P0301,PRI-BABY-0301,Prisma Baby Dresses MI Blue 6-12 Years,Kids,Baby Dresses,Prisma,MI Blue,6-12 Years,Cotton,All Season,Kids,1480.0,1065.0,SUP001,Active,images/products/P0301.jpg,28.04
+P0302,FAB-KURT-0302,Fabindia Kurtas RCB Red S,Women,Kurtas,Fabindia,RCB Red,S,Cotton,"Diwali, Temple Festival",Women,1120.0,771.0,SUP002,Active,images/products/P0302.jpg,31.16
+P0303,FAB-CURT-0303,Fabindia Curtains MI Blue Single,Home & Lifestyle,Curtains,Fabindia,MI Blue,Single,Cotton,All Season,Unisex,1260.0,826.0,SUP003,Active,images/products/P0303.jpg,34.44
+P0304,WES-BABY-0304,Westside Baby Dresses Red 6-12 Years,Kids,Baby Dresses,Westside,Red,6-12 Years,Cotton,All Season,Kids,970.0,593.0,SUP004,Active,images/products/P0304.jpg,38.87
+P0305,FAB-BEDS-0305,Fabindia Bedsheets Red Double,Home & Lifestyle,Bedsheets,Fabindia,Red,Double,Cotton,Summer,Unisex,2190.0,1264.0,SUP005,Active,images/products/P0305.jpg,42.28
+P0306,GUE-BELT-0306,Guess Belts Pink S,Accessories,Belts,Guess,Pink,S,Leather,All Season,Unisex,740.0,490.0,SUP006,Active,images/products/P0306.jpg,33.78
+P0307,FAB-SARE-0307,Fabindia Sarees Gold 9 Yards,Women,Sarees,Fabindia,Gold,9 Yards,Silk,"Wedding, Diwali, Navratri",Women,9560.0,5409.0,SUP007,Active,images/products/P0307.jpg,43.42
+P0308,RAY-BELT-0308,Raymond Belts CSK Yellow XXL,Accessories,Belts,Raymond,CSK Yellow,XXL,Leather,All Season,Unisex,370.0,286.0,SUP008,Active,images/products/P0308.jpg,22.7
+P0309,PRI-UMBR-0309,Prisma Umbrellas White XS,Accessories,Umbrellas,Prisma,White,XS,Polyester,Monsoon,Unisex,310.0,200.0,SUP009,Active,images/products/P0309.jpg,35.48
+P0310,BIB-FROC-0310,Biba Frocks CSK Yellow XL,Women,Frocks,Biba,CSK Yellow,XL,Polyester Blend,"Christmas, New Year",Women,1670.0,934.0,SUP010,Active,images/products/P0310.jpg,44.07
+P0311,PRI-RAIN-0311,Prisma Raincoats Blue XL,Accessories,Raincoats,Prisma,Blue,XL,Polyester,Monsoon,Unisex,1400.0,1103.0,SUP011,Active,images/products/P0311.jpg,21.21
+P0312,RAM-POLI-0312,Ramraj Cotton Political Veshti Blue 4m,Men,Political Veshti,Ramraj Cotton,Blue,4m,Cotton,"Political Campaign, Independence Day",Men,1300.0,956.0,SUP012,Active,images/products/P0312.jpg,26.46
+P0313,FAB-PILL-0313,Fabindia Pillow Covers Black Double,Home & Lifestyle,Pillow Covers,Fabindia,Black,Double,Cotton,All Season,Unisex,480.0,337.0,SUP013,Active,images/products/P0313.jpg,29.79
+P0314,UAT-TOWE-0314,Uathayam Towels Black L,Accessories,Towels,Uathayam,Black,L,Cotton,All Season,Unisex,250.0,192.0,SUP014,Active,images/products/P0314.jpg,23.2
+P0315,KAN-PUTT-0315,Kanchipuram Handloom Puttu Vasti Purple M,Women,Puttu Vasti,Kanchipuram Handloom,Purple,M,Silk,Wedding,Women,9470.0,5389.0,SUP015,Active,images/products/P0315.jpg,43.09
+P0316,UAT-SCHO-0316,Uathayam School Uniforms RCB Red S,Kids,School Uniforms,Uathayam,RCB Red,S,Cotton,"School Season, Monsoon",Kids,930.0,597.0,SUP016,Active,images/products/P0316.jpg,35.81
+P0317,PRI-BABY-0317,Prisma Baby Dresses Blue 0-3 Months,Kids,Baby Dresses,Prisma,Blue,0-3 Months,Cotton,All Season,Kids,320.0,214.0,SUP017,Active,images/products/P0317.jpg,33.12
+P0318,NET-IPLJ-0318,Netplay IPL Jerseys Green XXL,Accessories,IPL Jerseys,Netplay,Green,XXL,Polyester,IPL Season,Unisex,1730.0,1051.0,SUP018,Active,images/products/P0318.jpg,39.25
+P0319,PRI-GIFT-0319,Prisma Gift Boxes Blue L,Kids,Gift Boxes,Prisma,Blue,L,Cotton,All Season,Kids,2290.0,1417.0,SUP019,Active,images/products/P0319.jpg,38.12
+P0320,RAM-VESH-0320,Ramraj Cotton Veshti Purple Standard,Men,Veshti,Ramraj Cotton,Purple,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,2090.0,1477.0,SUP020,Active,images/products/P0320.jpg,29.33
+P0321,PRI-RAIN-0321,Prisma Raincoats Black M,Accessories,Raincoats,Prisma,Black,M,Polyester,Monsoon,Unisex,950.0,551.0,SUP021,Active,images/products/P0321.jpg,42.0
+P0322,PRI-GIFT-0322,Prisma Gift Boxes Cream S,Kids,Gift Boxes,Prisma,Cream,S,Cotton,All Season,Kids,1830.0,1157.0,SUP022,Active,images/products/P0322.jpg,36.78
+P0323,UAT-POLI-0323,Uathayam Political Veshti Maroon 9 Yards,Men,Political Veshti,Uathayam,Maroon,9 Yards,Cotton,"Political Campaign, Independence Day",Men,540.0,391.0,SUP023,Active,images/products/P0323.jpg,27.59
+P0324,PRI-SCHO-0324,Prisma School Uniforms Gold XXL,Kids,School Uniforms,Prisma,Gold,XXL,Cotton,"School Season, Monsoon",Kids,900.0,587.0,SUP024,Active,images/products/P0324.jpg,34.78
+P0325,RAM-TOWE-0325,Ramraj Cotton Towels Gold L,Men,Towels,Ramraj Cotton,Gold,L,Cotton,All Season,Men,160.0,121.0,SUP025,Active,images/products/P0325.jpg,24.38
+P0326,RAM-LUNG-0326,Ramraj Cotton Lungi Maroon 2m,Men,Lungi,Ramraj Cotton,Maroon,2m,Cotton,"Summer, Aadi Sale",Men,1200.0,673.0,SUP001,Active,images/products/P0326.jpg,43.92
+P0327,BIB-SHRE-0327,Biba Shree Blue L,Women,Shree,Biba,Blue,L,Silk,"Navratri, Wedding",Women,2120.0,1579.0,SUP002,Active,images/products/P0327.jpg,25.52
+P0328,WES-BABY-0328,Westside Baby Dresses RCB Red 1-5 Years,Kids,Baby Dresses,Westside,RCB Red,1-5 Years,Cotton,All Season,Kids,1000.0,755.0,SUP003,Active,images/products/P0328.jpg,24.5
+P0329,UAT-POLI-0329,Uathayam Political Veshti Black 2m,Men,Political Veshti,Uathayam,Black,2m,Cotton,"Political Campaign, Independence Day",Men,620.0,381.0,SUP004,Active,images/products/P0329.jpg,38.55
+P0330,RAY-PANT-0330,Raymond Pants Blue XL,Men,Pants,Raymond,Blue,XL,Polyester Blend,All Season,Men,640.0,433.0,SUP005,Active,images/products/P0330.jpg,32.34
+P0331,UAT-SCHO-0331,Uathayam School Uniforms MI Blue XL,Kids,School Uniforms,Uathayam,MI Blue,XL,Polyester Blend,"School Season, Monsoon",Kids,920.0,699.0,SUP006,Active,images/products/P0331.jpg,24.02
+P0332,FAB-CURT-0332,Fabindia Curtains Purple Single,Home & Lifestyle,Curtains,Fabindia,Purple,Single,Polyester,All Season,Unisex,1060.0,819.0,SUP007,Active,images/products/P0332.jpg,22.74
+P0333,FAB-CURT-0333,Fabindia Curtains Yellow Single,Home & Lifestyle,Curtains,Fabindia,Yellow,Single,Cotton,All Season,Unisex,2680.0,2090.0,SUP008,Active,images/products/P0333.jpg,22.01
+P0334,PRI-SOCK-0334,Prisma Socks Yellow XS,Accessories,Socks,Prisma,Yellow,XS,Cotton,"School Season, Winter",Unisex,190.0,145.0,SUP009,Active,images/products/P0334.jpg,23.68
+P0335,FAB-BEDC-0335,Fabindia Bed Covers Red Single,Home & Lifestyle,Bed Covers,Fabindia,Red,Single,Cotton,Summer,Unisex,2670.0,1876.0,SUP010,Active,images/products/P0335.jpg,29.74
+P0336,RAM-TOWE-0336,Ramraj Cotton Towels Cream XXL,Accessories,Towels,Ramraj Cotton,Cream,XXL,Cotton,All Season,Unisex,220.0,175.0,SUP011,Active,images/products/P0336.jpg,20.45
+P0337,RAM-LUNG-0337,Ramraj Cotton Lungi Gold Standard,Men,Lungi,Ramraj Cotton,Gold,Standard,Cotton,"Summer, Aadi Sale",Men,1190.0,876.0,SUP012,Active,images/products/P0337.jpg,26.39
+P0338,KAN-SARE-0338,Kanchipuram Handloom Sarees Green 2m,Women,Sarees,Kanchipuram Handloom,Green,2m,Silk,"Wedding, Diwali, Navratri",Women,5380.0,3928.0,SUP013,Active,images/products/P0338.jpg,26.99
+P0339,PRI-BABY-0339,Prisma Baby Dresses CSK Yellow 0-3 Months,Kids,Baby Dresses,Prisma,CSK Yellow,0-3 Months,Cotton,All Season,Kids,1400.0,823.0,SUP014,Active,images/products/P0339.jpg,41.21
+P0340,PRI-RAIN-0340,Prisma Raincoats CSK Yellow M,Accessories,Raincoats,Prisma,CSK Yellow,M,Polyester,Monsoon,Unisex,1130.0,815.0,SUP015,Active,images/products/P0340.jpg,27.88
+P0341,WES-FROC-0341,Westside Frocks CSK Yellow XS,Women,Frocks,Westside,CSK Yellow,XS,Polyester Blend,"Christmas, New Year",Women,2330.0,1412.0,SUP016,Active,images/products/P0341.jpg,39.4
+P0342,PRI-SCHO-0342,Prisma School Uniforms Green S,Kids,School Uniforms,Prisma,Green,S,Polyester Blend,"School Season, Monsoon",Kids,670.0,385.0,SUP017,Active,images/products/P0342.jpg,42.54
+P0343,UAT-SCHO-0343,Uathayam School Uniforms RCB Red XS,Kids,School Uniforms,Uathayam,RCB Red,XS,Cotton,"School Season, Monsoon",Kids,690.0,437.0,SUP018,Active,images/products/P0343.jpg,36.67
+P0344,FAB-PILL-0344,Fabindia Pillow Covers MI Blue King,Home & Lifestyle,Pillow Covers,Fabindia,MI Blue,King,Cotton,All Season,Unisex,600.0,462.0,SUP019,Active,images/products/P0344.jpg,23.0
+P0345,RAM-LUNG-0345,Ramraj Cotton Lungi White 2m,Men,Lungi,Ramraj Cotton,White,2m,Cotton,"Summer, Aadi Sale",Men,770.0,603.0,SUP020,Active,images/products/P0345.jpg,21.69
+P0346,FAB-BEDC-0346,Fabindia Bed Covers Black Double,Home & Lifestyle,Bed Covers,Fabindia,Black,Double,Cotton,Summer,Unisex,2390.0,1402.0,SUP021,Active,images/products/P0346.jpg,41.34
+P0347,PRI-UMBR-0347,Prisma Umbrellas CSK Yellow L,Accessories,Umbrellas,Prisma,CSK Yellow,L,Polyester,Monsoon,Unisex,800.0,482.0,SUP022,Active,images/products/P0347.jpg,39.75
+P0348,UAT-LUNG-0348,Uathayam Lungi MI Blue Standard,Men,Lungi,Uathayam,MI Blue,Standard,Cotton,"Summer, Aadi Sale",Men,710.0,453.0,SUP023,Active,images/products/P0348.jpg,36.2
+P0349,GUE-BELT-0349,Guess Belts Red M,Accessories,Belts,Guess,Red,M,Leather,All Season,Unisex,640.0,358.0,SUP024,Active,images/products/P0349.jpg,44.06
+P0350,FAB-CURT-0350,Fabindia Curtains Pink Double,Home & Lifestyle,Curtains,Fabindia,Pink,Double,Polyester,All Season,Unisex,2630.0,1819.0,SUP025,Active,images/products/P0350.jpg,30.84
+P0351,RAM-SHIR-0351,Ramraj Cotton Shirts Green S,Men,Shirts,Ramraj Cotton,Green,S,Linen,"Summer, Independence Day, Republic Day",Men,620.0,404.0,SUP001,Active,images/products/P0351.jpg,34.84
+P0352,FAB-CURT-0352,Fabindia Curtains Yellow King,Home & Lifestyle,Curtains,Fabindia,Yellow,King,Cotton,All Season,Unisex,1370.0,1089.0,SUP002,Active,images/products/P0352.jpg,20.51
+P0353,KAN-SARE-0353,Kanchipuram Handloom Sarees Red 4m,Women,Sarees,Kanchipuram Handloom,Red,4m,Handloom,"Wedding, Diwali, Navratri",Women,5640.0,3687.0,SUP003,Active,images/products/P0353.jpg,34.63
+P0354,WES-DRES-0354,Westside Dresses Orange M,Women,Dresses,Westside,Orange,M,Cotton,"Christmas, New Year",Women,3330.0,2362.0,SUP004,Active,images/products/P0354.jpg,29.07
+P0355,PRI-TOWE-0355,Prisma Towels White XL,Accessories,Towels,Prisma,White,XL,Cotton,All Season,Unisex,220.0,141.0,SUP005,Active,images/products/P0355.jpg,35.91
+P0356,FAB-SHRE-0356,Fabindia Shree Purple M,Women,Shree,Fabindia,Purple,M,Handloom,"Navratri, Wedding",Women,2080.0,1252.0,SUP006,Active,images/products/P0356.jpg,39.81
+P0357,PRI-RAIN-0357,Prisma Raincoats Gold XS,Accessories,Raincoats,Prisma,Gold,XS,Polyester,Monsoon,Unisex,660.0,364.0,SUP007,Active,images/products/P0357.jpg,44.85
+P0358,BIB-KURT-0358,Biba Kurtas RCB Red XS,Women,Kurtas,Biba,RCB Red,XS,Cotton,"Diwali, Temple Festival",Women,1360.0,1062.0,SUP008,Active,images/products/P0358.jpg,21.91
+P0359,FAB-PILL-0359,Fabindia Pillow Covers White Single,Home & Lifestyle,Pillow Covers,Fabindia,White,Single,Cotton,All Season,Unisex,320.0,239.0,SUP009,Active,images/products/P0359.jpg,25.31
+P0360,FAB-BEDC-0360,Fabindia Bed Covers Maroon King,Home & Lifestyle,Bed Covers,Fabindia,Maroon,King,Cotton,Summer,Unisex,2330.0,1511.0,SUP010,Active,images/products/P0360.jpg,35.15
+P0361,KAN-PUTT-0361,Kanchipuram Handloom Puttu Vasti Blue S,Women,Puttu Vasti,Kanchipuram Handloom,Blue,S,Silk,Wedding,Women,21170.0,15422.0,SUP011,Active,images/products/P0361.jpg,27.15
+P0362,FAB-PILL-0362,Fabindia Pillow Covers Green King,Home & Lifestyle,Pillow Covers,Fabindia,Green,King,Cotton,All Season,Unisex,400.0,264.0,SUP012,Active,images/products/P0362.jpg,34.0
+P0363,WES-BABY-0363,Westside Baby Dresses Pink 6-12 Years,Kids,Baby Dresses,Westside,Pink,6-12 Years,Cotton,All Season,Kids,330.0,221.0,SUP013,Active,images/products/P0363.jpg,33.03
+P0364,GUE-BELT-0364,Guess Belts CSK Yellow S,Accessories,Belts,Guess,CSK Yellow,S,Leather,All Season,Unisex,800.0,563.0,SUP014,Active,images/products/P0364.jpg,29.62
+P0365,FAB-BEDC-0365,Fabindia Bed Covers Black King,Home & Lifestyle,Bed Covers,Fabindia,Black,King,Cotton,Summer,Unisex,1130.0,832.0,SUP015,Active,images/products/P0365.jpg,26.37
+P0366,FAB-PILL-0366,Fabindia Pillow Covers CSK Yellow King,Home & Lifestyle,Pillow Covers,Fabindia,CSK Yellow,King,Cotton,All Season,Unisex,230.0,159.0,SUP016,Active,images/products/P0366.jpg,30.87
+P0367,GUE-IPLJ-0367,Guess IPL Jerseys Gold S,Accessories,IPL Jerseys,Guess,Gold,S,Polyester,IPL Season,Unisex,1110.0,749.0,SUP017,Active,images/products/P0367.jpg,32.52
+P0368,NET-SOCK-0368,Netplay Socks Red XS,Accessories,Socks,Netplay,Red,XS,Cotton,"School Season, Winter",Unisex,100.0,58.0,SUP018,Active,images/products/P0368.jpg,42.0
+P0369,NET-PANT-0369,Netplay Pants White M,Men,Pants,Netplay,White,M,Cotton,All Season,Men,1120.0,763.0,SUP019,Active,images/products/P0369.jpg,31.87
+P0370,RAM-VESH-0370,Ramraj Cotton Veshti MI Blue Standard,Men,Veshti,Ramraj Cotton,MI Blue,Standard,Cotton,"Pongal, Temple Festival, Summer",Men,2200.0,1508.0,SUP020,Active,images/products/P0370.jpg,31.45
+P0371,FAB-BEDC-0371,Fabindia Bed Covers Orange Double,Home & Lifestyle,Bed Covers,Fabindia,Orange,Double,Cotton,Summer,Unisex,990.0,741.0,SUP021,Active,images/products/P0371.jpg,25.15
+P0372,PRI-PANT-0372,Prisma Pants CSK Yellow L,Men,Pants,Prisma,CSK Yellow,L,Cotton,All Season,Men,760.0,522.0,SUP022,Active,images/products/P0372.jpg,31.32
+P0373,WES-BABY-0373,Westside Baby Dresses Cream 0-3 Months,Kids,Baby Dresses,Westside,Cream,0-3 Months,Cotton,All Season,Kids,730.0,421.0,SUP023,Active,images/products/P0373.jpg,42.33
+P0374,UAT-SCHO-0374,Uathayam School Uniforms MI Blue L,Kids,School Uniforms,Uathayam,MI Blue,L,Cotton,"School Season, Monsoon",Kids,840.0,584.0,SUP024,Active,images/products/P0374.jpg,30.48
+P0375,GUE-IPLJ-0375,Guess IPL Jerseys Red M,Accessories,IPL Jerseys,Guess,Red,M,Polyester,IPL Season,Unisex,1520.0,904.0,SUP025,Active,images/products/P0375.jpg,40.53
+P0376,FAB-CURT-0376,Fabindia Curtains Yellow King,Home & Lifestyle,Curtains,Fabindia,Yellow,King,Cotton,All Season,Unisex,1100.0,810.0,SUP001,Active,images/products/P0376.jpg,26.36
+P0377,PRI-GIFT-0377,Prisma Gift Boxes Purple XXL,Kids,Gift Boxes,Prisma,Purple,XXL,Cotton,All Season,Kids,910.0,598.0,SUP002,Active,images/products/P0377.jpg,34.29
+P0378,NET-PANT-0378,Netplay Pants Purple S,Men,Pants,Netplay,Purple,S,Cotton,All Season,Men,750.0,483.0,SUP003,Active,images/products/P0378.jpg,35.6
+P0379,WES-DRES-0379,Westside Dresses CSK Yellow M,Women,Dresses,Westside,CSK Yellow,M,Cotton,"Christmas, New Year",Women,1620.0,930.0,SUP004,Active,images/products/P0379.jpg,42.59
+P0380,NET-SHIR-0380,Netplay Shirts RCB Red XL,Men,Shirts,Netplay,RCB Red,XL,Cotton,"Summer, Independence Day, Republic Day",Men,1150.0,665.0,SUP005,Active,images/products/P0380.jpg,42.17
+P0381,RAM-TOWE-0381,Ramraj Cotton Towels Purple S,Accessories,Towels,Ramraj Cotton,Purple,S,Cotton,All Season,Unisex,470.0,277.0,SUP006,Active,images/products/P0381.jpg,41.06
+P0382,FAB-CURT-0382,Fabindia Curtains Maroon Single,Home & Lifestyle,Curtains,Fabindia,Maroon,Single,Cotton,All Season,Unisex,1390.0,1001.0,SUP007,Active,images/products/P0382.jpg,27.99
+P0383,PRI-UMBR-0383,Prisma Umbrellas Black XXL,Accessories,Umbrellas,Prisma,Black,XXL,Polyester,Monsoon,Unisex,950.0,728.0,SUP008,Active,images/products/P0383.jpg,23.37
+P0384,BIB-SHRE-0384,Biba Shree MI Blue S,Women,Shree,Biba,MI Blue,S,Silk,"Navratri, Wedding",Women,2460.0,1446.0,SUP009,Active,images/products/P0384.jpg,41.22
+P0385,RAY-PANT-0385,Raymond Pants Green M,Men,Pants,Raymond,Green,M,Polyester Blend,All Season,Men,1330.0,974.0,SUP010,Active,images/products/P0385.jpg,26.77
+P0386,FAB-BEDC-0386,Fabindia Bed Covers Maroon Single,Home & Lifestyle,Bed Covers,Fabindia,Maroon,Single,Cotton,Summer,Unisex,2320.0,1365.0,SUP011,Active,images/products/P0386.jpg,41.16
+P0387,NET-PANT-0387,Netplay Pants RCB Red XL,Men,Pants,Netplay,RCB Red,XL,Polyester Blend,All Season,Men,1140.0,887.0,SUP012,Active,images/products/P0387.jpg,22.19
+P0388,GUE-BELT-0388,Guess Belts Black XS,Accessories,Belts,Guess,Black,XS,Leather,All Season,Unisex,200.0,133.0,SUP013,Active,images/products/P0388.jpg,33.5
+P0389,NET-PANT-0389,Netplay Pants Green XL,Men,Pants,Netplay,Green,XL,Polyester Blend,All Season,Men,1030.0,628.0,SUP014,Active,images/products/P0389.jpg,39.03
+P0390,FAB-CURT-0390,Fabindia Curtains Maroon King,Home & Lifestyle,Curtains,Fabindia,Maroon,King,Cotton,All Season,Unisex,2950.0,1998.0,SUP015,Active,images/products/P0390.jpg,32.27
+P0391,NET-SOCK-0391,Netplay Socks White S,Accessories,Socks,Netplay,White,S,Cotton,"School Season, Winter",Unisex,150.0,103.0,SUP016,Active,images/products/P0391.jpg,31.33
+P0392,FAB-PILL-0392,Fabindia Pillow Covers Pink King,Home & Lifestyle,Pillow Covers,Fabindia,Pink,King,Cotton,All Season,Unisex,590.0,435.0,SUP017,Active,images/products/P0392.jpg,26.27
+P0393,PRI-UMBR-0393,Prisma Umbrellas Cream XXL,Accessories,Umbrellas,Prisma,Cream,XXL,Polyester,Monsoon,Unisex,960.0,650.0,SUP018,Active,images/products/P0393.jpg,32.29
+P0394,FAB-BEDS-0394,Fabindia Bedsheets Green King,Home & Lifestyle,Bedsheets,Fabindia,Green,King,Cotton,Summer,Unisex,690.0,433.0,SUP019,Active,images/products/P0394.jpg,37.25
+P0395,FAB-SHRE-0395,Fabindia Shree RCB Red XS,Women,Shree,Fabindia,RCB Red,XS,Silk,"Navratri, Wedding",Women,1990.0,1275.0,SUP020,Active,images/products/P0395.jpg,35.93
+P0396,WES-BABY-0396,Westside Baby Dresses Black 6-12 Years,Kids,Baby Dresses,Westside,Black,6-12 Years,Cotton,All Season,Kids,1480.0,961.0,SUP021,Active,images/products/P0396.jpg,35.07
+P0397,RAY-SHIR-0397,Raymond Shirts Red L,Men,Shirts,Raymond,Red,L,Polyester Blend,"Summer, Independence Day, Republic Day",Men,720.0,469.0,SUP022,Active,images/products/P0397.jpg,34.86
+P0398,FAB-CURT-0398,Fabindia Curtains Pink Single,Home & Lifestyle,Curtains,Fabindia,Pink,Single,Polyester,All Season,Unisex,1400.0,772.0,SUP023,Active,images/products/P0398.jpg,44.86
+P0399,PRI-GIFT-0399,Prisma Gift Boxes Cream XXL,Kids,Gift Boxes,Prisma,Cream,XXL,Cotton,All Season,Kids,1690.0,1335.0,SUP024,Active,images/products/P0399.jpg,21.01
+P0400,FAB-PILL-0400,Fabindia Pillow Covers CSK Yellow King,Home & Lifestyle,Pillow Covers,Fabindia,CSK Yellow,King,Cotton,All Season,Unisex,540.0,336.0,SUP025,Active,images/products/P0400.jpg,37.78
+P0401,KAN-PUTT-0401,Kanchipuram Handloom Puttu Vasti Cream XS,Women,Puttu Vasti,Kanchipuram Handloom,Cream,XS,Silk,Wedding,Women,15890.0,11289.0,SUP001,Active,images/products/P0401.jpg,28.96
+P0402,FAB-PUTT-0402,Fabindia Puttu Vasti Orange XS,Women,Puttu Vasti,Fabindia,Orange,XS,Silk,Wedding,Women,20230.0,11288.0,SUP002,Active,images/products/P0402.jpg,44.2
+P0403,FAB-CURT-0403,Fabindia Curtains Orange King,Home & Lifestyle,Curtains,Fabindia,Orange,King,Cotton,All Season,Unisex,2970.0,1709.0,SUP003,Active,images/products/P0403.jpg,42.46
+P0404,PRI-UMBR-0404,Prisma Umbrellas Red L,Accessories,Umbrellas,Prisma,Red,L,Polyester,Monsoon,Unisex,760.0,520.0,SUP004,Active,images/products/P0404.jpg,31.58
+P0405,BIB-SARE-0405,Biba Sarees MI Blue 2m,Women,Sarees,Biba,MI Blue,2m,Handloom,"Wedding, Diwali, Navratri",Women,2650.0,1564.0,SUP005,Active,images/products/P0405.jpg,40.98
+P0406,NET-IPLJ-0406,Netplay IPL Jerseys RCB Red M,Accessories,IPL Jerseys,Netplay,RCB Red,M,Polyester,IPL Season,Unisex,1630.0,922.0,SUP006,Active,images/products/P0406.jpg,43.44
+P0407,GUE-IPLJ-0407,Guess IPL Jerseys White L,Accessories,IPL Jerseys,Guess,White,L,Polyester,IPL Season,Unisex,1650.0,1146.0,SUP007,Active,images/products/P0407.jpg,30.55
+P0408,BIB-KURT-0408,Biba Kurtas CSK Yellow XXL,Women,Kurtas,Biba,CSK Yellow,XXL,Silk,"Diwali, Temple Festival",Women,1310.0,788.0,SUP008,Active,images/products/P0408.jpg,39.85
+P0409,PRI-SCHO-0409,Prisma School Uniforms Blue S,Kids,School Uniforms,Prisma,Blue,S,Cotton,"School Season, Monsoon",Kids,880.0,678.0,SUP009,Active,images/products/P0409.jpg,22.95
+P0410,NET-SOCK-0410,Netplay Socks Purple XL,Accessories,Socks,Netplay,Purple,XL,Cotton,"School Season, Winter",Unisex,200.0,146.0,SUP010,Active,images/products/P0410.jpg,27.0
+P0411,PRI-SOCK-0411,Prisma Socks MI Blue XL,Accessories,Socks,Prisma,MI Blue,XL,Cotton,"School Season, Winter",Unisex,90.0,58.0,SUP011,Active,images/products/P0411.jpg,35.56
+P0412,PRI-GIFT-0412,Prisma Gift Boxes Gold S,Kids,Gift Boxes,Prisma,Gold,S,Cotton,All Season,Kids,2280.0,1325.0,SUP012,Active,images/products/P0412.jpg,41.89
+P0413,FAB-PILL-0413,Fabindia Pillow Covers Orange Single,Home & Lifestyle,Pillow Covers,Fabindia,Orange,Single,Cotton,All Season,Unisex,680.0,522.0,SUP013,Active,images/products/P0413.jpg,23.24
+P0414,PRI-UMBR-0414,Prisma Umbrellas Cream S,Accessories,Umbrellas,Prisma,Cream,S,Polyester,Monsoon,Unisex,680.0,375.0,SUP014,Active,images/products/P0414.jpg,44.85
+P0415,FAB-BEDS-0415,Fabindia Bedsheets Green King,Home & Lifestyle,Bedsheets,Fabindia,Green,King,Cotton,Summer,Unisex,2320.0,1832.0,SUP015,Active,images/products/P0415.jpg,21.03
+P0416,RAY-SHIR-0416,Raymond Shirts CSK Yellow XS,Men,Shirts,Raymond,CSK Yellow,XS,Cotton,"Summer, Independence Day, Republic Day",Men,730.0,508.0,SUP016,Active,images/products/P0416.jpg,30.41
+P0417,FAB-PILL-0417,Fabindia Pillow Covers Maroon Single,Home & Lifestyle,Pillow Covers,Fabindia,Maroon,Single,Cotton,All Season,Unisex,460.0,319.0,SUP017,Active,images/products/P0417.jpg,30.65
+P0418,FAB-BEDS-0418,Fabindia Bedsheets Green Single,Home & Lifestyle,Bedsheets,Fabindia,Green,Single,Cotton,Summer,Unisex,720.0,476.0,SUP018,Active,images/products/P0418.jpg,33.89
+P0419,PRI-SCHO-0419,Prisma School Uniforms Cream XS,Kids,School Uniforms,Prisma,Cream,XS,Polyester Blend,"School Season, Monsoon",Kids,450.0,255.0,SUP019,Active,images/products/P0419.jpg,43.33
+P0420,PRI-RAIN-0420,Prisma Raincoats Black S,Accessories,Raincoats,Prisma,Black,S,Polyester,Monsoon,Unisex,820.0,618.0,SUP020,Active,images/products/P0420.jpg,24.63
+P0421,FAB-SARE-0421,Fabindia Sarees Yellow Standard,Women,Sarees,Fabindia,Yellow,Standard,Handloom,"Wedding, Diwali, Navratri",Women,9610.0,7399.0,SUP021,Active,images/products/P0421.jpg,23.01
+P0422,PRI-GIFT-0422,Prisma Gift Boxes Red S,Kids,Gift Boxes,Prisma,Red,S,Cotton,All Season,Kids,910.0,554.0,SUP022,Active,images/products/P0422.jpg,39.12
+P0423,PRI-TOWE-0423,Prisma Towels Pink S,Accessories,Towels,Prisma,Pink,S,Cotton,All Season,Unisex,450.0,270.0,SUP023,Active,images/products/P0423.jpg,40.0
+P0424,UAT-POLI-0424,Uathayam Political Veshti Purple 9 Yards,Men,Political Veshti,Uathayam,Purple,9 Yards,Cotton,"Political Campaign, Independence Day",Men,910.0,724.0,SUP024,Active,images/products/P0424.jpg,20.44
+P0425,FAB-BEDC-0425,Fabindia Bed Covers Maroon Single,Home & Lifestyle,Bed Covers,Fabindia,Maroon,Single,Cotton,Summer,Unisex,2500.0,1859.0,SUP025,Active,images/products/P0425.jpg,25.64
+P0426,RAM-TOWE-0426,Ramraj Cotton Towels Pink XXL,Accessories,Towels,Ramraj Cotton,Pink,XXL,Cotton,All Season,Unisex,390.0,228.0,SUP001,Active,images/products/P0426.jpg,41.54
+P0427,RAM-LUNG-0427,Ramraj Cotton Lungi Gold Standard,Men,Lungi,Ramraj Cotton,Gold,Standard,Cotton,"Summer, Aadi Sale",Men,980.0,590.0,SUP002,Active,images/products/P0427.jpg,39.8
+P0428,FAB-SHRE-0428,Fabindia Shree Cream L,Women,Shree,Fabindia,Cream,L,Handloom,"Navratri, Wedding",Women,1270.0,796.0,SUP003,Active,images/products/P0428.jpg,37.32
+P0429,PRI-BABY-0429,Prisma Baby Dresses Blue 6-12 Years,Kids,Baby Dresses,Prisma,Blue,6-12 Years,Cotton,All Season,Kids,750.0,461.0,SUP004,Active,images/products/P0429.jpg,38.53
+P0430,GUE-DRES-0430,Guess Dresses Green XXL,Women,Dresses,Guess,Green,XXL,Cotton,"Christmas, New Year",Women,2370.0,1857.0,SUP005,Active,images/products/P0430.jpg,21.65
+P0431,GUE-IPLJ-0431,Guess IPL Jerseys Purple XXL,Accessories,IPL Jerseys,Guess,Purple,XXL,Polyester,IPL Season,Unisex,1440.0,996.0,SUP006,Active,images/products/P0431.jpg,30.83
+P0432,RAM-LUNG-0432,Ramraj Cotton Lungi Maroon Standard,Men,Lungi,Ramraj Cotton,Maroon,Standard,Cotton,"Summer, Aadi Sale",Men,510.0,339.0,SUP007,Active,images/products/P0432.jpg,33.53
+P0433,PRI-SOCK-0433,Prisma Socks Red XL,Accessories,Socks,Prisma,Red,XL,Cotton,"School Season, Winter",Unisex,70.0,48.0,SUP008,Active,images/products/P0433.jpg,31.43
+P0434,RAM-LUNG-0434,Ramraj Cotton Lungi White 2m,Men,Lungi,Ramraj Cotton,White,2m,Cotton,"Summer, Aadi Sale",Men,1140.0,761.0,SUP009,Active,images/products/P0434.jpg,33.25
+P0435,FAB-PUTT-0435,Fabindia Puttu Vasti Orange XS,Women,Puttu Vasti,Fabindia,Orange,XS,Silk,Wedding,Women,23110.0,16212.0,SUP010,Active,images/products/P0435.jpg,29.85
+P0436,WES-BABY-0436,Westside Baby Dresses Yellow 1-5 Years,Kids,Baby Dresses,Westside,Yellow,1-5 Years,Cotton,All Season,Kids,640.0,419.0,SUP011,Active,images/products/P0436.jpg,34.53
+P0437,FAB-BEDS-0437,Fabindia Bedsheets Green Single,Home & Lifestyle,Bedsheets,Fabindia,Green,Single,Cotton,Summer,Unisex,2400.0,1430.0,SUP012,Active,images/products/P0437.jpg,40.42
+P0438,FAB-PILL-0438,Fabindia Pillow Covers MI Blue Single,Home & Lifestyle,Pillow Covers,Fabindia,MI Blue,Single,Cotton,All Season,Unisex,780.0,506.0,SUP013,Active,images/products/P0438.jpg,35.13
+P0439,WES-FROC-0439,Westside Frocks Yellow M,Women,Frocks,Westside,Yellow,M,Polyester Blend,"Christmas, New Year",Women,1240.0,807.0,SUP014,Active,images/products/P0439.jpg,34.92
+P0440,BIB-KURT-0440,Biba Kurtas Orange M,Women,Kurtas,Biba,Orange,M,Cotton,"Diwali, Temple Festival",Women,2110.0,1443.0,SUP015,Active,images/products/P0440.jpg,31.61
+P0441,BIB-SARE-0441,Biba Sarees RCB Red 9 Yards,Women,Sarees,Biba,RCB Red,9 Yards,Cotton,"Wedding, Diwali, Navratri",Women,6040.0,3934.0,SUP016,Active,images/products/P0441.jpg,34.87
+P0442,WES-DRES-0442,Westside Dresses Pink XXL,Women,Dresses,Westside,Pink,XXL,Polyester Blend,"Christmas, New Year",Women,2110.0,1503.0,SUP017,Active,images/products/P0442.jpg,28.77
+P0443,FAB-PILL-0443,Fabindia Pillow Covers White Single,Home & Lifestyle,Pillow Covers,Fabindia,White,Single,Cotton,All Season,Unisex,290.0,181.0,SUP018,Active,images/products/P0443.jpg,37.59
+P0444,FAB-CURT-0444,Fabindia Curtains CSK Yellow King,Home & Lifestyle,Curtains,Fabindia,CSK Yellow,King,Polyester,All Season,Unisex,1250.0,921.0,SUP019,Active,images/products/P0444.jpg,26.32
+P0445,UAT-SCHO-0445,Uathayam School Uniforms RCB Red M,Kids,School Uniforms,Uathayam,RCB Red,M,Polyester Blend,"School Season, Monsoon",Kids,980.0,584.0,SUP020,Active,images/products/P0445.jpg,40.41
+P0446,UAT-TOWE-0446,Uathayam Towels Green XL,Accessories,Towels,Uathayam,Green,XL,Cotton,All Season,Unisex,110.0,81.0,SUP021,Active,images/products/P0446.jpg,26.36
+P0447,FAB-PILL-0447,Fabindia Pillow Covers Purple King,Home & Lifestyle,Pillow Covers,Fabindia,Purple,King,Cotton,All Season,Unisex,560.0,434.0,SUP022,Active,images/products/P0447.jpg,22.5
+P0448,KAN-SARE-0448,Kanchipuram Handloom Sarees Yellow Standard,Women,Sarees,Kanchipuram Handloom,Yellow,Standard,Handloom,"Wedding, Diwali, Navratri",Women,3180.0,2071.0,SUP023,Active,images/products/P0448.jpg,34.87
+P0449,RAM-TOWE-0449,Ramraj Cotton Towels RCB Red XXL,Accessories,Towels,Ramraj Cotton,RCB Red,XXL,Cotton,All Season,Unisex,440.0,255.0,SUP024,Active,images/products/P0449.jpg,42.05
+P0450,PRI-GIFT-0450,Prisma Gift Boxes Pink XXL,Kids,Gift Boxes,Prisma,Pink,XXL,Cotton,All Season,Kids,1730.0,1255.0,SUP025,Active,images/products/P0450.jpg,27.46
+P0451,WES-DRES-0451,Westside Dresses RCB Red L,Women,Dresses,Westside,RCB Red,L,Polyester Blend,"Christmas, New Year",Women,1690.0,996.0,SUP001,Active,images/products/P0451.jpg,41.07
+P0452,UAT-SCHO-0452,Uathayam School Uniforms MI Blue L,Kids,School Uniforms,Uathayam,MI Blue,L,Polyester Blend,"School Season, Monsoon",Kids,330.0,183.0,SUP002,Active,images/products/P0452.jpg,44.55
+P0453,NET-IPLJ-0453,Netplay IPL Jerseys CSK Yellow M,Accessories,IPL Jerseys,Netplay,CSK Yellow,M,Polyester,IPL Season,Unisex,960.0,687.0,SUP003,Active,images/products/P0453.jpg,28.44
+P0454,PRI-UMBR-0454,Prisma Umbrellas Black XXL,Accessories,Umbrellas,Prisma,Black,XXL,Polyester,Monsoon,Unisex,340.0,239.0,SUP004,Active,images/products/P0454.jpg,29.71
+P0455,UAT-POLI-0455,Uathayam Political Veshti Black 9 Yards,Men,Political Veshti,Uathayam,Black,9 Yards,Cotton,"Political Campaign, Independence Day",Men,930.0,626.0,SUP005,Active,images/products/P0455.jpg,32.69
+P0456,FAB-BEDS-0456,Fabindia Bedsheets Gold King,Home & Lifestyle,Bedsheets,Fabindia,Gold,King,Cotton,Summer,Unisex,2220.0,1558.0,SUP006,Active,images/products/P0456.jpg,29.82
+P0457,NET-SOCK-0457,Netplay Socks Green M,Accessories,Socks,Netplay,Green,M,Cotton,"School Season, Winter",Unisex,220.0,165.0,SUP007,Active,images/products/P0457.jpg,25.0
+P0458,PRI-SCHO-0458,Prisma School Uniforms Purple XL,Kids,School Uniforms,Prisma,Purple,XL,Cotton,"School Season, Monsoon",Kids,700.0,439.0,SUP008,Active,images/products/P0458.jpg,37.29
+P0459,FAB-PUTT-0459,Fabindia Puttu Vasti Pink M,Women,Puttu Vasti,Fabindia,Pink,M,Silk,Wedding,Women,13860.0,10356.0,SUP009,Active,images/products/P0459.jpg,25.28
+P0460,UAT-POLI-0460,Uathayam Political Veshti Cream 4m,Men,Political Veshti,Uathayam,Cream,4m,Cotton,"Political Campaign, Independence Day",Men,1020.0,812.0,SUP010,Active,images/products/P0460.jpg,20.39
+P0461,PRI-BABY-0461,Prisma Baby Dresses Black 1-5 Years,Kids,Baby Dresses,Prisma,Black,1-5 Years,Cotton,All Season,Kids,1060.0,759.0,SUP011,Active,images/products/P0461.jpg,28.4
+P0462,UAT-SCHO-0462,Uathayam School Uniforms Gold XL,Kids,School Uniforms,Uathayam,Gold,XL,Polyester Blend,"School Season, Monsoon",Kids,450.0,333.0,SUP012,Active,images/products/P0462.jpg,26.0
+P0463,FAB-PILL-0463,Fabindia Pillow Covers Gold Double,Home & Lifestyle,Pillow Covers,Fabindia,Gold,Double,Cotton,All Season,Unisex,760.0,582.0,SUP013,Active,images/products/P0463.jpg,23.42
+P0464,FAB-BEDS-0464,Fabindia Bedsheets Gold King,Home & Lifestyle,Bedsheets,Fabindia,Gold,King,Cotton,Summer,Unisex,1790.0,1095.0,SUP014,Active,images/products/P0464.jpg,38.83
+P0465,RAY-BELT-0465,Raymond Belts White XS,Accessories,Belts,Raymond,White,XS,Leather,All Season,Unisex,780.0,441.0,SUP015,Active,images/products/P0465.jpg,43.46
+P0466,RAM-TOWE-0466,Ramraj Cotton Towels Pink XS,Accessories,Towels,Ramraj Cotton,Pink,XS,Cotton,All Season,Unisex,220.0,148.0,SUP016,Active,images/products/P0466.jpg,32.73
+P0467,BIB-KURT-0467,Biba Kurtas CSK Yellow XL,Women,Kurtas,Biba,CSK Yellow,XL,Silk,"Diwali, Temple Festival",Women,930.0,544.0,SUP017,Active,images/products/P0467.jpg,41.51
+P0468,FAB-BEDC-0468,Fabindia Bed Covers MI Blue Double,Home & Lifestyle,Bed Covers,Fabindia,MI Blue,Double,Cotton,Summer,Unisex,1750.0,1363.0,SUP018,Active,images/products/P0468.jpg,22.11
+P0469,FAB-PILL-0469,Fabindia Pillow Covers CSK Yellow Single,Home & Lifestyle,Pillow Covers,Fabindia,CSK Yellow,Single,Cotton,All Season,Unisex,580.0,359.0,SUP019,Active,images/products/P0469.jpg,38.1
+P0470,FAB-KURT-0470,Fabindia Kurtas Cream S,Women,Kurtas,Fabindia,Cream,S,Silk,"Diwali, Temple Festival",Women,1720.0,1094.0,SUP020,Active,images/products/P0470.jpg,36.4
+P0471,BIB-FROC-0471,Biba Frocks Blue L,Women,Frocks,Biba,Blue,L,Cotton,"Christmas, New Year",Women,1700.0,970.0,SUP021,Active,images/products/P0471.jpg,42.94
+P0472,UAT-SCHO-0472,Uathayam School Uniforms Cream M,Kids,School Uniforms,Uathayam,Cream,M,Polyester Blend,"School Season, Monsoon",Kids,440.0,283.0,SUP022,Active,images/products/P0472.jpg,35.68
+P0473,RAM-TOWE-0473,Ramraj Cotton Towels Orange M,Accessories,Towels,Ramraj Cotton,Orange,M,Cotton,All Season,Unisex,350.0,270.0,SUP023,Active,images/products/P0473.jpg,22.86
+P0474,PRI-RAIN-0474,Prisma Raincoats Purple XL,Accessories,Raincoats,Prisma,Purple,XL,Polyester,Monsoon,Unisex,890.0,535.0,SUP024,Active,images/products/P0474.jpg,39.89
+P0475,RAY-PANT-0475,Raymond Pants Purple XS,Men,Pants,Raymond,Purple,XS,Polyester Blend,All Season,Men,560.0,341.0,SUP025,Active,images/products/P0475.jpg,39.11
+P0476,PRI-SCHO-0476,Prisma School Uniforms Cream S,Kids,School Uniforms,Prisma,Cream,S,Cotton,"School Season, Monsoon",Kids,1000.0,600.0,SUP001,Active,images/products/P0476.jpg,40.0
+P0477,GUE-BELT-0477,Guess Belts Yellow XL,Accessories,Belts,Guess,Yellow,XL,Leather,All Season,Unisex,410.0,303.0,SUP002,Active,images/products/P0477.jpg,26.1
+P0478,WES-BABY-0478,Westside Baby Dresses RCB Red 3-6 Months,Kids,Baby Dresses,Westside,RCB Red,3-6 Months,Cotton,All Season,Kids,390.0,305.0,SUP003,Active,images/products/P0478.jpg,21.79
+P0479,FAB-PILL-0479,Fabindia Pillow Covers Gold Double,Home & Lifestyle,Pillow Covers,Fabindia,Gold,Double,Cotton,All Season,Unisex,350.0,249.0,SUP004,Active,images/products/P0479.jpg,28.86
+P0480,BIB-SARE-0480,Biba Sarees Yellow 9 Yards,Women,Sarees,Biba,Yellow,9 Yards,Handloom,"Wedding, Diwali, Navratri",Women,6480.0,4962.0,SUP005,Active,images/products/P0480.jpg,23.43
+P0481,FAB-PILL-0481,Fabindia Pillow Covers Purple King,Home & Lifestyle,Pillow Covers,Fabindia,Purple,King,Cotton,All Season,Unisex,420.0,303.0,SUP006,Active,images/products/P0481.jpg,27.86
+P0482,PRI-GIFT-0482,Prisma Gift Boxes White XS,Kids,Gift Boxes,Prisma,White,XS,Cotton,All Season,Kids,2390.0,1744.0,SUP007,Active,images/products/P0482.jpg,27.03
+P0483,GUE-IPLJ-0483,Guess IPL Jerseys Purple XL,Accessories,IPL Jerseys,Guess,Purple,XL,Polyester,IPL Season,Unisex,1170.0,893.0,SUP008,Active,images/products/P0483.jpg,23.68
+P0484,PRI-BABY-0484,Prisma Baby Dresses Black 3-6 Months,Kids,Baby Dresses,Prisma,Black,3-6 Months,Cotton,All Season,Kids,1380.0,946.0,SUP009,Active,images/products/P0484.jpg,31.45
+P0485,UAT-SCHO-0485,Uathayam School Uniforms Green XXL,Kids,School Uniforms,Uathayam,Green,XXL,Cotton,"School Season, Monsoon",Kids,1000.0,664.0,SUP010,Active,images/products/P0485.jpg,33.6
+P0486,PRI-UMBR-0486,Prisma Umbrellas Purple XXL,Accessories,Umbrellas,Prisma,Purple,XXL,Polyester,Monsoon,Unisex,940.0,742.0,SUP011,Active,images/products/P0486.jpg,21.06
+P0487,NET-IPLJ-0487,Netplay IPL Jerseys White XS,Accessories,IPL Jerseys,Netplay,White,XS,Polyester,IPL Season,Unisex,1190.0,876.0,SUP012,Active,images/products/P0487.jpg,26.39
+P0488,WES-BABY-0488,Westside Baby Dresses Red 1-5 Years,Kids,Baby Dresses,Westside,Red,1-5 Years,Cotton,All Season,Kids,1480.0,935.0,SUP013,Active,images/products/P0488.jpg,36.82
+P0489,PRI-TOWE-0489,Prisma Towels Blue S,Accessories,Towels,Prisma,Blue,S,Cotton,All Season,Unisex,420.0,309.0,SUP014,Active,images/products/P0489.jpg,26.43
+P0490,RAY-PANT-0490,Raymond Pants Cream XXL,Men,Pants,Raymond,Cream,XXL,Linen,All Season,Men,860.0,595.0,SUP015,Active,images/products/P0490.jpg,30.81
+P0491,WES-FROC-0491,Westside Frocks Gold XL,Women,Frocks,Westside,Gold,XL,Cotton,"Christmas, New Year",Women,510.0,317.0,SUP016,Active,images/products/P0491.jpg,37.84
+P0492,GUE-IPLJ-0492,Guess IPL Jerseys Yellow XXL,Accessories,IPL Jerseys,Guess,Yellow,XXL,Polyester,IPL Season,Unisex,1010.0,659.0,SUP017,Active,images/products/P0492.jpg,34.75
+P0493,FAB-BEDS-0493,Fabindia Bedsheets Blue Single,Home & Lifestyle,Bedsheets,Fabindia,Blue,Single,Cotton,Summer,Unisex,1500.0,938.0,SUP018,Active,images/products/P0493.jpg,37.47
+P0494,UAT-SCHO-0494,Uathayam School Uniforms Blue XL,Kids,School Uniforms,Uathayam,Blue,XL,Cotton,"School Season, Monsoon",Kids,910.0,586.0,SUP019,Active,images/products/P0494.jpg,35.6
+P0495,FAB-SHRE-0495,Fabindia Shree Pink L,Women,Shree,Fabindia,Pink,L,Handloom,"Navratri, Wedding",Women,3380.0,2599.0,SUP020,Active,images/products/P0495.jpg,23.11
+P0496,RAY-BELT-0496,Raymond Belts RCB Red XL,Accessories,Belts,Raymond,RCB Red,XL,Leather,All Season,Unisex,760.0,492.0,SUP021,Active,images/products/P0496.jpg,35.26
+P0497,GUE-DRES-0497,Guess Dresses Cream M,Women,Dresses,Guess,Cream,M,Polyester Blend,"Christmas, New Year",Women,2300.0,1591.0,SUP022,Active,images/products/P0497.jpg,30.83
+P0498,PRI-SCHO-0498,Prisma School Uniforms Green L,Kids,School Uniforms,Prisma,Green,L,Polyester Blend,"School Season, Monsoon",Kids,730.0,506.0,SUP023,Active,images/products/P0498.jpg,30.68
+P0499,WES-BABY-0499,Westside Baby Dresses Maroon 6-12 Years,Kids,Baby Dresses,Westside,Maroon,6-12 Years,Cotton,All Season,Kids,380.0,214.0,SUP024,Active,images/products/P0499.jpg,43.68
+P0500,NET-IPLJ-0500,Netplay IPL Jerseys White XXL,Accessories,IPL Jerseys,Netplay,White,XXL,Polyester,IPL Season,Unisex,1770.0,1191.0,SUP025,Active,images/products/P0500.jpg,32.71
